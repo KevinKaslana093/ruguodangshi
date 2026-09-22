@@ -1,0 +1,332 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-09-22T15:19:00.229Z",
+ "count": 13,
+ "genres": [
+  "office",
+  "dorm",
+  "pet",
+  "travel",
+  "birthday",
+  "mystery",
+  "scifi",
+  "warm"
+ ],
+ "stories": [
+  {
+   "storyId": "sc-0001",
+   "file": "sc-0001.json",
+   "title": "凌晨的货架底层",
+   "genreId": "warm",
+   "tagline": "总部要下架那款饭团，她把最后一个藏进货架底层。夜还长，规矩和人情都得慢慢说。",
+   "summary": "总部通知下架那款饭团，夜班店员林晚照旧把最后一个藏进货架底层，留给每天凌晨来买它的常客。店长盘点时翻到了那一格。留货、下架、规矩与人情，都被摆在同一张收银台上。这一夜怎么收场，取决于谁先开口、怎么说，也取决于那盏关东煮的灯还亮不亮。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 16,
+   "tags": [
+    "深夜便利店",
+    "温柔日常",
+    "规矩人情",
+    "细水长流"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 8,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0002",
+   "file": "sc-0002.json",
+   "title": "第七遍闹铃没人认领",
+   "genreId": "office",
+   "tagline": "闹钟响了七遍，四个人装睡，谁先认领谁就得叫全寝起床。",
+   "summary": "早上七点十二分，宿舍的闹钟响了第七遍。上学期立下的规矩还在：谁按掉闹钟，谁就得负责把全寝叫起来。于是四个人把脸埋进被子，谁都不肯先动。昨晚宿舍断过电，手机只剩百分之三的电量，早八在八点整。这是一场关于起床的拉锯战。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 16,
+   "tags": [
+    "宿舍",
+    "早八",
+    "群像",
+    "搞笑"
+   ],
+   "cover": {
+    "pattern": "waves",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 6,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0003",
+   "file": "sc-0003.json",
+   "title": "这栋楼不叫那个名字",
+   "genreId": "mystery",
+   "tagline": "一封写给前住户的信，撞上整栋楼心照不宣的沉默。",
+   "summary": "搬家第一晚，门缝里塞进一封写给前住户的信。林小满拿着它去问对门邻居，对方笑着把话岔开；去问物业老周，老周的回答前后矛盾。整栋楼都在小心翼翼地绕开一个名字。她决定顺着这封信往下查，直到弄清大家为什么不肯叫出那两个字。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 12,
+   "tags": [
+    "轻悬疑",
+    "日常",
+    "邻里",
+    "解谜"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 6,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0004",
+   "file": "sc-0004.json",
+   "title": "全价票与三日游",
+   "genreId": "travel",
+   "tagline": "退票短信亮起，她点开购票页，他翻开攻略，计划从这一刻开始散架。",
+   "summary": "出发前一晚，林小满收到退票短信。她手指已经落在次日全价票的支付键上，同行的陈野却翻开攻略，说干脆就地玩三天。一个把省钱当战绩，一个把计划当草稿，两个人在候车厅里算账、打听、互相递手机，谁也没说服谁。假期只有那么多天，路却越走越歪。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 12,
+   "tags": [
+    "旅行事故",
+    "计划泡汤",
+    "省钱博主",
+    "临时改道"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 6,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0005",
+   "file": "sc-0005.json",
+   "title": "钥匙声停在楼道的那晚",
+   "genreId": "pet",
+   "tagline": "它以为自己在被一点点遗忘，却不知道每一次晚归都藏着说不出口的理由。",
+   "summary": "凌晨一点，钥匙声又停在楼道，橘猫阿满蹲在玄关等它响。主人回家后越来越沉默，阿满用毛球、用身体、用整夜的守候，一次次试着被看见。它以为自己在被一点点遗忘，却不知道门外的停顿与深夜的加班里，藏着另一份它读不懂的温柔。全篇为虚构创作。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 14,
+   "tags": [
+    "猫视角",
+    "都市独居",
+    "温柔误会",
+    "短篇"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 7,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0006",
+   "file": "sc-0006.json",
+   "title": "天亮前的咸蛋糕",
+   "genreId": "birthday",
+   "tagline": "他把盐当成糖，朋友把咸味当成心意咽了下去。",
+   "summary": "小陶想在朋友阿栗生日那天亲手烤一个蛋糕，凌晨的厨房里却飘出咸味的焦糊香气。补救来不及，坦白又不敢，被声响弄醒的小满成了唯一的知情人。两个人对着一个失败的蛋糕反复商量，而寿星阿栗，其实早就尝过那一口。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 14,
+   "tags": [
+    "生日惊喜",
+    "笨拙真诚",
+    "咸味蛋糕",
+    "友情"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 30
+   },
+   "contentVersion": 1,
+   "avgPathLen": 7,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0007",
+   "file": "sc-0007.json",
+   "title": "该用户已归档",
+   "genreId": "scifi",
+   "tagline": "柜台屏亮起：该用户已归档。可他还站在这里，还在呼吸。",
+   "summary": "阿禾在记忆租赁店值夜班，顺手给自己续租一份记忆，柜台屏却亮起：该用户已归档。店里那台早该报废的旧归档机，把活人写进了逝者名单，天亮前名单就会生效。他拉上修机的老穆和同班的灯灯，要在这一夜里把自己的呼吸重新接回那台停用的登记仪——可那台机器只认当场呼吸。",
+   "estimatedMinutes": 6,
+   "endingCount": 3,
+   "nodeCount": 12,
+   "tags": [
+    "记忆租赁",
+    "已归档",
+    "夜班",
+    "自证"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 6,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0008",
+   "file": "sc-0008.json",
+   "title": "冰箱滴水，无人认领",
+   "genreId": "dorm",
+   "tagline": "冷冻层滴答作响，四个人同时决定：谁先开口，谁就是这台冰箱的监护人。",
+   "summary": "宿舍冰箱的冷冻层开始滴水，阿栗是寝室长，也是全宿舍公认的老好人。只要自己先开口，这台冰箱从此就归自己管——他清楚，另外三个人显然也清楚。于是四个人围着冰箱，齐刷刷假装刷手机。从点名到绕弯，从自救到报修，从潜规则到公约，一场关于“谁先开口”的拉锯战，就在十几平米的房间里慢慢烧开。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 14,
+   "tags": [
+    "宿舍日常",
+    "群像",
+    "沙雕",
+    "踢皮球"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 7,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0009",
+   "file": "sc-0009.json",
+   "title": "工牌没了，章还在",
+   "genreId": "office",
+   "tagline": "闸机说他已离职，系统要他集齐三个章，而这三个章谁也不认领。",
+   "summary": "八年工龄的老周刷卡进楼，闸机亮红灯：您已离职。人事窗口说，撤销这个判决要集齐三个无人认领的废章。于是他拉上同部门的小丁，在资产室、数据治理办和一间没有门牌的房间之间来回打转，用最笨的合规办法，证明自己今天早上还在这儿上班。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 12,
+   "tags": [
+    "职场",
+    "荒诞",
+    "盖章跑腿",
+    "黑色幽默"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 6,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0010",
+   "file": "sc-0010.json",
+   "title": "接水要写三千字",
+   "genreId": "office",
+   "tagline": "组长说，字数就是态度；小林决定，把一杯水写成三幕史诗。",
+   "summary": "组长宣布，周报字数就是工作态度，排名末位要在晨会上朗读自己的周报。实习生小林当天只写了三行。为了活下去，他盯上了饮水机——水温、水位、换桶的声响，全是素材。前辈递来注水模板，组长不断改口径，一杯水眼看要写成三千字史诗。荒诞的排名游戏里，谁先学会注水，谁就先保住工位。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 14,
+   "tags": [
+    "职场喜剧",
+    "荒诞",
+    "注水文学",
+    "字数排名"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 7,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0011",
+   "file": "sc-0011.json",
+   "title": "靠窗工位不眠夜",
+   "genreId": "office",
+   "tagline": "凌晨四点，两把折叠椅并排。谁先眨眼，谁就搬去复印机旁边。",
+   "summary": "凌晨四点，办公室门口并排摆着两把折叠椅。老周和小丁盯上同一个靠窗工位，谁也不肯先眨眼。规则从「谁先到」一路升级成「谁先睡」，速溶咖啡、冷风、白噪音轮番上阵，八年资历和两年熬夜战绩正面对撞。天亮之前，谁也不敢合眼。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 12,
+   "tags": [
+    "职场",
+    "抢工位",
+    "熬夜",
+    "荒诞",
+    "办公室"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 6,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0012",
+   "file": "sc-0012.json",
+   "title": "先别发报名链接",
+   "genreId": "office",
+   "tagline": "会议纪要抄错一个词，裁员预案成了团建分组，全公司抢着报名。",
+   "summary": "市场部实习生小满冲进IT部，因为一份团建报名链接正要点发送——而链接里的分组名单，抄的是会议纪要里的裁员预案：「优化分组」被误写成了「团建分组」。全公司已经抢着报名。小满只能拉上IT部的老张、阿哲和HR莉姐，在链接发出去前把这份纪要先拆开看清楚。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 14,
+   "tags": [
+    "职场",
+    "荒诞",
+    "误会",
+    "群像",
+    "喜剧"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 7,
+   "pathMode": "exhaustive"
+  },
+  {
+   "storyId": "sc-0013",
+   "file": "sc-0013.json",
+   "title": "越真诚，越升职",
+   "genreId": "office",
+   "tagline": "他把缺点一条条写实，系统就一条条把他往管理岗上推。",
+   "summary": "小周是绩效系统的测试员，本职是把自评模板试到出问题。可他删了一版又一版缺点，系统给他的管理潜质分只涨不跌。弹窗弹出：恭喜，匹配管理岗。主管老陈当了真，面谈、情境模拟、最终自评一路排开。小周只想证明这是个bug，却发现整层楼的人都在等这个bug成真。",
+   "estimatedMinutes": 4,
+   "endingCount": 3,
+   "nodeCount": 12,
+   "tags": [
+    "职场",
+    "荒诞",
+    "系统",
+    "测试员",
+    "黑色幽默"
+   ],
+   "cover": {
+    "pattern": "grid",
+    "hue": 205
+   },
+   "contentVersion": 1,
+   "avgPathLen": 6,
+   "pathMode": "exhaustive"
+  }
+ ]
+}
