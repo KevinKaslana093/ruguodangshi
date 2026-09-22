@@ -1,0 +1,13 @@
+{
+ "storyId": "sc-0012",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-22T15:11:52.302Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [],
+  "verdict": "pass"
+ }
+}

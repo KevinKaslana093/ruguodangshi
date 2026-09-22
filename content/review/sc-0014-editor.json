@@ -1,0 +1,18 @@
+{
+ "storyId": "sc-0014",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-22T15:33:12.457Z",
+  "editorIssues": [
+   {
+    "severity": "minor",
+    "nodeId": "n6",
+    "issue": "沈工的“目录”此前从未出现，突然成为关键道具",
+    "suggest": "在n2/n4让沈工先提到在建目录",
+    "evidence": "沈工那边的目录又多了一层"
+   }
+  ],
+  "verdict": "pass",
+  "fixRounds": 0
+ }
+}

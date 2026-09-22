@@ -1,0 +1,28 @@
+{
+ "storyId": "sc-0010",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-22T15:10:52.649Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 1,
+    "issue": "稿子已被组长接走翻页，选择却又写把稿子推到他手边，动作重复矛盾",
+    "suggest": "改为\"把稿子留在组长手边，转身回工位\"",
+    "evidence": "周组长接了，捏着页脚一页页翻……把稿子推到组长手边，转身回工位"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 2,
+    "issue": "前文已逐份比对旧周报，却在组长面前才滑出署名旧稿，略显刻意",
+    "suggest": "补一句当时漏看夹页，或改为翻到夹页才留意",
+    "evidence": "一份一份比对着栏目……夹着的一份旧稿滑了出来，署名正是周组长"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

@@ -1,0 +1,44 @@
+{
+ "storyId": "sc-0002",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-20T19:28:43.680Z",
+  "sampled": 10,
+  "totalPaths": 48,
+  "fixRounds": 2,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "major",
+    "pathIndex": 5,
+    "issue": "已按掉闹钟并认领，下节点闹钟仍在响、四人又都没起",
+    "suggest": "按掉后应改为闹钟已停，直接进入叫人环节"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 0,
+    "issue": "大鹏的枕头已飞走砸老陶，却又压在自己耳朵上",
+    "suggest": "改为大鹏用被子蒙头或抱枕"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 6,
+    "issue": "手机已按掉放回桌上，后文闹钟又亮又响",
+    "suggest": "补一句贪睡键或改为屏幕余亮"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 2,
+    "issue": "空教室靠米粒抄错课表解释，前文无任何铺垫",
+    "suggest": "在米粒本子处埋一句课表存疑"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 7,
+    "issue": "自己先抽后直接跳到各退一步，抽签结果缺失",
+    "suggest": "补一句抽签作废或改选别的办法"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

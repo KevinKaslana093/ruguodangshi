@@ -1,0 +1,21 @@
+{
+ "storyId": "sc-0008",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-21T06:06:01.008Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 2,
+    "issue": "豆芽此前对冰箱毫不知情，却突然拿出购买订单截图",
+    "suggest": "前文补一句冰箱当初是豆芽下单买的",
+    "evidence": "豆芽翻手机，翻出当初买冰箱的订单截图递过来"
+   }
+  ],
+  "verdict": "pass"
+ }
+}

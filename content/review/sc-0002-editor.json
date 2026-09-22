@@ -1,0 +1,29 @@
+{
+ "storyId": "sc-0002",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-20T19:28:29.425Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n6",
+    "issue": "大鹏称老陶电量最多，与人物设定及n11大鹏80%直接冲突",
+    "suggest": "改为大鹏自夸电量最多，或删掉这句反驳"
+   },
+   {
+    "severity": "major",
+    "nodeId": "n16",
+    "issue": "黑板写“调至周五”，却又说米粒抄错教室，两种解释打架",
+    "suggest": "统一为调课或抄错教室，只留一个原因"
+   },
+   {
+    "severity": "major",
+    "nodeId": "n5",
+    "issue": "n3米粒说阿栗已按掉闹钟，n5闹钟却仍在响并耗电",
+    "suggest": "改成只按了贪睡，或删去“你按的”这句"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 2
+ }
+}

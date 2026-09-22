@@ -1,0 +1,3516 @@
+{
+ "proposals": [
+  {
+   "conflict": "一人要砸钱买次日全价票，一人要就地玩三天再说",
+   "differs": "争的是钱与责任，不是路线；矛盾落在该不该为意外买单",
+   "hook": "退票短信亮起，她打开购票页，他打开旅游攻略",
+   "protagonist": "林小满，抠门旅行博主"
+  },
+  {
+   "conflict": "一人要睡机场等改签，一人要连夜搭长途车去邻城",
+   "differs": "争的是风险与体力，焦点在敢不敢赌一趟陌生夜车",
+   "hook": "凌晨两点的候机厅喇叭又响，他把背包甩上肩说走",
+   "protagonist": "阿哲，怕麻烦的上班族"
+  },
+  {
+   "conflict": "一人要打电话找当地旧友借宿，一人死活不肯麻烦人",
+   "differs": "争的是面子与人情，冲突指向求助他人这件事本身",
+   "hook": "手机通讯录停在那个三年没联系的名字上",
+   "protagonist": "程夏，不愿欠人情的插画师"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "全价票与三日游",
+  "tagline": "退票短信亮起，她点开购票页，他翻开攻略，计划从这一刻开始散架。",
+  "summary": "出发前一晚，林小满收到退票短信。她手指已经落在次日全价票的支付键上，同行的陈野却翻开攻略，说干脆就地玩三天。一个把省钱当战绩，一个把计划当草稿，两个人在候车厅里算账、打听、互相递手机，谁也没说服谁。假期只有那么多天，路却越走越歪。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "旅行事故",
+   "计划泡汤",
+   "省钱博主",
+   "临时改道"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "林小满",
+    "desc": "抠门旅行博主，把省钱当战绩"
+   },
+   {
+    "id": "c2",
+    "name": "陈野",
+    "desc": "同行的随性旅伴，主张就地玩三天"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "退票短信亮起",
+    "purpose": "抛出二选一：抢票还是就地玩",
+    "choices": [
+     {
+      "text": "挤到柜台问次日全价票",
+      "to": "n2"
+     },
+     {
+      "text": "蹲在候车厅翻攻略找住处",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "柜台前的报价",
+    "purpose": "让全价票的代价具体到肉疼",
+    "choices": [
+     {
+      "text": "问最便宜的一班，转机也行",
+      "to": "n4"
+     },
+     {
+      "text": "先问能不能改签到别家",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "攻略里的三日线",
+    "purpose": "把就地三天摊成可执行清单",
+    "choices": [
+     {
+      "text": "圈出三个不用门票的地方",
+      "to": "n4"
+     },
+     {
+      "text": "先找能开口讲价的住处",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "把账算在纸上",
+    "purpose": "把两套方案的钱并排算一遍",
+    "choices": [
+     {
+      "text": "把三天的吃住逐项列出来",
+      "to": "n6"
+     },
+     {
+      "text": "只算票价和住宿的差额",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "找本地人打听",
+    "purpose": "从本地人嘴里问出攻略外选项",
+    "choices": [
+     {
+      "text": "问保洁阿姨附近哪里能住",
+      "to": "n6"
+     },
+     {
+      "text": "问便利店店员有没有空房",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "天黑还没定下来",
+    "purpose": "逼出最终态度：谁先松口",
+    "choices": [
+     {
+      "text": "把手机推过去，让他拍板",
+      "to": "n8"
+     },
+     {
+      "text": "说再走一圈，边走边决定",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "松口之后的第一步",
+    "purpose": "把松口落成动作，两条路各自去试",
+    "choices": [
+     {
+      "text": "先去问哪里能凑合一晚",
+      "to": "n8"
+     },
+     {
+      "text": "先去售票机上试余票",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "凑合的一夜",
+    "purpose": "落脚之后，天亮前定下玩还是抢票",
+    "choices": [
+     {
+      "text": "天亮就按三日线走",
+      "to": "n10"
+     },
+     {
+      "text": "天亮再去窗口碰余票",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "售票机前的队伍",
+    "purpose": "排队试票时，决定继续还是放手",
+    "choices": [
+     {
+      "text": "排下去，把余票买下来",
+      "to": "n11"
+     },
+     {
+      "text": "不排了，就在原地取材",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": "e1",
+    "label": "就地三天，意外好看",
+    "purpose": "收束：留下来，三天走出意外的好",
+    "choices": []
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": "e2",
+    "label": "票买到了，心却留下",
+    "purpose": "收束：赶上了车，心思却留在原地",
+    "choices": []
+   },
+   {
+    "id": "n12",
+    "level": 5,
+    "endingId": "e3",
+    "label": "哪也没去，反成爆款",
+    "purpose": "收束：原地取材，反而做成爆款",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "就地三天，意外好看",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "票买到了，心却留下",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "哪也没去，反成爆款",
+    "kind": "twist"
+   }
+  ]
+ },
+ "shape": {
+  "id": "grid12",
+  "note": "六个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 12,
+  "paths": 32,
+  "minLen": 6,
+  "maxLen": 6,
+  "levels": 6,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "（结局入口）"
+  ],
+  "n11": [
+   "n8",
+   "n9",
+   "（结局入口）"
+  ],
+  "n12": [
+   "n9",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n10": {
+   "text": "他们把行程表翻到背面，当成随手记的纸。陈野说三天够走完半座城，林小满蹲在台阶上算门票，算着算着就笑了：原来最贵的不是钱，是没试过。巷口的阿姨递来两碗热汤，说慢慢逛。他们真的慢慢逛，走着走着，路自己长出了样子。",
+   "choices": []
+  },
+  "n11": {
+   "text": "她把刚打出来的票递过去，又回头看了一眼那片没走完的街。陈野把攻略折好塞进口袋，说下次再来补上，她应了一声。有些地方只来一次，有些地方来一次就够记很久。队伍还在往前挪，她的眼睛却留在身后。",
+   "choices": []
+  },
+  "n12": {
+   "text": "谁也没再提走不走的事。林小满把手机架在台阶上，拍打瞌睡的陈野，拍排队的人，拍云从窗外挪过去。剪好发出去时她没抱希望，评论却一条接一条涌进来。她盯着屏幕上跳动的数字，忽然有点想笑。",
+   "choices": []
+  },
+  "n6": {
+   "text": "攻略在陈野手里翻得哗哗响，他说计划本来就是草稿，改一改不亏。林小满不接话，只在心里盘那笔差价。话说到一半就停住，谁也没先松口。最后还是他先开口：总得挑一样吧。她抬起头，看着他，还没答。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "先找个地方凑合一晚"
+    },
+    {
+     "to": "n9",
+     "text": "去售票机那儿排队试试"
+    }
+   ]
+  },
+  "n8": {
+   "text": "落脚的地方是随手找的，能躺下就行。陈野把外套叠成枕头，说三天也能玩出花样；林小满举着手机刷票，嘴里念着省下的每一块。灯关了又亮，两个人都没睡实。她翻过身问：是就这么逛下去，还是再去试一次。他闭着眼说随你，反正攻略还能改。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "不抢票了，就地玩三天"
+    },
+    {
+     "to": "n11",
+     "text": "再去试一次，把票拿到手"
+    }
+   ]
+  },
+  "n9": {
+   "text": "队挪得很慢，前面的人散去又补上。陈野靠着栏杆打哈欠，说排到也未必有；林小满盯着屏幕上的余票，手在袖口里攥着。她问还排不排，他说你说了算。身后又有人挤上来，把两个人往前推了半步。",
+   "choices": [
+    {
+     "to": "n11",
+     "text": "排到底，把票拿到手"
+    },
+    {
+     "to": "n12",
+     "text": "不排了，就地拍点东西"
+    }
+   ]
+  },
+  "n4": {
+   "text": "陈野把攻略摊在膝头，翻到背面那页空白，递来一支笔。林小满没接，先把两边的价钱念了一遍，才肯落在纸上：一边是眼下这一趟的全部代价，一边是三天里吃住行加起来的估数。两个数字并排躺着，越看越不像同一件事。她说这还用算吗，他说算都算了，就再算清楚点。笔尖悬着，谁也没划掉哪一行。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "接着算，算到天黑也没定下来"
+    },
+    {
+     "to": "n7",
+     "text": "不算了，先松口去试一条"
+    }
+   ]
+  },
+  "n5": {
+   "text": "陈野先开的口。他凑到旁边搭话的人跟前，问除了攻略上写的那条线，还有没有别的走法。对方说得很快，报出几个地名，手指在半空比划方向，说那边不用赶，慢慢逛就行。林小满把地名一个个记进备忘录，记完才发现自己连价钱都没问。她抬头看他，他正冲她挑眉。路好像多了一条，账却还没算清。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "把问来的先记下，接着算账"
+    },
+    {
+     "to": "n7",
+     "text": "照本地人说的，先试一步"
+    }
+   ]
+  },
+  "n7": {
+   "text": "松口是几乎同时的。她说那就试试，他说行，试试就试试，话说出口，两个人都松了半口气。攻略折起来塞进兜里，手机揣回袖口，散着的东西一件件收拢，谁也不再提那笔差价。剩下的事很小：先找个能躺下的地方，还是再去试一次。她看着他，等他先走。他也看着她。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "先找个能躺下的地方，凑合一晚"
+    },
+    {
+     "to": "n9",
+     "text": "掉头去排队，再试一次"
+    }
+   ]
+  },
+  "n1": {
+   "text": "候车厅的灯白得发慌。林小满盯着手机，退票短信躺在屏幕上，一行字安安静静，像把票从她手里抽走了。陈野把攻略摊在腿上，翻到第一页，又翻回来，说要不就地玩三天，语气轻得像随口一提。她手指悬在购票页面，全价票的价格亮着，没按下，也没划走。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "去柜台问全价票多少钱"
+    },
+    {
+     "to": "n3",
+     "text": "让陈野把三天排出来看看"
+    }
+   ]
+  },
+  "n2": {
+   "text": "柜台后的屏幕转过来，数字一个个念出来：全价票、退改签的手续费，还有被退掉的那张票，加在一起，比她预算里那一栏高出一截。林小满的指尖在柜台边沿敲了两下，没敲出声。陈野把背包往上提了提，站在她旁边没说话。广播在头顶过了一遍，两个人还站在原地，谁也没把手伸进兜里。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "把两边的价钱摊在纸上算"
+    },
+    {
+     "to": "n5",
+     "text": "找人打听还有没有别的走法"
+    }
+   ]
+  },
+  "n3": {
+   "text": "陈野把攻略摊在两个人中间，手指顺着页面往下划：头一天沿着老街走，第二天去城外的山，第三天留着随便逛。他说得不快，像在念一份还算像样的清单。林小满听着，把手机翻过来扣在膝上，又翻回去。三天摊开了，摆在眼前，可她脑子里那笔账还没摊开。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "先算清楚三天要花多少"
+    },
+    {
+     "to": "n5",
+     "text": "问问本地人还有哪条线"
+    }
+   ]
+  }
+ },
+ "story": {
+  "storyId": "sc-0004",
+  "schemaVersion": 1,
+  "title": "全价票与三日游",
+  "tagline": "退票短信亮起，她点开购票页，他翻开攻略，计划从这一刻开始散架。",
+  "summary": "出发前一晚，林小满收到退票短信。她手指已经落在次日全价票的支付键上，同行的陈野却翻开攻略，说干脆就地玩三天。一个把省钱当战绩，一个把计划当草稿，两个人在候车厅里算账、打听、互相递手机，谁也没说服谁。假期只有那么多天，路却越走越歪。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "旅行事故",
+   "计划泡汤",
+   "省钱博主",
+   "临时改道"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "林小满",
+    "desc": "抠门旅行博主，把省钱当战绩"
+   },
+   {
+    "id": "c2",
+    "name": "陈野",
+    "desc": "同行的随性旅伴，主张就地玩三天"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "就地三天，意外好看",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "票买到了，心却留下",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "哪也没去，反成爆款",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "候车厅的灯白得发慌。林小满盯着手机，退票短信躺在屏幕上，一行字安安静静，像把票从她手里抽走了。陈野把攻略摊在腿上，翻到第一页，又翻回来，说要不就地玩三天，语气轻得像随口一提。她手指悬在购票页面，全价票的价格亮着，没按下，也没划走。",
+    "label": "退票短信亮起",
+    "choices": [
+     {
+      "text": "去柜台问全价票多少钱",
+      "to": "n2"
+     },
+     {
+      "text": "让陈野把三天排出来看看",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "柜台后的屏幕转过来，数字一个个念出来：全价票、退改签的手续费，还有被退掉的那张票，加在一起，比她预算里那一栏高出一截。林小满的指尖在柜台边沿敲了两下，没敲出声。陈野把背包往上提了提，站在她旁边没说话。广播在头顶过了一遍，两个人还站在原地，谁也没把手伸进兜里。",
+    "label": "柜台前的报价",
+    "choices": [
+     {
+      "text": "把两边的价钱摊在纸上算",
+      "to": "n4"
+     },
+     {
+      "text": "找人打听还有没有别的走法",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "陈野把攻略摊在两个人中间，手指顺着页面往下划：头一天沿着老街走，第二天去城外的山，第三天留着随便逛。他说得不快，像在念一份还算像样的清单。林小满听着，把手机翻过来扣在膝上，又翻回去。三天摊开了，摆在眼前，可她脑子里那笔账还没摊开。",
+    "label": "攻略里的三日线",
+    "choices": [
+     {
+      "text": "先算清楚三天要花多少",
+      "to": "n4"
+     },
+     {
+      "text": "问问本地人还有哪条线",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "陈野把攻略摊在膝头，翻到背面那页空白，递来一支笔。林小满没接，先把两边的价钱念了一遍，才肯落在纸上：一边是眼下这一趟的全部代价，一边是三天里吃住行加起来的估数。两个数字并排躺着，越看越不像同一件事。她说这还用算吗，他说算都算了，就再算清楚点。笔尖悬着，谁也没划掉哪一行。",
+    "label": "把账算在纸上",
+    "choices": [
+     {
+      "text": "接着算，算到天黑也没定下来",
+      "to": "n6"
+     },
+     {
+      "text": "不算了，先松口去试一条",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "陈野先开的口。他凑到旁边搭话的人跟前，问除了攻略上写的那条线，还有没有别的走法。对方说得很快，报出几个地名，手指在半空比划方向，说那边不用赶，慢慢逛就行。林小满把地名一个个记进备忘录，记完才发现自己连价钱都没问。她抬头看他，他正冲她挑眉。路好像多了一条，账却还没算清。",
+    "label": "找本地人打听",
+    "choices": [
+     {
+      "text": "把问来的先记下，接着算账",
+      "to": "n6"
+     },
+     {
+      "text": "照本地人说的，先试一步",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "攻略在陈野手里翻得哗哗响，他说计划本来就是草稿，改一改不亏。林小满不接话，只在心里盘那笔差价。话说到一半就停住，谁也没先松口。最后还是他先开口：总得挑一样吧。她抬起头，看着他，还没答。",
+    "label": "天黑还没定下来",
+    "choices": [
+     {
+      "text": "先找个地方凑合一晚",
+      "to": "n8"
+     },
+     {
+      "text": "去售票机那儿排队试试",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "松口是几乎同时的。她说那就试试，他说行，试试就试试，话说出口，两个人都松了半口气。攻略折起来塞进兜里，手机揣回袖口，散着的东西一件件收拢，谁也不再提那笔差价。剩下的事很小：先找个能躺下的地方，还是再去试一次。她看着他，等他先走。他也看着她。",
+    "label": "松口之后的第一步",
+    "choices": [
+     {
+      "text": "先找个能躺下的地方，凑合一晚",
+      "to": "n8"
+     },
+     {
+      "text": "掉头去排队，再试一次",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "落脚的地方是随手找的，能躺下就行。陈野把外套叠成枕头，说三天也能玩出花样；林小满举着手机刷票，嘴里念着省下的每一块。灯关了又亮，两个人都没睡实。她翻过身问：是就这么逛下去，还是再去试一次。他闭着眼说随你，反正攻略还能改。",
+    "label": "凑合的一夜",
+    "choices": [
+     {
+      "text": "不抢票了，就地玩三天",
+      "to": "n10"
+     },
+     {
+      "text": "再去试一次，把票拿到手",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "队挪得很慢，前面的人散去又补上。陈野靠着栏杆打哈欠，说排到也未必有；林小满盯着屏幕上的余票，手在袖口里攥着。她问还排不排，他说你说了算。身后又有人挤上来，把两个人往前推了半步。",
+    "label": "售票机前的队伍",
+    "choices": [
+     {
+      "text": "排到底，把票拿到手",
+      "to": "n11"
+     },
+     {
+      "text": "不排了，就地拍点东西",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "他们把行程表翻到背面，当成随手记的纸。陈野说三天够走完半座城，林小满蹲在台阶上算门票，算着算着就笑了：原来最贵的不是钱，是没试过。巷口的阿姨递来两碗热汤，说慢慢逛。他们真的慢慢逛，走着走着，路自己长出了样子。",
+    "label": "就地三天，意外好看",
+    "ending": {
+     "id": "e1",
+     "title": "就地三天，意外好看",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n11",
+    "text": "她把刚打出来的票递过去，又回头看了一眼那片没走完的街。陈野把攻略折好塞进口袋，说下次再来补上，她应了一声。有些地方只来一次，有些地方来一次就够记很久。队伍还在往前挪，她的眼睛却留在身后。",
+    "label": "票买到了，心却留下",
+    "ending": {
+     "id": "e2",
+     "title": "票买到了，心却留下",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n12",
+    "text": "谁也没再提走不走的事。林小满把手机架在台阶上，拍打瞌睡的陈野，拍排队的人，拍云从窗外挪过去。剪好发出去时她没抱希望，评论却一条接一条涌进来。她盯着屏幕上跳动的数字，忽然有点想笑。",
+    "label": "哪也没去，反成爆款",
+    "ending": {
+     "id": "e3",
+     "title": "哪也没去，反成爆款",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "travel",
+  "meta": {
+   "createdAt": "2026-09-20T23:06:45.513Z",
+   "generatedBy": "tools/content/produce.cjs@1",
+   "reviewStatus": "passed",
+   "contentSources": "原创虚构，未使用未授权私人素材",
+   "pipeline": {
+    "proposalId": "sc-0004-p0",
+    "editorPass": true,
+    "pathReviewPass": true,
+    "editorVerdict": "pass",
+    "pathVerdict": "pass",
+    "pathSampling": "10/32",
+    "fixRounds": 0,
+    "openIssuesAtAcceptance": 0,
+    "premium": true
+   }
+  }
+ },
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 32,
+    "capped": false,
+    "visitedPairs": 12,
+    "totalPairs": 12,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 8,
+    "e2": 16,
+    "e3": 8
+   },
+   "nodeCount": 12,
+   "endingCount": 3,
+   "avgNodeCjk": 98,
+   "totalChoices": 18,
+   "avgPathLen": 6,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "把两边的价钱摊在纸上算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "去柜台问全价票多少钱",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "找人打听还有没有别的走法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "接着算，算到天黑也没定下来",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "先算清楚三天要花多少",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不算了，先松口去试一条",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先找个地方凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "把问来的先记下，接着算账",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "去售票机那儿排队试试",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "不抢票了，就地玩三天",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "先找个能躺下的地方，凑合一晚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "再去试一次，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "排到底，把票拿到手",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "让陈野把三天排出来看看",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "问问本地人还有哪条线",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "照本地人说的，先试一步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "掉头去排队，再试一次",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不排了，就地拍点东西",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "把两边的价钱摊在纸上算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "去柜台问全价票多少钱",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "找人打听还有没有别的走法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "接着算，算到天黑也没定下来",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "先算清楚三天要花多少",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不算了，先松口去试一条",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先找个地方凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "把问来的先记下，接着算账",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "去售票机那儿排队试试",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "不抢票了，就地玩三天",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "先找个能躺下的地方，凑合一晚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "再去试一次，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "排到底，把票拿到手",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "让陈野把三天排出来看看",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "问问本地人还有哪条线",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "照本地人说的，先试一步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "掉头去排队，再试一次",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不排了，就地拍点东西",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "editorReview": {
+  "at": "2026-09-20T23:06:32.536Z",
+  "editorIssues": [],
+  "verdict": "pass",
+  "fixRounds": 0
+ },
+ "pathReview": {
+  "at": "2026-09-20T23:06:45.445Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 1,
+    "issue": "结局票突然到手，中间无买票过程",
+    "suggest": "补一句排队或付款的动作再切结局",
+    "evidence": "她把刚打出来的票递过去，又回头看了一眼那片没走完的街"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 5,
+    "issue": "未经历僵持却写“松口”，缺铺垫",
+    "suggest": "把“松口”改成顺势决定，或补一句犹豫",
+    "evidence": "松口是几乎同时的。她说那就试试，他说行，试试就试试"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 4,
+    "issue": "选“接着算账”后直接跳到天黑，账没算",
+    "suggest": "补半句算账内容再过渡到天黑",
+    "evidence": "路好像多了一条，账却还没算清"
+   }
+  ],
+  "verdict": "pass"
+ },
+ "mergeCheck": {
+  "at": "2026-09-20T23:06:45.505Z",
+  "issues": [],
+  "mergeCount": 0,
+  "propCount": 0,
+  "factCount": 0,
+  "fixRounds": 0
+ },
+ "finalCheck": {
+  "ok": true,
+  "codes": [],
+  "openIssuesAfterDedup": 0,
+  "openIssuesRaw": 0,
+  "openIssues": [],
+  "at": "2026-09-20T23:06:45.513Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "storyId": "sc-0006",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-21T14:12:15.906Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n13",
+    "issue": "选项写小陶把剩下的塞进嘴，结局却说盘子没人再动、切面敞着，行为与后果直接冲突",
+    "suggest": "让 n13 承接该动作（如盘底刮空），或删掉这个选项",
+    "evidence": "闷头把剩下的往嘴里塞 / 盘子里没人再动，切面敞着"
+   },
+   {
+    "severity": "minor",
+    "nodeId": "n12",
+    "issue": "把咸蛋糕塞进冰箱的路径也通向「咸的也挺好吃」结局，标题与所端蛋糕不符",
+    "suggest": "该路径改用新蛋糕的结局文案或标题",
+    "evidence": "只端新出炉的，旧的塞进冰箱 / 咸的也挺好吃"
+   },
+   {
+    "severity": "minor",
+    "nodeId": "n11",
+    "issue": "阿栗在 n11 已说出早就知道，e3 的「反转」到结局已无悬念",
+    "suggest": "把揭晓推迟到结局，n11 只留沉默",
+    "evidence": "阿栗说她其实早就知道 / 其实阿栗早就知道"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ }
+}

@@ -1,0 +1,7252 @@
+{
+ "proposals": [
+  {
+   "conflict": "组长按字数排名，实习生把接水写成三千字史诗求生存",
+   "differs": "冲突在个人生存：新人用文学才华换考核分",
+   "hook": "饮水机前，实习生掏出手机记录今日水温",
+   "protagonist": "实习生小林"
+  },
+  {
+   "conflict": "全组周报互相拼接抄袭，唯一写实的人成了异类",
+   "differs": "冲突在群体共谋：不是写不写，是抄不抄",
+   "hook": "群里弹出周报模板，文件名标着第37版",
+   "protagonist": "老员工老陈"
+  },
+  {
+   "conflict": "总监只看字数不看内容，周报逐渐变成全组文学竞赛",
+   "differs": "冲突在管理层夹心：上头要厚度，下头要活路",
+   "hook": "总监把周报打印出来，拿尺子量了量厚度",
+   "protagonist": "组长阿May"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "接水要写三千字",
+  "tagline": "组长说，字数就是态度；小林决定，把一杯水写成三幕史诗。",
+  "summary": "组长宣布，周报字数就是工作态度，排名末位要在晨会上朗读自己的周报。实习生小林当天只写了三行。为了活下去，他盯上了饮水机——水温、水位、换桶的声响，全是素材。前辈递来注水模板，组长不断改口径，一杯水眼看要写成三千字史诗。荒诞的排名游戏里，谁先学会注水，谁就先保住工位。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场喜剧",
+   "荒诞",
+   "注水文学",
+   "字数排名"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "小林",
+    "desc": "实习生，被迫把接水写成史诗"
+   },
+   {
+    "id": "c2",
+    "name": "周组长",
+    "desc": "以字数论英雄，口径随时改"
+   },
+   {
+    "id": "c3",
+    "name": "阿梅",
+    "desc": "资深注水员，握有全套凑字模板"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "饮水机前的排行榜",
+    "purpose": "字数榜公布，小林垫底，冲突点燃",
+    "choices": [
+     {
+      "text": "当场向组长问清排名口径",
+      "to": "n2"
+     },
+     {
+      "text": "先凑到老员工屏幕前取经",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "茶水间问组长",
+    "purpose": "组长确认：标点与接水记录都算字数",
+    "choices": [
+     {
+      "text": "按文学路线写接水史诗",
+      "to": "n4"
+     },
+     {
+      "text": "按数据路线写接水报告",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "老员工的注水模板",
+    "purpose": "前辈展示模板，全组都在凑字数",
+    "choices": [
+     {
+      "text": "按文学路线写接水史诗",
+      "to": "n4"
+     },
+     {
+      "text": "按数据路线写接水报告",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "三幕接水史诗",
+    "purpose": "小林动笔，把接水写成三幕悲剧",
+    "choices": [
+     {
+      "text": "在会上全文朗读",
+      "to": "n6"
+     },
+     {
+      "text": "只递上字数统计表",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "水温数据长文",
+    "purpose": "小林动笔，把水温水位做成数据长文",
+    "choices": [
+     {
+      "text": "在会上全文朗读",
+      "to": "n6"
+     },
+     {
+      "text": "只递上字数统计表",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "当众朗读之后",
+    "purpose": "组长点评文学过头，改按有效字数排名",
+    "choices": [
+     {
+      "text": "当场应下素材库整理",
+      "to": "n8"
+     },
+     {
+      "text": "说怕耽误本职，婉拒",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "统计表递上去之后",
+    "purpose": "组长点评数据无故事，改按有效字数排名",
+    "choices": [
+     {
+      "text": "抢着应下素材库整理",
+      "to": "n8"
+     },
+     {
+      "text": "以实习期为由推掉",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "先问阿梅的口径",
+    "purpose": "小林凑到阿梅工位，问有效字数怎么算",
+    "choices": [
+     {
+      "text": "照阿梅的模板改成硬数据",
+      "to": "n10"
+     },
+     {
+      "text": "先翻旧周报摸组长的口味",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "先问组长的口径",
+    "purpose": "小林当面追问组长，有效字数的红线在哪",
+    "choices": [
+     {
+      "text": "按组长口径当场改稿",
+      "to": "n10"
+     },
+     {
+      "text": "回去比对往期周报存档",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": null,
+    "label": "水吧台前正面交稿",
+    "purpose": "小林用硬数据稿正面交差，组长当场验字数",
+    "choices": [
+     {
+      "text": "把水温念成战报，当众硬刚",
+      "to": "n12"
+     },
+     {
+      "text": "把稿子悄悄压在队尾交",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": null,
+    "label": "摊开旧档对写法",
+    "purpose": "小林摊开往期周报，边比对边补字数",
+    "choices": [
+     {
+      "text": "照旧档格式补齐，按时交稿",
+      "to": "n13"
+     },
+     {
+      "text": "举着组长的旧周报问他多少字",
+      "to": "n14"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "level": 6,
+    "endingId": "e1",
+    "label": "接水史诗转正",
+    "purpose": "当众朗读封神，小林拿到转正名额",
+    "choices": []
+   },
+   {
+    "id": "n13",
+    "level": 6,
+    "endingId": "e2",
+    "label": "字数榜上无名",
+    "purpose": "稿子够长却没人记得，转正名单没他",
+    "choices": []
+   },
+   {
+    "id": "n14",
+    "level": 6,
+    "endingId": "e3",
+    "label": "原来组长也注水",
+    "purpose": "组长旧周报全是水，口径当场崩掉",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n12",
+    "title": "接水史诗转正",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n13",
+    "title": "字数榜上无名",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n14",
+    "title": "原来组长也注水",
+    "kind": "twist"
+   }
+  ]
+ },
+ "skeletonSignature": "grid14s:14",
+ "shape": {
+  "id": "grid14s",
+  "note": "七个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 14,
+  "paths": 64,
+  "minLen": 7,
+  "maxLen": 7,
+  "levels": 7,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "n9"
+  ],
+  "n11": [
+   "n8",
+   "n9"
+  ],
+  "n12": [
+   "n10",
+   "（结局入口）"
+  ],
+  "n13": [
+   "n10",
+   "n11",
+   "（结局入口）"
+  ],
+  "n14": [
+   "n11",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n1": {
+   "text": "茶水间的饮水机旁贴出新一版周报字数榜，红笔把末位圈了出来。小林的名字挂在最下面，三行，连标点一起算也撑不满半页。周组长端着杯子站在榜前，说晨会朗读的名额就按这张纸来。阿梅把笔记本往怀里收了收，屏幕上密密的字还在往下滚。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "当场向组长问清排名口径"
+    },
+    {
+     "to": "n3",
+     "text": "先凑到老员工屏幕前取经"
+    }
+   ]
+  },
+  "n2": {
+   "text": "小林把杯子搁在饮水机上，问周组长这榜到底怎么算。组长拧开保温杯，说标点也算，接水记录也算——只要落到纸上，就是工作态度。他还说口径以后照调，榜每天照贴。阿梅在旁边没吭声，手指在键盘上敲得飞快。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "按文学路线写接水史诗"
+    },
+    {
+     "to": "n5",
+     "text": "按数据路线写接水报告"
+    }
+   ]
+  },
+  "n3": {
+   "text": "阿梅把小林的椅子拖到自己屏幕前，调出一份注水模板：开头写环境，中间写流程，结尾写感悟，每一栏都配好可替换的句子。她说全组都靠这个填，模板越厚越安全。周组长端着杯子在门口没走，周围的屏幕上字一行行往下滚。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "按文学路线写接水史诗"
+    },
+    {
+     "to": "n5",
+     "text": "按数据路线写接水报告"
+    }
+   ]
+  },
+  "n4": {
+   "text": "小林把杯子搁在饮水机旁，屏幕亮着，手指落上去。第一幕写等水：红灯亮着，水还没开；第二幕写接水：水柱从闷响到清亮；第三幕写拧盖：杯壁烫手。他给每一幕都配上情绪，写等待的焦灼，写水柱的失控，写盖子合拢的收尾。榜还贴在茶水间，晨会照旧要开。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "晨会上从头念到尾"
+    },
+    {
+     "to": "n7",
+     "text": "只把字数统计表递上去"
+    }
+   ]
+  },
+  "n5": {
+   "text": "小林把杯子搁回饮水机，翻出本子开始记：水位停在哪一格，红灯亮着的时候桶里还剩多少，水柱落进杯子分几种声响，换桶时桶底磕在架子上是什么动静。他把这些排成表格，一行一行往下填，行与行之间再缀上一句描述。榜还贴在茶水间，晨会照旧要开。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "念完整篇数据长文"
+    },
+    {
+     "to": "n7",
+     "text": "只递上统计表"
+    }
+   ]
+  },
+  "n6": {
+   "text": "晨会上，那篇接水的稿子摆在桌上。周组长翻了两页，说写得太文学，抒情不算工作量。他当场改了口径：从今天起按有效字数算，标点不计，重复的句子不计，情绪词也不算。随后他把一沓打印稿搁在桌角，说组里要建素材库，总得有人整理。他抬眼看小林，问接不接。榜还贴在茶水间，名字没动。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "先应下来，再去问阿梅口径"
+    },
+    {
+     "to": "n9",
+     "text": "说怕耽误本职，婉拒"
+    }
+   ]
+  },
+  "n7": {
+   "text": "稿子递上去，周组长翻过一遍，说里面没有故事——接水就是接水，字再多也只是字。他当场改了口径：从今天起按有效字数排名，标点不计，重复的句子不计，情绪词也不算。榜还贴在茶水间，小林的名字没动。他把一沓打印稿搁在桌角，说组里要建素材库，总得有人整理，抬眼看小林，问接不接。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "接下素材库，转头问阿梅口径"
+    },
+    {
+     "to": "n9",
+     "text": "推掉素材库，当面追问组长"
+    }
+   ]
+  },
+  "n8": {
+   "text": "阿梅的屏幕上字还在往下滚。小林把椅子拖过去，压低声音问：标点不算，重复的句子不算，情绪词也不算，那有效字数到底怎么算？阿梅手上没停，只把笔记本往他那边转了半寸，说能替换的句子都在里面。桌角那沓打印稿还搁着。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "照阿梅的模板改成硬数据"
+    },
+    {
+     "to": "n11",
+     "text": "先翻旧周报摸组长的口味"
+    }
+   ]
+  },
+  "n9": {
+   "text": "周组长端着保温杯没走。小林跟上去，问有效字数的红线到底在哪：标点不算，重复的句子不算，情绪词也不算，那写什么才算数。组长拧开杯盖，说先看看别人怎么写，口径他随时再调。桌角那沓打印稿还搁着。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "按组长口径当场改稿"
+    },
+    {
+     "to": "n11",
+     "text": "回去比对往期周报存档"
+    }
+   ]
+  },
+  "n10": {
+   "text": "饮水机就在工位边上。小林把那张按水位、水声、桶底磕架排成表格的稿子从桌上拿起，走到水吧台前，正面递了过去。周组长接了，捏着页脚一页页翻，指尖点着行尾往下数，嘴里不出声。阿梅屏幕上的字还在往下滚。桌角那沓打印稿还搁着，榜还贴在茶水间。",
+   "choices": [
+    {
+     "to": "n12",
+     "text": "当着全组把水温数据念成战报"
+    },
+    {
+     "to": "n13",
+     "text": "把稿子悄悄压在那沓打印稿最底下"
+    }
+   ]
+  },
+  "n11": {
+   "text": "小林把往期的周报打印件摊在桌面上，一份一份比对着栏目，看别人开头怎么写、流程怎么排、结尾停在哪一句。他把自己的表格稿挪到屏幕边上，边比边往行间补句子，笔尖在字上点了又点。阿梅屏幕上的字还在往下滚，周组长端着保温杯在几步外没走，桌角那沓打印稿还搁着。",
+   "choices": [
+    {
+     "to": "n13",
+     "text": "照旧档的格式补齐，按时交上去"
+    },
+    {
+     "to": "n14",
+     "text": "举着组长的旧周报去问他写了多少字"
+    }
+   ]
+  },
+  "n12": {
+   "text": "晨会上，那篇接水的稿子被念了出来。念到水柱从闷响转清亮那一段，屋里静得能听见饮水机在响。周组长翻页的手停在半空，翻到最后一页才落下去。他把转正名额那张表推到小林面前，笔已经搁在表上了。",
+   "choices": []
+  },
+  "n13": {
+   "text": "晨会照常开。那篇稿子摊在桌面上，周组长翻得很快，翻到一半就抬手说下一个。水柱、水位、桶底磕架，一页也没被念出来。散会后转正名单贴到墙上，小林从头看到尾，没找到自己的名字。茶水间那张榜还贴着，他那三行也还压在最下面。",
+   "choices": []
+  },
+  "n14": {
+   "text": "摊开的往期周报里夹着一份署名周组长的旧稿。小林往下读：开头写窗外天色，中间写流程，结尾一段感悟，情绪词一行接一行，和模板一个字不差。周组长端着保温杯在几步外站住，看见那一页，杯盖捏在手里没拧上，话说到一半停了。",
+   "choices": []
+  }
+ },
+ "story": {
+  "storyId": "sc-0010",
+  "schemaVersion": 1,
+  "title": "接水要写三千字",
+  "tagline": "组长说，字数就是态度；小林决定，把一杯水写成三幕史诗。",
+  "summary": "组长宣布，周报字数就是工作态度，排名末位要在晨会上朗读自己的周报。实习生小林当天只写了三行。为了活下去，他盯上了饮水机——水温、水位、换桶的声响，全是素材。前辈递来注水模板，组长不断改口径，一杯水眼看要写成三千字史诗。荒诞的排名游戏里，谁先学会注水，谁就先保住工位。",
+  "genre": "office",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场喜剧",
+   "荒诞",
+   "注水文学",
+   "字数排名"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "小林",
+    "desc": "实习生，被迫把接水写成史诗"
+   },
+   {
+    "id": "c2",
+    "name": "周组长",
+    "desc": "以字数论英雄，口径随时改"
+   },
+   {
+    "id": "c3",
+    "name": "阿梅",
+    "desc": "资深注水员，握有全套凑字模板"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n12",
+    "title": "接水稿转正",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n13",
+    "title": "字数榜上无名",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n14",
+    "title": "原来组长也注水",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "茶水间的饮水机旁贴出新一版周报字数榜，红笔把末位圈了出来。小林的名字挂在最下面，三行，连标点一起算也撑不满半页。周组长端着杯子站在榜前，说晨会朗读的成绩记进转正评议，名额就按这张纸来。阿梅把笔记本往怀里收了收，屏幕上密密的字还在往下滚。",
+    "label": "饮水机前的排行榜",
+    "choices": [
+     {
+      "text": "当场向组长问清排名口径",
+      "to": "n2"
+     },
+     {
+      "text": "先凑到老员工屏幕前取经",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "小林把杯子搁在饮水机上，问周组长这榜到底怎么算。组长拧开保温杯，说标点也算，接水记录也算——只要落到纸上，就是工作态度。他还说口径以后照调，榜每天照贴。阿梅在旁边没吭声，手指在键盘上敲得飞快。",
+    "label": "茶水间问组长",
+    "choices": [
+     {
+      "text": "按文学路线写接水史诗",
+      "to": "n4"
+     },
+     {
+      "text": "按数据路线写接水报告",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "阿梅把小林的椅子拖到自己屏幕前，调出一份注水模板：开头写环境，中间写流程，结尾写感悟，每一栏都配好可替换的句子。她说全组都靠这个填，模板越厚越安全。周组长端着杯子在门口没走，周围的屏幕上字一行行往下滚。",
+    "label": "老员工的注水模板",
+    "choices": [
+     {
+      "text": "按文学路线写接水史诗",
+      "to": "n4"
+     },
+     {
+      "text": "按数据路线写接水报告",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "小林把杯子搁在饮水机旁，屏幕亮着，手指落上去。第一幕写等水：红灯亮着，水还没开；第二幕写接水：水柱从闷响到清亮；第三幕写拧盖：杯壁烫手。他给每一幕都配上情绪，写等待的焦灼，写水柱的失控，写盖子合拢的收尾。榜还贴在茶水间，晨会照旧要开。",
+    "label": "三幕接水史诗",
+    "choices": [
+     {
+      "text": "晨会上从头念到尾",
+      "to": "n6"
+     },
+     {
+      "text": "不念稿，先把稿子交上去",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "小林把杯子搁回饮水机，翻出本子开始记：水位停在哪一格，红灯亮着的时候桶里还剩多少，水柱落进杯子分几种声响，换桶时桶底磕在架子上是什么动静。他把这些排成表格，一行一行往下填，行与行之间再缀上一句描述。榜还贴在茶水间，晨会照旧要开。",
+    "label": "水温数据长文",
+    "choices": [
+     {
+      "text": "念完整篇数据长文",
+      "to": "n6"
+     },
+     {
+      "text": "只把稿子递上去",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "晨会上，那篇接水的稿子摆在桌上。周组长从头听到尾，没接话，说这一轮先不论路子，当场把口径改了：从今天起按有效字数算，标点不计，重复的句子不计，情绪词也不算。随后他把一沓打印稿搁在桌角，说组里要建素材库，总得有人整理。他抬眼看小林，问接不接。榜还贴在茶水间，名字没动。",
+    "label": "当众朗读之后",
+    "choices": [
+     {
+      "text": "先应下来，再去问阿梅口径",
+      "to": "n8"
+     },
+     {
+      "text": "说怕耽误本职，婉拒",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "稿子递上去，周组长翻过一遍，说这稿子还是不对路数，字再多也只是字。他当场改了口径：从今天起按有效字数算，标点不计，重复的句子不计，情绪词也不算。榜还贴在茶水间，小林的名字没动。他把一沓打印稿搁在桌角，说组里要建素材库，总得有人整理，抬眼看小林，问接不接。",
+    "label": "稿子被打回",
+    "choices": [
+     {
+      "text": "接下素材库，转头问阿梅口径",
+      "to": "n8"
+     },
+     {
+      "text": "推掉素材库，当面追问组长",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "阿梅的屏幕上字还在往下滚。小林把椅子拖过去，压低声音问：标点不算，重复的句子不算，情绪词也不算，那有效字数到底怎么算？阿梅手上没停，说素材库那摊子先放一放，这套能替换的句子更要紧，想要就自己抄。她把笔记本往他那边转了半寸。桌角那沓打印稿还搁着。",
+    "label": "先问阿梅的口径",
+    "choices": [
+     {
+      "text": "照阿梅的模板改成硬数据",
+      "to": "n10"
+     },
+     {
+      "text": "先翻旧周报摸组长的口味",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "周组长端着保温杯没走。小林跟上去，问有效字数的红线到底在哪：标点不算，重复的句子不算，情绪词也不算，那写什么才算数。组长拧开杯盖，说先看看别人怎么写，口径他随时再调。桌角那沓打印稿还搁着。",
+    "label": "先问组长的口径",
+    "choices": [
+     {
+      "text": "按组长口径当场改稿",
+      "to": "n10"
+     },
+     {
+      "text": "回去比对往期周报存档",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "小林把稿子从桌上拿起，走到茶水间的水吧台前，正面递了过去。周组长接了，捏着页脚一页页翻，指尖点着行尾往下数，嘴里不出声。阿梅屏幕上的字还在往下滚。桌角那沓打印稿还搁着，榜还贴在茶水间。",
+    "label": "水吧台前正面交稿",
+    "choices": [
+     {
+      "text": "当着全组，把稿子念出声",
+      "to": "n12"
+     },
+     {
+      "text": "把稿子推到组长手边，转身回工位",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "text": "小林把攒下来的往期周报打印件摊在桌面上，一份一份比对着栏目，看别人开头怎么写、流程怎么排、结尾停在哪一句。他把自己的稿子挪到屏幕边上，边比边往行间补句子，笔尖在字上点了又点。阿梅屏幕上的字还在往下滚，周组长端着保温杯在几步外没走。",
+    "label": "摊开旧档对写法",
+    "choices": [
+     {
+      "text": "照旧档的格式补齐，按时交上去",
+      "to": "n13"
+     },
+     {
+      "text": "把那沓旧周报抱去组长面前摊开",
+      "to": "n14"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "text": "小林没等谁来点名，把稿子从头念到尾。念到水柱那一段，整层静下来，只剩饮水机在响。周组长翻页的手停在半空，翻到最后一页才落下去。他把转正评议表推到小林面前，笔已经搁在表上了。",
+    "label": "接水稿转正",
+    "ending": {
+     "id": "e1",
+     "title": "接水稿转正",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n13",
+    "text": "晨会照常开。那篇稿子交出去以后，一页也没被提起。散会后转正名单贴到墙上，小林从头看到尾，没找到自己的名字。茶水间那张榜还贴着，他那三行也还压在最下面。",
+    "label": "字数榜上无名",
+    "ending": {
+     "id": "e2",
+     "title": "字数榜上无名",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n14",
+    "text": "小林把那沓旧周报抱到周组长面前，一份一份摊开。翻到中间，夹着的一份旧稿滑了出来，署名正是周组长。他顺着往下读：开头写窗外天色，中间写流程，结尾一段感悟，情绪词一行接一行——按组里新改的口径，这些一个字都不算数。周组长低头看着那一页，杯盖捏在手里没拧上，话说到一半停了。",
+    "label": "原来组长也注水",
+    "ending": {
+     "id": "e3",
+     "title": "原来组长也注水",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "office",
+  "meta": {
+   "createdAt": "2026-09-22T15:18:46.268Z",
+   "generatedBy": "tools/content/produce.cjs@1",
+   "reviewStatus": "passed",
+   "contentSources": "原创虚构，未使用未授权私人素材",
+   "pipeline": {
+    "proposalId": "sc-0010-p0",
+    "editorPass": true,
+    "pathReviewPass": true,
+    "editorVerdict": "pass",
+    "pathVerdict": "pass",
+    "pathSampling": "10/64",
+    "fixRounds": 0,
+    "openIssuesAtAcceptance": 0,
+    "premium": false
+   }
+  }
+ },
+ "choicesRefreshed": {
+  "at": "2026-09-22T10:56:06.858Z",
+  "touched": 0
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "当场向组长问清排名口径",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "晨会上从头念到尾",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "按文学路线写接水史诗",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "不念稿，先把稿子交上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "先应下来，再去问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "念完整篇数据长文",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说怕耽误本职，婉拒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "照阿梅的模板改成硬数据",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "接下素材库，转头问阿梅口径",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先翻旧周报摸组长的口味",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "当着全组，把稿子念出声",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "按组长口径当场改稿",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "把稿子推到组长手边，转身回工位",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "照旧档的格式补齐，按时交上去",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "先凑到老员工屏幕前取经",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "按数据路线写接水报告",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "只把稿子递上去",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "推掉素材库，当面追问组长",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "回去比对往期周报存档",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "把那沓旧周报抱去组长面前摊开",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "editorReview": {
+  "at": "2026-09-22T15:16:43.058Z",
+  "verdict": "pass",
+  "editorIssues": []
+ },
+ "pathReview": {
+  "at": "2026-09-22T15:16:57.474Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "verdict": "pass",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 0,
+    "issue": "稿子已递交并被组长接走，紧接着又由小林从头念到尾，交接时序略含糊",
+    "suggest": "补一句他把稿子取回，或改为组长示意他念",
+    "evidence": "周组长接了，捏着页脚一页页翻……小林没等谁来点名，把稿子从头念到尾"
+   }
+  ]
+ },
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 64,
+    "capped": false,
+    "visitedPairs": 14,
+    "totalPairs": 14,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 16,
+    "e2": 32,
+    "e3": 16
+   },
+   "nodeCount": 14,
+   "endingCount": 3,
+   "avgNodeCjk": 97,
+   "totalChoices": 22,
+   "avgPathLen": 7,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "当场向组长问清排名口径",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "晨会上从头念到尾",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "按文学路线写接水史诗",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "不念稿，先把稿子交上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "先应下来，再去问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "念完整篇数据长文",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说怕耽误本职，婉拒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "照阿梅的模板改成硬数据",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "接下素材库，转头问阿梅口径",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先翻旧周报摸组长的口味",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "当着全组，把稿子念出声",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "按组长口径当场改稿",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "把稿子推到组长手边，转身回工位",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "照旧档的格式补齐，按时交上去",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "先凑到老员工屏幕前取经",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "按数据路线写接水报告",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "只把稿子递上去",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "推掉素材库，当面追问组长",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "回去比对往期周报存档",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "把那沓旧周报抱去组长面前摊开",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "finalCheck": {
+  "ok": true,
+  "codes": [],
+  "openIssuesAfterDedup": 0,
+  "openIssuesRaw": 0,
+  "openIssues": [],
+  "at": "2026-09-22T15:18:46.268Z"
+ }
+}

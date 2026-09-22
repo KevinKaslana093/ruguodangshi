@@ -1,0 +1,131 @@
+/* 「如果当时」播放器样式：以中文长阅读为第一优先。
+ * 不依赖任何外链资源；字体用系统字体栈；图案全部由 CSS 程序绘制。 */
+
+:root{
+  --bg:#faf7f2; --card:#ffffff; --ink:#2b2622; --ink-2:#6b625a; --ink-3:#948a80;
+  --line:#e7e0d6; --accent:#8c5a3c; --accent-soft:#f3e6dd; --ok:#3f7d5c; --warn:#8a5a1f;
+  --shadow:0 1px 2px rgba(43,38,34,.05), 0 8px 24px rgba(43,38,34,.06);
+  --radius:14px; --maxw:42rem;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  --anim:1;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:var(--font);
+  -webkit-text-size-adjust:100%;}
+body{font-size:17px;line-height:1.75;min-height:100vh}
+[data-motion="off"] *{transition:none !important;animation:none !important}
+@media (prefers-reduced-motion: reduce){
+  *{transition:none !important;animation:none !important}
+}
+.app{max-width:64rem;margin:0 auto;padding:0 1rem 4rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ── 顶栏 ─────────────────────────────────────────── */
+.topbar{display:flex;align-items:center;gap:.75rem;padding:1rem 0 .75rem;flex-wrap:wrap}
+.brand{font-size:1.15rem;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+.brand span{color:var(--accent)}
+.topbar .spacer{flex:1}
+.toggle-btn{border:1px solid var(--line);background:var(--card);color:var(--ink-2);
+  border-radius:999px;padding:.35rem .8rem;font-size:.82rem;cursor:pointer;font-family:var(--font)}
+.toggle-btn[aria-pressed="true"]{background:var(--accent-soft);border-color:#e0cbbd;color:var(--accent)}
+.tagline{color:var(--ink-2);font-size:.92rem;margin:.1rem 0 1.1rem}
+
+/* ── 首页 ─────────────────────────────────────────── */
+.section-title{font-size:.9rem;font-weight:600;color:var(--ink-3);margin:1.6rem 0 .7rem;letter-spacing:.06em}
+.resume{display:flex;gap:1rem;align-items:center;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow);margin-bottom:.6rem}
+.resume .grow{flex:1;min-width:0}
+.resume h3{margin:0 0 .2rem;font-size:1.02rem}
+.resume p{margin:0;color:var(--ink-2);font-size:.86rem}
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin:.2rem 0 .9rem}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink-2);border-radius:999px;
+  padding:.32rem .78rem;font-size:.84rem;cursor:pointer;font-family:var(--font)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;cursor:pointer;
+  transition:transform .18s ease, box-shadow .18s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 2px 6px rgba(43,38,34,.06),0 14px 34px rgba(43,38,34,.09)}
+.cover{height:7.4rem;position:relative;overflow:hidden;
+  background:linear-gradient(145deg,hsl(var(--hue) 42% 88%),hsl(var(--hue) 38% 72%))}
+.cover .glyph{position:absolute;inset:0;opacity:.5}
+.cover .title-on{position:absolute;left:.9rem;bottom:.7rem;right:.9rem;color:hsl(var(--hue) 45% 20%);
+  font-weight:700;font-size:1.02rem;line-height:1.35;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+.card-body{padding:.8rem .95rem 1rem;display:flex;flex-direction:column;gap:.45rem;flex:1}
+.card-meta{display:flex;gap:.5rem;flex-wrap:wrap;font-size:.78rem;color:var(--ink-3)}
+.pill{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:.12rem .55rem}
+.pill.plain{background:#f0ece5;color:var(--ink-2)}
+.card-body .tagline2{font-size:.88rem;color:var(--ink-2);margin:0;flex:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;border:1px solid var(--accent);
+  background:var(--accent);color:#fff;border-radius:10px;padding:.55rem 1rem;font-size:.95rem;cursor:pointer;
+  font-family:var(--font);text-decoration:none}
+.btn:hover{text-decoration:none;filter:brightness(1.05)}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+.btn.small{padding:.34rem .7rem;font-size:.85rem}
+.empty{padding:2.4rem 1rem;text-align:center;color:var(--ink-3);border:1px dashed var(--line);border-radius:var(--radius)}
+
+/* ── 故事卡详情 ───────────────────────────────────── */
+.detail{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);overflow:hidden;margin-top:.4rem}
+.detail .cover{height:11rem}
+.detail .cover .title-on{font-size:1.5rem;bottom:1rem}
+.detail-body{padding:1.15rem 1.2rem 1.4rem;display:flex;flex-direction:column;gap:.9rem}
+.detail h1{margin:0;font-size:1.35rem;line-height:1.4}
+.detail .summary{margin:0;color:var(--ink-2);font-size:1rem;max-width:var(--maxw)}
+.kv{display:flex;gap:1.4rem;flex-wrap:wrap;font-size:.86rem;color:var(--ink-2)}
+.kv b{color:var(--ink);font-weight:600}
+.chars{display:flex;gap:.5rem;flex-wrap:wrap}
+.char{border:1px solid var(--line);border-radius:999px;padding:.2rem .7rem;font-size:.84rem;color:var(--ink-2)}
+.char b{color:var(--ink);font-weight:600;margin-right:.3rem}
+.actions{display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.hint{font-size:.8rem;color:var(--ink-3)}
+.endings-list{display:flex;flex-direction:column;gap:.35rem;font-size:.88rem}
+.endings-list .row{display:flex;gap:.6rem;align-items:center;color:var(--ink-2)}
+.badge{font-size:.74rem;border-radius:6px;padding:.08rem .45rem;background:#f0ece5;color:var(--ink-3)}
+.badge.unlocked{background:#e6f0e9;color:var(--ok)}
+
+/* ── 阅读 / 游玩 ──────────────────────────────────── */
+.reader{max-width:var(--maxw);margin:1rem auto 0}
+.reader .label{font-size:.82rem;color:var(--ink-3);letter-spacing:.08em;margin-bottom:.3rem}
+.reader .text{font-size:1.06rem;line-height:1.95;white-space:pre-wrap;margin:0 0 1.4rem}
+.reader .choices{display:flex;flex-direction:column;gap:.65rem}
+.choice{text-align:left;border:1px solid var(--line);background:var(--card);border-radius:12px;
+  padding:.85rem 1rem;font-size:1rem;line-height:1.6;color:var(--ink);cursor:pointer;font-family:var(--font);
+  box-shadow:0 1px 2px rgba(43,38,34,.04);transition:border-color .15s,background .15s}
+.choice:hover{border-color:var(--accent);background:#fffdfa}
+.choice .num{color:var(--ink-3);font-size:.82rem;margin-right:.5rem}
+.progress{display:flex;align-items:center;gap:.7rem;margin:1.6rem 0 0;font-size:.8rem;color:var(--ink-3)}
+.progress .bar{flex:1;height:4px;background:#efe9e0;border-radius:999px;overflow:hidden}
+.progress .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .25s ease}
+.reader-foot{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem}
+
+/* ── 结局页 ───────────────────────────────────────── */
+.ending{max-width:var(--maxw);margin:1.2rem auto 0;background:var(--card);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem 1.4rem}
+.ending .kind{font-size:.8rem;color:var(--accent);letter-spacing:.1em}
+.ending h1{margin:.2rem 0 .8rem;font-size:1.5rem}
+.ending .text{font-size:1.05rem;line-height:1.95;white-space:pre-wrap;color:var(--ink)}
+.review{margin-top:1.4rem;border-top:1px solid var(--line);padding-top:1rem}
+.review h2{font-size:.95rem;margin:0 0 .5rem;color:var(--ink-2)}
+.review ol{margin:0;padding-left:1.3rem;color:var(--ink-2);font-size:.9rem;line-height:1.8}
+.unlocked{margin-top:1.2rem;font-size:.88rem;color:var(--ink-2)}
+.unlocked .row{display:flex;gap:.5rem;align-items:center;margin-top:.3rem}
+.stats{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.86rem;color:var(--ink-3);margin-top:.6rem}
+
+/* ── 其它 ─────────────────────────────────────────── */
+.toast{position:fixed;left:50%;bottom:1.4rem;transform:translateX(-50%);background:#2b2622;color:#fff;
+  padding:.6rem 1rem;border-radius:10px;font-size:.88rem;opacity:.96;z-index:50;max-width:90vw}
+.foot{margin-top:2.6rem;color:var(--ink-3);font-size:.8rem;line-height:1.7;border-top:1px solid var(--line);padding-top:1rem}
+.foot p{margin:.25rem 0}
+.offline-note{background:#fffdf7;border:1px solid #eadfcb;border-radius:12px;padding:.85rem 1rem;
+  font-size:.85rem;color:#6b5a3a;line-height:1.7}
+.err{background:#fdf1ee;border:1px solid #f0d5cf;color:#8a3b2a;border-radius:12px;padding:1rem;font-size:.92rem}
+@media (max-width:480px){
+  body{font-size:16.5px}
+  .app{padding:0 .85rem 3rem}
+  .detail .cover{height:9rem}
+  .detail .cover .title-on{font-size:1.25rem}
+  .cover{height:6.6rem}
+}
+@media print{.topbar,.reader-foot,.actions{display:none}}

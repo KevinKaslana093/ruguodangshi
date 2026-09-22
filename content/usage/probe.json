@@ -1,0 +1,75 @@
+{
+ "summary": {
+  "at": "2026-09-22T10:38:17.018Z",
+  "model": "deepseek-v4.1-flash",
+  "endpoint": "https://ollama.com/v1",
+  "requested": 3,
+  "concurrency": 1,
+  "ok": 3,
+  "failed": 0,
+  "wallMs": 5194,
+  "perRequestMs": {
+   "min": 1687,
+   "median": 1748,
+   "max": 1757
+  },
+  "throughputPerMin": 34.66,
+  "usageReturned": "3/3",
+  "usageSample": {
+   "prompt_tokens": 71,
+   "completion_tokens": 35,
+   "total_tokens": 106,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "usageCaveat": null,
+  "jsonValidRate": "100%",
+  "failures": [],
+  "note": "额度余额无法通过接口查询 → 标注未知；仅依据本地累计记录与预算设限。"
+ },
+ "results": [
+  {
+   "i": 0,
+   "ok": true,
+   "ms": 1687,
+   "usage": {
+    "prompt_tokens": 71,
+    "completion_tokens": 35,
+    "total_tokens": 106,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "jsonValid": true
+  },
+  {
+   "i": 1,
+   "ok": true,
+   "ms": 1757,
+   "usage": {
+    "prompt_tokens": 71,
+    "completion_tokens": 63,
+    "total_tokens": 134,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "jsonValid": true
+  },
+  {
+   "i": 2,
+   "ok": true,
+   "ms": 1748,
+   "usage": {
+    "prompt_tokens": 71,
+    "completion_tokens": 40,
+    "total_tokens": 111,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "jsonValid": true
+  }
+ ]
+}

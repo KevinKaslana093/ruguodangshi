@@ -1,0 +1,28 @@
+{
+ "storyId": "sc-0011",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-22T14:35:44.113Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 2,
+    "issue": "小丁刚提议改绿植角，保洁就递来同内容通知，巧合感强、缺铺垫",
+    "suggest": "让通知内容与提议略有偏差，或先埋通知被揭的伏笔",
+    "evidence": "绿植角的提议刚说出口，保洁推着车过来开门，顺手把一张对折的通知塞给老周……通知上写着：靠窗区域下月起改为绿植角"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 6,
+    "issue": "选择推咖啡过去，下一节点仍写那杯凉在原地，动作没落地",
+    "suggest": "补一句咖啡被推过去或改掉“凉在原地”的措辞",
+    "evidence": "先前冲的那杯速溶凉在原地，热气早散了"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

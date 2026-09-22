@@ -1,0 +1,18 @@
+{
+ "storyId": "sc-0010",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-22T15:10:37.834Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n14",
+    "issue": "走数据路线时，结局却说小林交的稿与组长旧稿是同一个注水套路，与表格稿直接矛盾",
+    "suggest": "结局只描述组长旧稿的套路，或按文学/数据路线分别措辞",
+    "evidence": "他把这些排成表格，一行一行往下填……和自己交上去的那份，是同一个套路"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ }
+}

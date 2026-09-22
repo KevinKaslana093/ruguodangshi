@@ -1,0 +1,448 @@
+{
+ "batch": "2",
+ "note": "B 档：每题材补足 10 个正式故事（共 80 个）；seed 为各不相同的核心冲突线索；非 premium 档（12–16 节点、路径 6–9 段、3 结局）。",
+ "counts": {
+  "office": 9,
+  "dorm": 9,
+  "pet": 9,
+  "travel": 9,
+  "birthday": 9,
+  "mystery": 9,
+  "scifi": 9,
+  "warm": 9
+ },
+ "items": [
+  {
+   "id": "sc-0009",
+   "genre": "office",
+   "premium": false,
+   "seed": "丢了工牌被系统判定离职，撤销流程要盖三个已经没人负责的章"
+  },
+  {
+   "id": "sc-0010",
+   "genre": "office",
+   "premium": false,
+   "seed": "周报被要求写满三千字，全组开始把喝水扩写成史诗"
+  },
+  {
+   "id": "sc-0011",
+   "genre": "office",
+   "premium": false,
+   "seed": "取消固定工位后，早到抢座变成一场无声较量"
+  },
+  {
+   "id": "sc-0012",
+   "genre": "office",
+   "premium": false,
+   "seed": "实习生把会议纪要发给了全公司，主角要在两小时内补救"
+  },
+  {
+   "id": "sc-0013",
+   "genre": "office",
+   "premium": false,
+   "seed": "绩效自评要写“最需要改进的地方”，主角反复删改"
+  },
+  {
+   "id": "sc-0014",
+   "genre": "office",
+   "premium": false,
+   "seed": "跨部门项目没人认领，最后落到了主角桌上"
+  },
+  {
+   "id": "sc-0015",
+   "genre": "office",
+   "premium": false,
+   "seed": "领导要求“用数据说话”，而数据是主角临时编的"
+  },
+  {
+   "id": "sc-0016",
+   "genre": "office",
+   "premium": false,
+   "seed": "团建被安排成相亲局，主角要体面退出"
+  },
+  {
+   "id": "sc-0017",
+   "genre": "office",
+   "premium": false,
+   "seed": "离职面谈时被问到公司缺点，说不说真话"
+  },
+  {
+   "id": "sc-0018",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "宿舍断电后要连夜赶完论文，四个人只有一台没电的电脑"
+  },
+  {
+   "id": "sc-0019",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "室友半夜开麦打游戏，主角要决定怎么开口"
+  },
+  {
+   "id": "sc-0020",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "期末周有人偷偷搬进空床位，宿管突然来查"
+  },
+  {
+   "id": "sc-0021",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "宿舍共用金鱼突然死了，四个人谁都不敢说"
+  },
+  {
+   "id": "sc-0022",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "毕业搬家时翻出一本所有人签名的留言册"
+  },
+  {
+   "id": "sc-0023",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "有人把宿舍当自习室，钥匙借给了外人"
+  },
+  {
+   "id": "sc-0024",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "全宿舍约定六点起床复习，第二天谁都没做到"
+  },
+  {
+   "id": "sc-0025",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "热水器坏了，四个人排队去隔壁楼洗澡"
+  },
+  {
+   "id": "sc-0026",
+   "genre": "dorm",
+   "premium": false,
+   "seed": "室友说要退学，主角是第一个知道的人"
+  },
+  {
+   "id": "sc-0027",
+   "genre": "pet",
+   "premium": false,
+   "seed": "猫只在新来的人面前抓沙发，主人要为它辩解"
+  },
+  {
+   "id": "sc-0028",
+   "genre": "pet",
+   "premium": false,
+   "seed": "狗在小区里认错了主人，跟着陌生人走了半条街"
+  },
+  {
+   "id": "sc-0029",
+   "genre": "pet",
+   "premium": false,
+   "seed": "宠物医院说要做很贵的检查，主角要当场决定"
+  },
+  {
+   "id": "sc-0030",
+   "genre": "pet",
+   "premium": false,
+   "seed": "搬家后猫三天没出柜子，主角试遍所有办法"
+  },
+  {
+   "id": "sc-0031",
+   "genre": "pet",
+   "premium": false,
+   "seed": "邻居投诉狗叫，主角要去当面谈"
+  },
+  {
+   "id": "sc-0032",
+   "genre": "pet",
+   "premium": false,
+   "seed": "仓鼠从笼子里跑了，全家开始大搜索"
+  },
+  {
+   "id": "sc-0033",
+   "genre": "pet",
+   "premium": false,
+   "seed": "老人养的鸟学会了说一句不合时宜的话"
+  },
+  {
+   "id": "sc-0034",
+   "genre": "pet",
+   "premium": false,
+   "seed": "宠物美容回来后狗像换了一只，主人不敢认"
+  },
+  {
+   "id": "sc-0035",
+   "genre": "pet",
+   "premium": false,
+   "seed": "猫把家里的鱼缸当水盆，鱼开始绝食"
+  },
+  {
+   "id": "sc-0036",
+   "genre": "travel",
+   "premium": false,
+   "seed": "民宿和照片完全不一样，退订要损失全款"
+  },
+  {
+   "id": "sc-0037",
+   "genre": "travel",
+   "premium": false,
+   "seed": "行李被拿错，主人要追到另一个城市"
+  },
+  {
+   "id": "sc-0038",
+   "genre": "travel",
+   "premium": false,
+   "seed": "同行朋友临时要改行程，主角想按原计划走"
+  },
+  {
+   "id": "sc-0039",
+   "genre": "travel",
+   "premium": false,
+   "seed": "末班车开走前还剩十分钟，两人意见不同"
+  },
+  {
+   "id": "sc-0040",
+   "genre": "travel",
+   "premium": false,
+   "seed": "手机没电又下暴雨，主角要凭记忆找路"
+  },
+  {
+   "id": "sc-0041",
+   "genre": "travel",
+   "premium": false,
+   "seed": "订的酒店实际上是一个住宅楼里的小房间"
+  },
+  {
+   "id": "sc-0042",
+   "genre": "travel",
+   "premium": false,
+   "seed": "旅途中钱花超了，剩下的两天要怎么过"
+  },
+  {
+   "id": "sc-0043",
+   "genre": "travel",
+   "premium": false,
+   "seed": "当地人推荐了一家“只有本地人知道”的店"
+  },
+  {
+   "id": "sc-0044",
+   "genre": "travel",
+   "premium": false,
+   "seed": "景点排队三小时，朋友想放弃"
+  },
+  {
+   "id": "sc-0045",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "寿星说不要办，朋友们已经布置好了房间"
+  },
+  {
+   "id": "sc-0046",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "蛋糕店临时做错款式，主角要在两小时内补救"
+  },
+  {
+   "id": "sc-0047",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "异地庆生的视频通话卡在最后一秒"
+  },
+  {
+   "id": "sc-0048",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "生日礼物买错了尺码，收据也丢了"
+  },
+  {
+   "id": "sc-0049",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "生日当晚寿星临时加班，大家要在楼下等"
+  },
+  {
+   "id": "sc-0050",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "长辈的生日宴上，亲戚开始问敏感问题"
+  },
+  {
+   "id": "sc-0051",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "朋友许的愿被说破就不灵了，主角不小心说漏嘴"
+  },
+  {
+   "id": "sc-0052",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "生日会来了一个没被邀请的人"
+  },
+  {
+   "id": "sc-0053",
+   "genre": "birthday",
+   "premium": false,
+   "seed": "寿星真正想要的是一个人待着"
+  },
+  {
+   "id": "sc-0054",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "每晚十点整门铃响一次，门口没有人"
+  },
+  {
+   "id": "sc-0055",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "楼梯间的灯只在有人的时候亮，但监控里没人"
+  },
+  {
+   "id": "sc-0056",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "公共冰箱里每周三多出一份没人认领的午饭"
+  },
+  {
+   "id": "sc-0057",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "匿名寄来的明信片，邮戳来自主角没去过的城市"
+  },
+  {
+   "id": "sc-0058",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "同一栋楼里三个人都说自己收到过同一把钥匙"
+  },
+  {
+   "id": "sc-0059",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "留言条的字迹和主角自己的一模一样"
+  },
+  {
+   "id": "sc-0060",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "雨伞架上多出一把不属于任何人的伞"
+  },
+  {
+   "id": "sc-0061",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "旧手机里有一条没发出去的草稿"
+  },
+  {
+   "id": "sc-0062",
+   "genre": "mystery",
+   "premium": false,
+   "seed": "群里有个头像从来不说话，却知道所有人的事"
+  },
+  {
+   "id": "sc-0063",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "旧手机能回放十分钟前的画面，主角要用它改一次争吵"
+  },
+  {
+   "id": "sc-0064",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "记忆可以借出一天，主角借给了别人"
+  },
+  {
+   "id": "sc-0065",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "电梯偶尔会到一层的门牌号，那里本该不存在"
+  },
+  {
+   "id": "sc-0066",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "台灯会写日记，主角读到了自己的未来"
+  },
+  {
+   "id": "sc-0067",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "平行版本的自己发来消息，要求主角做一个选择"
+  },
+  {
+   "id": "sc-0068",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "天气预报可以改一次，代价是别人的一天"
+  },
+  {
+   "id": "sc-0069",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "梦境可以共享，主角发现自己出现在别人的梦里"
+  },
+  {
+   "id": "sc-0070",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "自动售货机会找回多付的钱，但要求一句真心话"
+  },
+  {
+   "id": "sc-0071",
+   "genre": "scifi",
+   "premium": false,
+   "seed": "时间被按小时租用，主角租了一小时的下午"
+  },
+  {
+   "id": "sc-0072",
+   "genre": "warm",
+   "premium": false,
+   "seed": "楼下修鞋铺要在月底搬走，老主顾们想办法"
+  },
+  {
+   "id": "sc-0073",
+   "genre": "warm",
+   "premium": false,
+   "seed": "父亲学会用外卖软件后一天点了三次"
+  },
+  {
+   "id": "sc-0074",
+   "genre": "warm",
+   "premium": false,
+   "seed": "菜场摊主每天给晚归的人留一盏灯"
+  },
+  {
+   "id": "sc-0075",
+   "genre": "warm",
+   "premium": false,
+   "seed": "夜班公交司机记得每个常客的下车站"
+  },
+  {
+   "id": "sc-0076",
+   "genre": "warm",
+   "premium": false,
+   "seed": "邻居家的猫每天来主角家阳台晒太阳"
+  },
+  {
+   "id": "sc-0077",
+   "genre": "warm",
+   "premium": false,
+   "seed": "老楼要装电梯，一楼住户不同意"
+  },
+  {
+   "id": "sc-0078",
+   "genre": "warm",
+   "premium": false,
+   "seed": "面馆老板退休前最后一天营业"
+  },
+  {
+   "id": "sc-0079",
+   "genre": "warm",
+   "premium": false,
+   "seed": "阳台上的花被风吹到楼下，捡到的人养了起来"
+  },
+  {
+   "id": "sc-0080",
+   "genre": "warm",
+   "premium": false,
+   "seed": "便利店的夜班店员总给流浪猫留一小碟水"
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "storyId": "sc-0007",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-21T08:05:32.346Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "major",
+    "pathIndex": 4,
+    "issue": "机器已拆开读过本地缓存，后文又去拆一次缓存，动作重复",
+    "suggest": "后段改为直接调取已读缓存或换一处未查的存储",
+    "evidence": "何棠从工具包里拿出螺丝刀，把底壳一颗颗拧开，露出本地缓存……去机器跟前拆它的缓存"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 1,
+    "issue": "选“查名单有没有熟人”却直接跳到名单新增苏未，转折缺铺垫",
+    "suggest": "先写查无熟人，再让新名字浮现",
+    "evidence": "先查名单里有没有熟人……名单又往下续了一行，收件人栏写着苏未"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

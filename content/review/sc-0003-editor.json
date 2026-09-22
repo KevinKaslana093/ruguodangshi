@@ -1,0 +1,32 @@
+{
+ "storyId": "sc-0003",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-21T08:56:20.213Z",
+  "editorIssues": [
+   {
+    "severity": "blocker",
+    "nodeId": "n12",
+    "issue": "同一路径上，沈知遥先说前住户搬走，后又说自己一直住这儿",
+    "suggest": "让前文留出她撒谎的破绽，或改成她从未搬走",
+    "evidence": "挺好一户，安静，不吵人，搬走得也急……她一直住在这栋楼，住得比谁都久"
+   },
+   {
+    "severity": "major",
+    "nodeId": "n6",
+    "issue": "选了拆信，后文仍写封口完好，拆信内容也从未出现",
+    "suggest": "拆信后改为封口已撕，并交代署名内容",
+    "evidence": "拆开信，先看里面的署名……封口的折痕朝上，边角磨得发毛"
+   },
+   {
+    "severity": "major",
+    "nodeId": "n10",
+    "issue": "两个结局对同一谜题给出互斥答案：信属于别人还是她本人",
+    "suggest": "统一设定，让e1也指向沈知遥自己",
+    "evidence": "说替那户人家留着……这是我以前的名字"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ }
+}

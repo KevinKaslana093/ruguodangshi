@@ -1,0 +1,7282 @@
+{
+ "proposals": [
+  {
+   "conflict": "主角为凑周报虚构了一个项目，结果全公司都开始认真推进它。",
+   "differs": "冲突源于主角自己造出的假项目失控，而非被动接活。"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "周报里的幽灵项目",
+  "tagline": "为了凑满一栏周报，他编了个项目，全公司开始认真推进它。",
+  "summary": "周小满的周报空着一栏，随手编了个听起来很专业的项目填进去。第二天周会上，主管念到这一栏，追问细节；同事老潘和沈工立刻认真起来，要拉资源、搭原型。一周之内，项目被报上评审、排进日程，没人问它从哪来。周小满只剩一件事可做：决定把这个谎，圆到底还是拆掉。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "群像",
+   "黑色幽默"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "周小满",
+    "desc": "普通职员，为凑周报编了个不存在的项目"
+   },
+   {
+    "id": "c2",
+    "name": "郝主管",
+    "desc": "把随口一提当战略，行动力惊人"
+   },
+   {
+    "id": "c3",
+    "name": "老潘",
+    "desc": "同事，擅长把没影的事说得头头是道"
+   },
+   {
+    "id": "c4",
+    "name": "沈工",
+    "desc": "技术同事，认真做原型，不问出处"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "周报截止前",
+    "purpose": "为凑满周报栏目，编出一个不存在的项目",
+    "choices": [
+     {
+      "text": "给虚构项目起个正经代号",
+      "to": "n2"
+     },
+     {
+      "text": "只写一行含糊的进展说明",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "周会，主管追问",
+    "purpose": "主角抢先补细节，把谎话撑得更具体",
+    "choices": [
+     {
+      "text": "当场画出模块图分工",
+      "to": "n4"
+     },
+     {
+      "text": "说先做个最小版本试试",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "周会，主管追问",
+    "purpose": "主角想降温，反复强调还在概念阶段",
+    "choices": [
+     {
+      "text": "推说调研还没做完",
+      "to": "n4"
+     },
+     {
+      "text": "提议先听听大家意见",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "会后茶水间",
+    "purpose": "主角顺着同事的提议往下接，越接越具体",
+    "choices": [
+     {
+      "text": "答应下周给一版方案",
+      "to": "n6"
+     },
+     {
+      "text": "提出先小范围试一下",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "会后茶水间",
+    "purpose": "主角想把事情按住，提议先别声张",
+    "choices": [
+     {
+      "text": "请同事先别往外说",
+      "to": "n6"
+     },
+     {
+      "text": "改口说等确认了再同步",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "评审通知下来",
+    "purpose": "主管已把项目报上评审，主角试图缩小范围",
+    "choices": [
+     {
+      "text": "申请只做一个演示版本",
+      "to": "n8"
+     },
+     {
+      "text": "请主管一起把口径统一",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "评审通知下来",
+    "purpose": "主管已把项目报上评审，主角试图把话挑明",
+    "choices": [
+     {
+      "text": "半真半假地说项目很虚",
+      "to": "n8"
+     },
+     {
+      "text": "直接问能不能换个人牵头",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "评审前的会议室",
+    "purpose": "主角抢先补细节，把漏洞一个个堵上",
+    "choices": [
+     {
+      "text": "把方案说到滴水不漏",
+      "to": "n10"
+     },
+     {
+      "text": "先留一句还在验证",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "评审前的会议室",
+    "purpose": "主角试探同事口风，想给项目降温",
+    "choices": [
+     {
+      "text": "顺着热度把话说满",
+      "to": "n10"
+     },
+     {
+      "text": "承认自己心里没底",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": null,
+    "label": "评审会现场",
+    "purpose": "主角把项目讲成战略级，主动加码",
+    "choices": [
+     {
+      "text": "接下资源，把项目做实",
+      "to": "n12"
+     },
+     {
+      "text": "当众申请缩减范围",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": null,
+    "label": "评审会现场",
+    "purpose": "主角当众留活口，暗示自己没底",
+    "choices": [
+     {
+      "text": "把疑点摆到台面上",
+      "to": "n13"
+     },
+     {
+      "text": "继续演，看谁先绷不住",
+      "to": "n14"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "level": 6,
+    "endingId": "e1",
+    "label": "结局：假项目真做成了",
+    "purpose": "假项目被真做出来，主角成了负责人",
+    "choices": []
+   },
+   {
+    "id": "n13",
+    "level": 6,
+    "endingId": "e2",
+    "label": "结局：项目黄了，人留下",
+    "purpose": "项目最终被砍，团队关系却留了下来",
+    "choices": []
+   },
+   {
+    "id": "n14",
+    "level": 6,
+    "endingId": "e3",
+    "label": "结局：全公司都在演",
+    "purpose": "主角发现所有人早知道是假的，都在演",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n12",
+    "title": "假项目真做成了",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n13",
+    "title": "项目黄了，人留下",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n14",
+    "title": "全公司都在演",
+    "kind": "twist"
+   }
+  ]
+ },
+ "skeletonSignature": "grid14s:14",
+ "shape": {
+  "id": "grid14s",
+  "note": "七个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 14,
+  "paths": 64,
+  "minLen": 7,
+  "maxLen": 7,
+  "levels": 7,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "n9"
+  ],
+  "n11": [
+   "n8",
+   "n9"
+  ],
+  "n12": [
+   "n10",
+   "（结局入口）"
+  ],
+  "n13": [
+   "n10",
+   "n11",
+   "（结局入口）"
+  ],
+  "n14": [
+   "n11",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n1": {
+   "text": "周五下班前，周报模板最后一栏还空着。周小满盯着那格光标，总得填点什么。郝主管在群里说，周会要逐条过。老潘从隔板后探头问写完没，沈工也把椅子转过来看了一眼。光标还在那一栏里一闪一闪。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "给虚构项目起个正经代号"
+    },
+    {
+     "to": "n3",
+     "text": "只写一行含糊的进展说明"
+    }
+   ]
+  },
+  "n2": {
+   "text": "郝主管念到那一栏，抬头问起细节。周小满抢在别人开口前接话，把范围、周期、能省下多少人力一样样往下说。老潘立刻点头，说这块他有资源；沈工已经翻开本子记。郝主管把笔停在那一格上，没打断，会议室里只剩空调声，等着下一句。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "当场画出模块图，把分工也写上去"
+    },
+    {
+     "to": "n5",
+     "text": "说先做个最小版本试试水"
+    }
+   ]
+  },
+  "n3": {
+   "text": "郝主管念到那一栏，抬头追问。周小满把话往回收，说这只是个想法，还在概念阶段，很多前提没验证。老潘却说概念阶段最值钱，沈工翻着本子问接口在哪。郝主管没接话，笔停在那格上，会议室安静下来，等他把话说完。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "推说调研还没做完，先别定分工"
+    },
+    {
+     "to": "n5",
+     "text": "提议先听听大家想怎么做"
+    }
+   ]
+  },
+  "n4": {
+   "text": "茶水间的热水机还在响。老潘把纸杯搁在台面上，顺着会上那几句往下说：先圈一个小场景，接口他去找人。沈工把本子摊开，问第一个对接点落在哪。周小满本来只想着别让话冷掉，一句一句回过去，越回越具体，每个问题都比上一个更难绕。杯里的水凉了半截，台面上还留着水汽。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "答应下周给一版方案"
+    },
+    {
+     "to": "n7",
+     "text": "提出先小范围试一下"
+    }
+   ]
+  },
+  "n5": {
+   "text": "茶水间的热水机还在响。老潘端着纸杯，把会上那几句又拎出来说了一遍；沈工把本子摊在台面上，笔尖悬着等一个落点。周小满看着那页纸，心里想的是怎么把这东西按回那一栏里去——先别往外说，先别惊动别人。台面上的水汽一点点散掉，谁都没先开口。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "请同事先别往外说"
+    },
+    {
+     "to": "n7",
+     "text": "改口说等确认了再同步"
+    }
+   ]
+  },
+  "n6": {
+   "text": "评审的日程弹在屏幕上，评审人一栏排得整整齐齐，郝主管在群里说材料他来对接。老潘已经去问资源，沈工那边的目录又多了一层。周小满盯着那行字，想把口子收小——只讲一个场景，只讲能演出来的那部分。桌角那杯水还满着，他在等一个开口的时机。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "申请只做一个演示版本"
+    },
+    {
+     "to": "n9",
+     "text": "请主管一起把口径统一"
+    }
+   ]
+  },
+  "n7": {
+   "text": "评审日程弹在屏幕最上面，评审人一栏排得整整齐齐，郝主管在群里说材料由他来对接。老潘那边已经去问了资源，沈工的目录又多了一层。周小满盯着那行字，把椅子转向他们那边，手指在桌沿上敲了两下——话已经到嘴边，还没想好从哪一句起头。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "半真半假地说项目其实很虚"
+    },
+    {
+     "to": "n9",
+     "text": "直接问能不能换个人牵头"
+    }
+   ]
+  },
+  "n8": {
+   "text": "评审会还没开始，会议室的灯开着，投影还没亮。郝主管把材料摊在桌上，说对接那部分他已经发出去了；老潘翻着资源那条，沈工指着目录里多出来的那层问从哪切。周小满顺着往下补，一条接一条，凡是想得到的口子都先往小里收。桌上那页纸快写满了，还有人抬着头等他往下说。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "把方案说到滴水不漏"
+    },
+    {
+     "to": "n11",
+     "text": "先留一句还在验证"
+    }
+   ]
+  },
+  "n9": {
+   "text": "评审会还没开始，会议室的灯开着，投影还没亮。郝主管把材料摊在桌上，说对接那部分他已经发出去了；老潘说资源问得差不多了，沈工的目录又多了一层。周小满没接技术那几句，转过去问老潘，这东西真要往下走，会不会太赶。老潘笑得挺轻松，沈工把笔放下，等他把后半句说完。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "顺着热度把话说满"
+    },
+    {
+     "to": "n11",
+     "text": "承认自己心里没底"
+    }
+   ]
+  },
+  "n10": {
+   "text": "投影亮了，第一页就停在那一栏上。周小满开口时比稿子里高了半格：这东西不该只做一个场景，能往下接成一层底座，别的组也能挂上来。郝主管的笔从格子上抬起，在页边划了条线；老潘把资源那条翻到最上面；沈工在本子上又添了一层目录。桌上那页纸推到中间，还没人落下下一步。",
+   "choices": [
+    {
+     "to": "n12",
+     "text": "接下资源，把项目做实"
+    },
+    {
+     "to": "n13",
+     "text": "当众申请缩减范围"
+    }
+   ]
+  },
+  "n11": {
+   "text": "投影亮了，第一页停在那一栏上。周小满照着念，念到一半停住，说这块还没验证，前提也悬着，真要往下走，得先留个活口。会议室里没人接这句。老潘低头翻了两页纸，把话头往回收了半句；沈工抬起眼，笔在本子上顿住；郝主管没抬头，指节在桌面上轻敲。投影的风扇还在响，谁也没把这一页翻过去。",
+   "choices": [
+    {
+     "to": "n13",
+     "text": "把疑点摆到台面上"
+    },
+    {
+     "to": "n14",
+     "text": "继续演，看谁先绷不住"
+    }
+   ]
+  },
+  "n12": {
+   "text": "那层底座真的跑起来了。沈工的原型接上了第一个场景，老潘拉来的资源一条条落到位，评审席上当初划的那条线，被排进了日程。周小满的名字挂在负责人那一栏，郝主管在群里说这块以后归他对接。他坐回原先的工位，周报最后一栏这回填得满满当当。",
+   "choices": []
+  },
+  "n13": {
+   "text": "那一栏最后没往下走。方向一变，评审就把它从日程上拿掉了；纸上那层目录还夹在沈工的本子里，老潘问过的资源只留了记录。散会时郝主管只说了句先放着。过了些日子，周小满坐回原工位，老潘照旧从隔板后探头问他写完没，沈工把椅子转过来看一眼。周报最后一栏空着，他这回没急着填。",
+   "choices": []
+  },
+  "n14": {
+   "text": "投影灭了，人陆续起身。老潘合上本子，说你这栏填得挺圆；沈工收笔时补了一句，目录那层他早看出接口对不上，只是没问。郝主管抱着材料走到门口，说这样的一栏之前也有过，材料照报，日程照排。走廊的灯白亮着，没人多看一眼。周小满攥着那页纸站在原地，才明白从头到尾，在场的人都知道这栏是空的。",
+   "choices": []
+  }
+ },
+ "story": {
+  "storyId": "sc-0014",
+  "schemaVersion": 1,
+  "title": "周报里的幽灵项目",
+  "tagline": "为了凑满一栏周报，他编了个项目，全公司开始认真推进它。",
+  "summary": "周小满的周报空着一栏，随手编了个听起来很专业的项目填进去。第二天周会上，主管念到这一栏，追问细节；同事老潘和沈工立刻认真起来，要拉资源、搭原型。一周之内，项目被报上评审、排进日程，没人问它从哪来。周小满只剩一件事可做：决定把这个谎，圆到底还是拆掉。",
+  "genre": "office",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "群像",
+   "黑色幽默"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "周小满",
+    "desc": "普通职员，为凑周报编了个不存在的项目"
+   },
+   {
+    "id": "c2",
+    "name": "郝主管",
+    "desc": "把随口一提当战略，行动力惊人"
+   },
+   {
+    "id": "c3",
+    "name": "老潘",
+    "desc": "同事，擅长把没影的事说得头头是道"
+   },
+   {
+    "id": "c4",
+    "name": "沈工",
+    "desc": "技术同事，认真做原型，不问出处"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n12",
+    "title": "假项目真做成了",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n13",
+    "title": "项目黄了，人留下",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n14",
+    "title": "全公司都在演",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "周五下班前，周报模板最后一栏还空着。周小满盯着那格光标，总得填点什么。郝主管在群里说，周会要逐条过。老潘从隔板后探头问写完没，沈工也把椅子转过来看了一眼。光标还在那一栏里一闪一闪。",
+    "label": "周报截止前",
+    "choices": [
+     {
+      "text": "给虚构项目起个正经代号",
+      "to": "n2"
+     },
+     {
+      "text": "只写一行含糊的进展说明",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "郝主管念到那一栏，抬头问起细节。周小满抢在别人开口前接话，把范围、周期、能省下多少人力一样样往下说。老潘立刻点头，说这块他有资源；沈工已经翻开本子记。郝主管把笔停在那一格上，没打断，会议室里只剩空调声，等着下一句。",
+    "label": "周会，主管追问",
+    "choices": [
+     {
+      "text": "当场画出模块图，把分工也写上去",
+      "to": "n4"
+     },
+     {
+      "text": "说先做个最小版本试试水",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "郝主管念到那一栏，抬头追问。周小满把话往回收，说这只是个想法，还在概念阶段，很多前提没验证。老潘却说概念阶段最值钱，沈工翻着本子问接口在哪。郝主管没接话，笔停在那格上，会议室安静下来，等他把话说完。",
+    "label": "周会，主管追问",
+    "choices": [
+     {
+      "text": "推说调研还没做完，先别定分工",
+      "to": "n4"
+     },
+     {
+      "text": "提议先听听大家想怎么做",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "茶水间的热水机还在响。老潘把纸杯搁在台面上，顺着会上那几句往下说：先圈一个小场景，接口他去找人。沈工把本子摊开，问第一个对接点落在哪。周小满本来只想着别让话冷掉，一句一句回过去，越回越具体，每个问题都比上一个更难绕。杯里的水凉了半截，台面上还留着水汽。",
+    "label": "会后茶水间",
+    "choices": [
+     {
+      "text": "答应下周给一版方案",
+      "to": "n6"
+     },
+     {
+      "text": "提出先小范围试一下",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "茶水间的热水机还在响。老潘端着纸杯，把会上那几句又拎出来说了一遍；沈工把本子摊在台面上，笔尖悬着等一个落点。周小满看着那页纸，心里想的是怎么把这东西按回那一栏里去——先别往外说，先别惊动别人。台面上的水汽一点点散掉，谁都没先开口。",
+    "label": "会后茶水间",
+    "choices": [
+     {
+      "text": "请同事先别往外说",
+      "to": "n6"
+     },
+     {
+      "text": "改口说等确认了再同步",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "评审的日程弹在屏幕上，评审人一栏排得整整齐齐，郝主管在群里说材料他来对接。老潘已经去问资源，沈工那边的目录又多了一层。周小满盯着那行字，想把口子收小——只讲一个场景，只讲能演出来的那部分。桌角那杯水还满着，他在等一个开口的时机。",
+    "label": "评审通知下来",
+    "choices": [
+     {
+      "text": "申请只做一个演示版本",
+      "to": "n8"
+     },
+     {
+      "text": "请主管一起把口径统一",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "评审日程弹在屏幕最上面，评审人一栏排得整整齐齐，郝主管在群里说材料由他来对接。老潘那边已经去问了资源，沈工的目录又多了一层。周小满盯着那行字，把椅子转向他们那边，手指在桌沿上敲了两下——话已经到嘴边，还没想好从哪一句起头。",
+    "label": "评审通知下来",
+    "choices": [
+     {
+      "text": "半真半假地说项目其实很虚",
+      "to": "n8"
+     },
+     {
+      "text": "直接问能不能换个人牵头",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "评审会还没开始，会议室的灯开着，投影还没亮。郝主管把材料摊在桌上，说对接那部分他已经发出去了；老潘翻着资源那条，沈工指着目录里多出来的那层问从哪切。周小满顺着往下补，一条接一条，凡是想得到的口子都先往小里收。桌上那页纸快写满了，还有人抬着头等他往下说。",
+    "label": "评审前的会议室",
+    "choices": [
+     {
+      "text": "把方案说到滴水不漏",
+      "to": "n10"
+     },
+     {
+      "text": "先留一句还在验证",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "评审会还没开始，会议室的灯开着，投影还没亮。郝主管把材料摊在桌上，说对接那部分他已经发出去了；老潘说资源问得差不多了，沈工的目录又多了一层。周小满没接技术那几句，转过去问老潘，这东西真要往下走，会不会太赶。老潘笑得挺轻松，沈工把笔放下，等他把后半句说完。",
+    "label": "评审前的会议室",
+    "choices": [
+     {
+      "text": "顺着热度把话说满",
+      "to": "n10"
+     },
+     {
+      "text": "承认自己心里没底",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "投影亮了，第一页就停在那一栏上。周小满本来只打算照着稿子念，老潘先开了口，说这东西不该只做一个场景，能往下接成一层底座，别的组也能挂上来。郝主管的笔从格子上抬起，问他能不能接；周小满顺着这句往下说，比稿子里高了半格。沈工在本子上又添了一层目录。桌上那页纸推到中间，还没人落下下一步。",
+    "label": "评审会现场",
+    "choices": [
+     {
+      "text": "接下资源，把项目做实",
+      "to": "n12"
+     },
+     {
+      "text": "当众申请缩减范围",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "text": "投影亮了，第一页停在那一栏上。周小满照着念，念到一半停住，说这块还没验证，前提也悬着，真要往下走，得先留个活口。会议室里没人接这句。老潘低头翻了两页纸，把话头往回收了半句；沈工抬起眼，笔在本子上顿住；郝主管没抬头，指节在桌面上轻敲。投影的风扇还在响，谁也没把这一页翻过去。",
+    "label": "评审会现场",
+    "choices": [
+     {
+      "text": "把疑点摆到台面上",
+      "to": "n13"
+     },
+     {
+      "text": "继续演，看谁先绷不住",
+      "to": "n14"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "text": "投影灭了，人陆续起身。郝主管把材料合上，说这块就按今天讲的往下走，资源他明天去协调；老潘把资源那条折了个角，说人他去盯；沈工合上本子，说原型他先搭。郝主管当场把周小满的名字填进负责人那一栏，笔尖压得很实。走廊的灯白亮着，他攥着那页纸往外走，脚步比来时快。",
+    "label": "结局：假项目真做成了",
+    "ending": {
+     "id": "e1",
+     "title": "假项目真做成了",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n13",
+    "text": "投影灭了，人陆续起身。郝主管把材料合上，说方向还得再想想，先放着；老潘把资源那条合进本子，没再提；沈工把多出来的那层目录夹回页里。散会的人从周小满身边过去，没人再提那一栏。走廊的灯白亮着，他攥着那页纸站在原地，后来还是回了工位，那一栏空了很久，他也没急着填。",
+    "label": "结局：项目黄了，人留下",
+    "ending": {
+     "id": "e2",
+     "title": "项目黄了，人留下",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n14",
+    "text": "投影灭了，人陆续起身。老潘合上本子，说你这栏填得挺圆；沈工收笔时补了一句，目录那层他早看出接口对不上，只是没问。郝主管抱着材料走到门口，说这样的一栏之前也有过，材料照报，日程照排。走廊的灯白亮着，没人多看一眼。周小满攥着那页纸站在原地，才明白从头到尾，在场的人都知道这栏是空的。",
+    "label": "结局：全公司都在演",
+    "ending": {
+     "id": "e3",
+     "title": "全公司都在演",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "office"
+ },
+ "choicesRefreshed": {
+  "at": "2026-09-22T15:32:50.252Z",
+  "touched": 0
+ },
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 64,
+    "capped": false,
+    "visitedPairs": 14,
+    "totalPairs": 14,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 16,
+    "e2": 32,
+    "e3": 16
+   },
+   "nodeCount": 14,
+   "endingCount": 3,
+   "avgNodeCjk": 106,
+   "totalChoices": 22,
+   "avgPathLen": 7,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "当场画出模块图，把分工也写上去",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "给虚构项目起个正经代号",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说先做个最小版本试试水",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "答应下周给一版方案",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推说调研还没做完，先别定分工",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提出先小范围试一下",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "申请只做一个演示版本",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请同事先别往外说",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "请主管一起把口径统一",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "把方案说到滴水不漏",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "半真半假地说项目其实很虚",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "先留一句还在验证",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "接下资源，把项目做实",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着热度把话说满",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "当众申请缩减范围",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "把疑点摆到台面上",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "只写一行含糊的进展说明",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "提议先听听大家想怎么做",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "改口说等确认了再同步",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "直接问能不能换个人牵头",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "承认自己心里没底",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "继续演，看谁先绷不住",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "当场画出模块图，把分工也写上去",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "给虚构项目起个正经代号",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说先做个最小版本试试水",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "答应下周给一版方案",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推说调研还没做完，先别定分工",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提出先小范围试一下",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "申请只做一个演示版本",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请同事先别往外说",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "请主管一起把口径统一",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "把方案说到滴水不漏",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "半真半假地说项目其实很虚",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "先留一句还在验证",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "接下资源，把项目做实",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着热度把话说满",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "当众申请缩减范围",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "把疑点摆到台面上",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "只写一行含糊的进展说明",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "提议先听听大家想怎么做",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "改口说等确认了再同步",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "直接问能不能换个人牵头",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "承认自己心里没底",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "继续演，看谁先绷不住",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "editorReview": {
+  "at": "2026-09-22T15:33:12.457Z",
+  "editorIssues": [
+   {
+    "severity": "minor",
+    "nodeId": "n6",
+    "issue": "沈工的“目录”此前从未出现，突然成为关键道具",
+    "suggest": "在n2/n4让沈工先提到在建目录",
+    "evidence": "沈工那边的目录又多了一层"
+   }
+  ],
+  "verdict": "pass",
+  "fixRounds": 0
+ },
+ "pathReview": {
+  "at": "2026-09-22T15:33:23.170Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "major",
+    "pathIndex": 3,
+    "issue": "刚坦白项目很虚，评审会现场却突然拔高做实，缺过渡",
+    "suggest": "补一句他为何改口，或让拔高由他人推动",
+    "evidence": "半真半假地说项目其实很虚……这东西不该只做一个场景，能往下接成一层底座"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 4,
+    "issue": "要求同事别外传，下一节点同事已对外问资源",
+    "suggest": "改为同事私下打听，或点明他们没听劝",
+    "evidence": "请同事先别往外说……老潘已经去问资源，沈工那边的目录又多了一层"
+   }
+  ],
+  "verdict": "revise"
+ },
+ "mergeCheck": {
+  "at": "2026-09-22T15:35:12.481Z",
+  "issues": [],
+  "mergeCount": 0,
+  "propCount": 0,
+  "factCount": 0,
+  "levelCount": 0,
+  "fixRounds": 1
+ },
+ "fixRounds": 1,
+ "fixLog": [
+  {
+   "round": 1,
+   "applied": 3,
+   "touched": [
+    "n10",
+    "n12",
+    "n13"
+   ],
+   "uncovered": [
+    "n7"
+   ],
+   "note": "n12、n13 改写为与 n14 同一场（评审会散会、投影灭掉）的收束，三个结局同层同场景；并连带改其直接上游 n10，把现场拔高改为由老潘先开口推动、周小满顺着接话，补上 n7 坦白后到评审会拔高的过渡。",
+   "at": "2026-09-22T15:34:06.755Z"
+  }
+ ],
+ "regressions": [
+  {
+   "at": "2026-09-22T15:35:12.468Z",
+   "round": 1,
+   "scope": [
+    "n10",
+    "n8",
+    "n9",
+    "n12",
+    "n13",
+    "n11"
+   ],
+   "issues": []
+  }
+ ]
+}

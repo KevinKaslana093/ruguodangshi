@@ -1,0 +1,3508 @@
+{
+ "proposals": [
+  {
+   "conflict": "两个同事为抢同一个靠窗工位，从比谁先到升级为比谁更不睡。",
+   "differs": "核心是体力与作息的恶性内卷，不是物件或权力。",
+   "hook": "凌晨四点，办公室门口两把折叠椅并排，谁也没敢先眨眼。",
+   "protagonist": "老周，入职八年的资深专员"
+  },
+  {
+   "conflict": "有人用私人物品占座，引发全组用更离谱道具宣示领地的军备竞赛。",
+   "differs": "冲突焦点是占座道具的荒诞升级，而非人本身的竞争。",
+   "hook": "一张空桌上摆着一盆绿萝，盆里插着写有名字的牙签旗。",
+   "protagonist": "小林，刚转正的行政助理"
+  },
+  {
+   "conflict": "全公司唯一的黄金工位成了隐形权位象征，抢到的人开始被默认发号施令。",
+   "differs": "把座位变成权力符号，冲突是身份错位与滑稽服从。",
+   "hook": "实习生坐上那个位子，第二天全组竟自发向他汇报工作。",
+   "protagonist": "阿May，市场部普通策划"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "靠窗工位不眠夜",
+  "tagline": "凌晨四点，两把折叠椅并排。谁先眨眼，谁就搬去复印机旁边。",
+  "summary": "凌晨四点，办公室门口并排摆着两把折叠椅。老周和小丁盯上同一个靠窗工位，谁也不肯先眨眼。规则从「谁先到」一路升级成「谁先睡」，速溶咖啡、冷风、白噪音轮番上阵，八年资历和两年熬夜战绩正面对撞。天亮之前，谁也不敢合眼。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "抢工位",
+   "熬夜",
+   "荒诞",
+   "办公室"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "老周",
+    "desc": "入职八年的资深专员，认定靠窗位是老员工福利"
+   },
+   {
+    "id": "c2",
+    "name": "小丁",
+    "desc": "入职两年的同事，自称熬夜战绩全公司第一"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "凌晨四点的两把折叠椅",
+    "purpose": "确立对峙场面，交代靠窗工位之争的起因",
+    "choices": [
+     {
+      "text": "先开口，提议立个规矩",
+      "to": "n2"
+     },
+     {
+      "text": "不开口，把椅子摆正坐好",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "先开口的那个人",
+    "purpose": "老周主动搭话，把胜负标准往「不睡」上引",
+    "choices": [
+     {
+      "text": "先问小丁怕不怕熬夜",
+      "to": "n4"
+     },
+     {
+      "text": "先讲自己当年熬过通宵",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "谁先眨眼谁认输",
+    "purpose": "两人沉默较劲，用动作代替开口破局",
+    "choices": [
+     {
+      "text": "推过去一杯速溶咖啡",
+      "to": "n4"
+     },
+     {
+      "text": "把两把椅子转成背对背",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "门开之后的谈判",
+    "purpose": "老周提出让步方案，试探对方底线",
+    "choices": [
+     {
+      "text": "提议聊天提神，谁睡谁输",
+      "to": "n6"
+     },
+     {
+      "text": "提议闭麦对峙，谁开口谁输",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "加码还是让位",
+    "purpose": "老周选择把赌局往上抬，不肯先松口",
+    "choices": [
+     {
+      "text": "先拉着小丁复盘白天的事",
+      "to": "n6"
+     },
+     {
+      "text": "把手机调静音，先不吭声",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "嘴皮子消耗战",
+    "purpose": "用不停说话拖住对手，熬夜变成耐力赛",
+    "choices": [
+     {
+      "text": "开始讲自己八年的职场往事",
+      "to": "n8"
+     },
+     {
+      "text": "开始念工位使用管理规范",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "速溶咖啡对冷风",
+    "purpose": "改拼道具和体感，僵局继续升级",
+    "choices": [
+     {
+      "text": "老周提议私下定个规矩",
+      "to": "n8"
+     },
+     {
+      "text": "老周提议找行政评理",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "天亮前的讨价还价",
+    "purpose": "两人私下谈条件，方案还没落地",
+    "choices": [
+     {
+      "text": "各退一步，单双日轮流",
+      "to": "n10"
+     },
+     {
+      "text": "谁也不让，耗到天亮",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "规则里没有答案",
+    "purpose": "翻制度问行政，靠窗位归属没写",
+    "choices": [
+     {
+      "text": "不认这套，继续干耗",
+      "to": "n11"
+     },
+     {
+      "text": "提议干脆改成绿植角",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": "e1",
+    "label": "单双日轮流靠窗",
+    "purpose": "谈成轮流协议，一人一天靠窗",
+    "choices": []
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": "e2",
+    "label": "天亮了，谁也没赢",
+    "purpose": "两人都没合眼，工位归属悬空",
+    "choices": []
+   },
+   {
+    "id": "n12",
+    "level": 5,
+    "endingId": "e3",
+    "label": "靠窗位改成了绿植角",
+    "purpose": "行政批复改造，两人一起傻眼",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "单双日轮流靠窗",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "天亮了，谁也没赢",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "靠窗位改成了绿植角",
+    "kind": "twist"
+   }
+  ]
+ },
+ "skeletonSignature": "grid12s:12",
+ "shape": {
+  "id": "grid12s",
+  "note": "六个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 12,
+  "paths": 32,
+  "minLen": 6,
+  "maxLen": 6,
+  "levels": 6,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "（结局入口）"
+  ],
+  "n11": [
+   "n8",
+   "n9",
+   "（结局入口）"
+  ],
+  "n12": [
+   "n9",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n1": {
+   "text": "凌晨四点，整层楼只剩应急灯亮着。靠窗那个工位白天晒得到太阳，抬头就是街对面的灯牌。老周说那是老员工的福利，他八年了，该坐；小丁说他入职两年，熬夜战绩全公司第一，位置该归最能熬的人。两人从储物间各搬一把折叠椅，并排摆在办公室门口。玻璃门还锁着，钥匙在保洁那儿。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "先开口，提议立个规矩"
+    },
+    {
+     "to": "n3",
+     "text": "不开口，把椅子摆正坐好"
+    }
+   ]
+  },
+  "n2": {
+   "text": "老周先开了口，声音压得低，像怕吵醒整层楼。他说先到先得这规矩太便宜，反正椅子都搬来了，不如换个比法——比谁不睡。小丁抬了抬下巴，没接话，把外套拉链一直拉到顶。玻璃门还锁着，钥匙在保洁手上。老周的手指在椅面上敲了两下，话头就停在那儿。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "先问小丁怕不怕熬夜"
+    },
+    {
+     "to": "n5",
+     "text": "先讲自己当年熬过通宵"
+    }
+   ]
+  },
+  "n3": {
+   "text": "谁也没先开口。小丁把手机屏幕扣在膝盖上，老周抱起胳膊，两人隔着半米走廊互相看着。饮水机在尽头嗡嗡响，应急灯把影子拉得很长。小丁从包里摸出一包速溶咖啡，撕开倒进纸杯，接了热水，只冲了一杯，放在两把椅子中间的地上。热气慢慢散开，谁也没伸手。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "推过去一杯速溶咖啡"
+    },
+    {
+     "to": "n5",
+     "text": "把两把椅子转成背对背"
+    }
+   ]
+  },
+  "n4": {
+   "text": "老周把椅子往墙边挪了半寸，说靠窗位不是不能谈，但得有个说法。他压着嗓子问小丁：是想比谁说得动谁，还是比谁先沉得住气。玻璃门还锁着，钥匙在保洁手上，应急灯把两把并排的折叠椅影子投在地上。小丁捏着外套的拉链头，没答话，也没挪椅子。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "提议边聊边熬，谁先睡谁输"
+    },
+    {
+     "to": "n7",
+     "text": "提议都不说话，谁先开口谁输"
+    }
+   ]
+  },
+  "n5": {
+   "text": "老周把胳膊一松，说既然都坐到这儿了，就把话挑明：他不困，也不打算先困。他把外套往椅背上一搭，说比法还能再抬一格，天亮之前谁先合眼，谁就认这个位置不归自己。玻璃门还锁着，钥匙在保洁手上，应急灯照着两把并排的折叠椅。小丁抬眼看过来，没吭声。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "先拉着小丁复盘白天的事"
+    },
+    {
+     "to": "n7",
+     "text": "把手机调静音，先不吭声"
+    }
+   ]
+  },
+  "n6": {
+   "text": "话头一开就收不住。老周说一句，小丁接一句，谁也不肯让句子落地，从工位扯到考勤，从考勤扯到谁更配那扇窗。两个人都把声音压得低，像怕惊动整层楼，可谁也没停。应急灯照着两把折叠椅，玻璃门还锁着，钥匙在保洁手上。说到嗓子发干，话还是没断。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "开始讲自己八年的职场往事"
+    },
+    {
+     "to": "n9",
+     "text": "开始念工位使用管理规范"
+    }
+   ]
+  },
+  "n7": {
+   "text": "小丁起身把走廊尽头的窗推开一道缝，冷风顺着地砖爬过来，先到脚踝，再到膝盖。老周没躲，弯腰端起地上那杯凉透的速溶，抿了一口，又搁回原处。两人换了个较劲的法子：一个靠冷风提神，一个靠咖啡吊着，谁也没说话，谁也没挪椅子。玻璃门还锁着，钥匙在保洁手上，应急灯的影子钉在地上一动不动。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "私下把规矩定下来"
+    },
+    {
+     "to": "n9",
+     "text": "翻制度、找行政评理"
+    }
+   ]
+  },
+  "n8": {
+   "text": "老周把嗓子再压低半格，说闹到天亮对谁都不好看，不如两个人自己划个道，别把行政扯进来。小丁问划什么道，老周说隔天换着坐也不是不能谈，条件是摆得出来的。小丁没接，鞋跟在地上蹭了两下，眼睛盯着玻璃门里那片黑。玻璃门还锁着，钥匙在保洁手上，应急灯照着两把并排的折叠椅。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "各退一步，单双日轮流"
+    },
+    {
+     "to": "n11",
+     "text": "谁也不让，耗到天亮"
+    }
+   ]
+  },
+  "n9": {
+   "text": "老周掏出手机翻公司的制度库，考勤、加班、工位管理一条条往下划。小丁凑过来，两个人把屏幕挪到应急灯底下看。工位那页只登记了编号和资产归属，谁坐哪儿、靠不靠窗，一个字没提。小丁拨了行政的座机，响了很久，没人接。玻璃门还锁着，两把折叠椅并排立在旁边。",
+   "choices": [
+    {
+     "to": "n11",
+     "text": "不认这套，继续干耗"
+    },
+    {
+     "to": "n12",
+     "text": "提议改成绿植角"
+    }
+   ]
+  },
+  "n10": {
+   "text": "天蒙蒙亮的时候，两个人把隔天轮换的话说定了。小丁从包里掏出张便签，压在折叠椅扶手上，老周从胸袋里抽出笔，把日子一格一格划开：单日归他，双日归小丁。保洁推着车过来，钥匙串哗啦响，玻璃门开了。谁也没提这一夜是怎么坐过来的。",
+   "choices": []
+  },
+  "n11": {
+   "text": "窗外的天从深蓝褪成灰白，街对面的灯牌灭了。老周和小丁还并排坐在那两把折叠椅上，谁也没合眼，谁也没再提位置归谁。保洁推着车过来，钥匙串一响，玻璃门开了。靠窗那个工位就在门里，阳光还没照进来，两个人同时站起来，谁也没先迈那一步。",
+   "choices": []
+  },
+  "n12": {
+   "text": "天快亮时，保洁推着车过来开门，顺手把一张对折的通知塞给老周，说是昨天贴的，被人揭了。通知上写着：靠窗区域下月起改为绿植角，工位统一调整到内侧。老周和小丁同时抬头，看向那扇窗。应急灯灭了，走廊亮起来。",
+   "choices": []
+  }
+ },
+ "story": {
+  "storyId": "sc-0011",
+  "schemaVersion": 1,
+  "title": "靠窗工位不眠夜",
+  "tagline": "凌晨四点，两把折叠椅并排。谁先眨眼，谁就搬去复印机旁边。",
+  "summary": "凌晨四点，办公室门口并排摆着两把折叠椅。老周和小丁盯上同一个靠窗工位，谁也不肯先眨眼。规则从「谁先到」一路升级成「谁先睡」，速溶咖啡、冷风、白噪音轮番上阵，八年资历和两年熬夜战绩正面对撞。天亮之前，谁也不敢合眼。",
+  "genre": "office",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "抢工位",
+   "熬夜",
+   "荒诞",
+   "办公室"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "老周",
+    "desc": "入职八年的资深专员，认定靠窗位是老员工福利"
+   },
+   {
+    "id": "c2",
+    "name": "小丁",
+    "desc": "入职两年的同事，自称熬夜战绩全公司第一"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "单双日轮流靠窗",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "天亮了，谁也没赢",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "靠窗位要变绿植角",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "凌晨四点，整层楼只剩应急灯亮着。靠窗那个工位白天晒得到太阳，抬头就是街对面的灯牌。老周说那是老员工的福利，他八年了，该坐；小丁说他入职两年，熬夜战绩全公司第一，位置该归最能熬的人。两人从储物间各搬一把折叠椅，并排摆在办公室门口。玻璃门还锁着，钥匙在保洁那儿。",
+    "label": "凌晨四点的两把折叠椅",
+    "choices": [
+     {
+      "text": "先开口，提议立个规矩",
+      "to": "n2"
+     },
+     {
+      "text": "不开口，把椅子摆正坐好",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "老周先开了口，声音压得低，像怕吵醒整层楼。他说先到先得这规矩太便宜，反正椅子都搬来了，不如换个比法——比谁不睡。小丁抬了抬下巴，没接话，把外套拉链一直拉到顶，又从包里摸出一包速溶咖啡，撕开倒进纸杯，接了热水，搁在两把椅子中间的地上。玻璃门还锁着，钥匙在保洁手上。老周的手指在椅面上敲了两下，话头就停在那儿。",
+    "label": "先开口的那个人",
+    "choices": [
+     {
+      "text": "先问小丁怕不怕熬夜",
+      "to": "n4"
+     },
+     {
+      "text": "提议把比法再抬一格",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "谁也没先开口。小丁把手机屏幕扣在膝盖上，老周抱起胳膊，两人隔着半米走廊互相看着。饮水机在尽头嗡嗡响，应急灯把影子拉得很长。小丁从包里摸出一包速溶咖啡，撕开倒进纸杯，接了热水，只冲了一杯，放在两把椅子中间的地上。热气慢慢散开，谁也没伸手。",
+    "label": "谁先眨眼谁认输",
+    "choices": [
+     {
+      "text": "推过去一杯速溶咖啡",
+      "to": "n4"
+     },
+     {
+      "text": "把话挑明，先定个比法",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "老周把椅子往墙边挪了半寸，说靠窗位不是不能谈，但得有个说法。他压着嗓子问小丁：是想比谁说得动谁，还是比谁先沉得住气。玻璃门还锁着，钥匙在保洁手上，应急灯把两把并排的折叠椅影子投在地上。先前冲的那杯速溶凉在原地，热气早散了。小丁捏着外套的拉链头，没答话，也没挪椅子。",
+    "label": "门还没开时的谈判",
+    "choices": [
+     {
+      "text": "提议边聊边熬，谁先睡谁输",
+      "to": "n6"
+     },
+     {
+      "text": "提议都不说话，谁先开口谁输",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "老周把胳膊一松，说既然都坐到这儿了，就把话挑明：他不困，也不打算先困。他把外套往椅背上一搭，说比法还能再抬一格，天亮之前谁先合眼，谁就认这个位置不归自己。玻璃门还锁着，钥匙在保洁手上，应急灯照着两把并排的折叠椅。小丁抬眼看过来，没吭声。",
+    "label": "加码还是让位",
+    "choices": [
+     {
+      "text": "先拉着小丁复盘白天的事",
+      "to": "n6"
+     },
+     {
+      "text": "把手机调静音，先不吭声",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "话头一开就收不住。老周说一句，小丁接一句，谁也不肯让句子落地，从工位扯到考勤，从考勤扯到谁更配那扇窗。两个人都把声音压得低，像怕惊动整层楼，可谁也没停。应急灯照着两把折叠椅，玻璃门还锁着，钥匙在保洁手上。说到嗓子发干，话还是没断。",
+    "label": "嘴皮子消耗战",
+    "choices": [
+     {
+      "text": "开始讲自己八年的职场往事",
+      "to": "n8"
+     },
+     {
+      "text": "开始念工位使用管理规范",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "小丁起身把走廊尽头的窗推开一道缝，冷风顺着地砖爬过来，先到脚踝，再到膝盖。老周没躲，弯腰端起地上那杯凉透的速溶，抿了一口，又搁回原处。两人换了个较劲的法子：一个靠冷风提神，一个靠咖啡吊着，谁也没说话，谁也没挪椅子。玻璃门还锁着，钥匙在保洁手上，应急灯的影子钉在地上一动不动。",
+    "label": "速溶咖啡对冷风",
+    "choices": [
+     {
+      "text": "私下把规矩定下来",
+      "to": "n8"
+     },
+     {
+      "text": "翻制度、找行政评理",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "老周把嗓子再压低半格，说闹到天亮对谁都不好看，不如两个人自己划个道，别把行政扯进来。小丁问划什么道，老周说隔天换着坐也不是不能谈，条件是摆得出来的。小丁没接，鞋跟在地上蹭了两下，眼睛盯着玻璃门里那片黑。玻璃门还锁着，钥匙在保洁手上，应急灯照着两把并排的折叠椅。",
+    "label": "天亮前的讨价还价",
+    "choices": [
+     {
+      "text": "各退一步，单双日轮流",
+      "to": "n10"
+     },
+     {
+      "text": "谁也不让，耗到天亮",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "老周掏出手机翻公司的制度库，考勤、加班、工位管理一条条往下划。小丁凑过来，两个人把屏幕挪到应急灯底下看。工位那页只登记了编号和资产归属，谁坐哪儿、靠不靠窗，一个字没提。小丁拨了行政的座机，响了很久，没人接。玻璃门还锁着，两把折叠椅并排立在旁边。",
+    "label": "规则里没有答案",
+    "choices": [
+     {
+      "text": "不认这套，继续干耗",
+      "to": "n11"
+     },
+     {
+      "text": "提议改成绿植角",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "天蒙蒙亮的时候，两个人把隔天轮换的话说定了。小丁从包里掏出张便签，压在折叠椅扶手上，老周从胸袋里抽出笔，把日子一格一格划开：单日归他，双日归小丁。保洁推着车过来，钥匙串哗啦响，玻璃门开了。谁也没提这一夜是怎么坐过来的。",
+    "label": "单双日轮流靠窗",
+    "ending": {
+     "id": "e1",
+     "title": "单双日轮流靠窗",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n11",
+    "text": "窗外的天从深蓝褪成灰白，街对面的灯牌灭了。老周和小丁还并排坐在那两把折叠椅上，谁也没合眼，谁也没再提位置归谁。保洁推着车过来，钥匙串一响，玻璃门开了。靠窗那个工位就在门里，阳光还没照进来，两个人同时站起来，谁也没先迈那一步。",
+    "label": "天亮了，谁也没赢",
+    "ending": {
+     "id": "e2",
+     "title": "天亮了，谁也没赢",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n12",
+    "text": "绿植角的提议刚说出口，保洁推着车过来开门，顺手把一张对折的通知塞给老周，说是昨天贴的，被人揭了。通知上写着：靠窗区域下月起改为绿植角，工位统一调整到内侧。老周和小丁同时抬头，看向那扇窗。应急灯灭了，走廊亮起来。",
+    "label": "靠窗位要变绿植角",
+    "ending": {
+     "id": "e3",
+     "title": "靠窗位要变绿植角",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "office",
+  "meta": {
+   "createdAt": "2026-09-22T14:35:44.126Z",
+   "generatedBy": "tools/content/produce.cjs@1",
+   "reviewStatus": "passed",
+   "contentSources": "原创虚构，未使用未授权私人素材",
+   "pipeline": {
+    "proposalId": "sc-0011-p0",
+    "editorPass": true,
+    "pathReviewPass": true,
+    "editorVerdict": "pass",
+    "pathVerdict": "revise",
+    "pathSampling": "10/32",
+    "fixRounds": 0,
+    "openIssuesAtAcceptance": 0,
+    "premium": false
+   }
+  }
+ },
+ "choicesRefreshed": {
+  "at": "2026-09-22T11:03:43.833Z",
+  "touched": 0
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先问小丁怕不怕熬夜",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "先开口，提议立个规矩",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "提议把比法再抬一格",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "提议边聊边熬，谁先睡谁输",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "推过去一杯速溶咖啡",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "提议都不说话，谁先开口谁输",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "开始讲自己八年的职场往事",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "先拉着小丁复盘白天的事",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "开始念工位使用管理规范",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "各退一步，单双日轮流",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "私下把规矩定下来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "谁也不让，耗到天亮",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "不认这套，继续干耗",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不开口，把椅子摆正坐好",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把话挑明，先定个比法",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把手机调静音，先不吭声",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "翻制度、找行政评理",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "提议改成绿植角",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 32,
+    "capped": false,
+    "visitedPairs": 12,
+    "totalPairs": 12,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 8,
+    "e2": 16,
+    "e3": 8
+   },
+   "nodeCount": 12,
+   "endingCount": 3,
+   "avgNodeCjk": 109,
+   "totalChoices": 18,
+   "avgPathLen": 6,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先问小丁怕不怕熬夜",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "先开口，提议立个规矩",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "提议把比法再抬一格",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "提议边聊边熬，谁先睡谁输",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "推过去一杯速溶咖啡",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "提议都不说话，谁先开口谁输",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "开始讲自己八年的职场往事",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "先拉着小丁复盘白天的事",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "开始念工位使用管理规范",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "各退一步，单双日轮流",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "私下把规矩定下来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "谁也不让，耗到天亮",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "不认这套，继续干耗",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不开口，把椅子摆正坐好",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把话挑明，先定个比法",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把手机调静音，先不吭声",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "翻制度、找行政评理",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "提议改成绿植角",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "editorReview": {
+  "at": "2026-09-22T14:35:26.401Z",
+  "editorIssues": [],
+  "verdict": "pass",
+  "fixRounds": 0
+ },
+ "pathReview": {
+  "at": "2026-09-22T14:35:44.113Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 2,
+    "issue": "小丁刚提议改绿植角，保洁就递来同内容通知，巧合感强、缺铺垫",
+    "suggest": "让通知内容与提议略有偏差，或先埋通知被揭的伏笔",
+    "evidence": "绿植角的提议刚说出口，保洁推着车过来开门，顺手把一张对折的通知塞给老周……通知上写着：靠窗区域下月起改为绿植角"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 6,
+    "issue": "选择推咖啡过去，下一节点仍写那杯凉在原地，动作没落地",
+    "suggest": "补一句咖啡被推过去或改掉“凉在原地”的措辞",
+    "evidence": "先前冲的那杯速溶凉在原地，热气早散了"
+   }
+  ],
+  "verdict": "revise"
+ },
+ "finalCheck": {
+  "ok": true,
+  "codes": [],
+  "openIssuesAfterDedup": 0,
+  "openIssuesRaw": 0,
+  "openIssues": [],
+  "at": "2026-09-22T14:35:44.126Z"
+ }
+}

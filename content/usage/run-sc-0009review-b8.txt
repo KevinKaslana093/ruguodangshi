@@ -1,0 +1,4 @@
+编辑审核 verdict=pass，issues=0
+路径审核 verdict=pass，issues=1（抽样 10/32）
+  [minor] 路径5 :: 选项提到“受理台”，但该路径从未到过或听说过受理台 | 证据: 绕开受理台，往走廊深处走
+已写回 draft 审核结论

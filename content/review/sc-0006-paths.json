@@ -1,0 +1,21 @@
+{
+ "storyId": "sc-0006",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-21T14:12:30.675Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 0,
+    "issue": "第二炉已成功出炉，结局却仍以咸蛋糕收尾，阿栗吃哪盘未交代",
+    "suggest": "点明阿栗先切的是那盘咸的，或说明两盘都尝了",
+    "evidence": "第二炉是在天快亮时出的烤箱……阿栗又叉了一块，含在嘴里，慢慢点了点头，说这样也挺好吃"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

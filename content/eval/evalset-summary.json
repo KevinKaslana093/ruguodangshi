@@ -1,0 +1,30 @@
+{
+ "at": "2026-09-22T05:46:10.327Z",
+ "count": 2400,
+ "byGenre": {
+  "office": 300,
+  "dorm": 300,
+  "pet": 300,
+  "travel": 300,
+  "birthday": 300,
+  "mystery": 300,
+  "scifi": 300,
+  "warm": 300
+ },
+ "byMechanic": {
+  "pure-dag": 304,
+  "trust-int": 304,
+  "enum-route": 304,
+  "bool-flag": 304,
+  "merge-back": 296,
+  "fake-branch-trap": 296,
+  "long-path": 296,
+  "three-enders": 296
+ },
+ "byDifficulty": {
+  "偏难": 791,
+  "常规": 826,
+  "简单": 783
+ },
+ "file": "content/eval/evalset.jsonl"
+}

@@ -1,0 +1,3590 @@
+{
+ "proposals": [
+  {
+   "conflict": "主角把缺点写得越真诚，系统越判定他适合升职。",
+   "differs": "冲突在系统算法与自我认知错位，非人际。",
+   "hook": "他删掉第19版缺点，屏幕弹出：恭喜，匹配管理岗。",
+   "protagonist": "小周，绩效系统测试员"
+  },
+  {
+   "conflict": "全组缺点雷同，主管要求有人改成别的以凑多样性。",
+   "differs": "冲突在集体指标与个人诚实之间的博弈。",
+   "hook": "会议室白板写着：缺人，还缺一个不一样的缺点。",
+   "protagonist": "阿凯，五人小组组员"
+  },
+  {
+   "conflict": "主角每写一条缺点，对应同事当天就真的犯这个错。",
+   "differs": "冲突带荒诞因果，前两个是制度与人际。",
+   "hook": "他刚写下“拖延”，隔壁工位的文件就晚交了三小时。",
+   "protagonist": "林编辑，内刊文字编辑"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "越真诚，越升职",
+  "tagline": "他把缺点一条条写实，系统就一条条把他往管理岗上推。",
+  "summary": "小周是绩效系统的测试员，本职是把自评模板试到出问题。可他删了一版又一版缺点，系统给他的管理潜质分只涨不跌。弹窗弹出：恭喜，匹配管理岗。主管老陈当了真，面谈、情境模拟、最终自评一路排开。小周只想证明这是个bug，却发现整层楼的人都在等这个bug成真。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "系统",
+   "测试员",
+   "黑色幽默"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "小周",
+    "desc": "绩效系统测试员，缺点写得过分真诚"
+   },
+   {
+    "id": "c2",
+    "name": "老陈",
+    "desc": "部门主管，把系统报表当成圣旨"
+   },
+   {
+    "id": "c3",
+    "name": "系统",
+    "desc": "弹窗人格，永远温和地宣布坏消息"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "工位·弹窗",
+    "purpose": "弹出管理岗匹配，必须决定下一步",
+    "choices": [
+     {
+      "text": "关掉弹窗，先去找老陈探口风",
+      "to": "n2"
+     },
+     {
+      "text": "把弹窗截图，直接摊到他面前",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "主管工位·探口风",
+    "purpose": "套老陈口风，得知他要当面验证",
+    "choices": [
+     {
+      "text": "按系统脚本，演个铁腕主管",
+      "to": "n4"
+     },
+     {
+      "text": "照自己性子，演个软主管",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "主管工位·摊截图",
+    "purpose": "摊开截图，逼老陈表态要不要管",
+    "choices": [
+     {
+      "text": "把截图亮出来，照着演强硬",
+      "to": "n4"
+     },
+     {
+      "text": "跳过截图，按自己脾气演",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "会议室·强硬剧本",
+    "purpose": "硬演铁腕，系统判定管理潜质更高",
+    "choices": [
+     {
+      "text": "把缺点一条条照实写满",
+      "to": "n6"
+     },
+     {
+      "text": "每条缺点后面加改进计划",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "会议室·软性剧本",
+    "purpose": "本色出演软主管，系统判定更合适",
+    "choices": [
+     {
+      "text": "缺点原样照抄进自评",
+      "to": "n6"
+     },
+     {
+      "text": "把缺点翻译成管理优势",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "自评表·照实填",
+    "purpose": "照实写缺点，系统分值继续上涨",
+    "choices": [
+     {
+      "text": "把自评交上去，等系统出结果",
+      "to": "n8"
+     },
+     {
+      "text": "先按住不交，回头再核对一遍",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "终评前·两张牌",
+    "purpose": "老陈宣布终评开始，小周决定先出哪张牌",
+    "choices": [
+     {
+      "text": "把判定反转的截图摊在桌上",
+      "to": "n8"
+     },
+     {
+      "text": "继续照实念自己的缺点",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "终评现场·摊截图",
+    "purpose": "当众指出判定反转，老陈要一个当场结论",
+    "choices": [
+     {
+      "text": "让老陈当场复核全部数据",
+      "to": "n10"
+     },
+     {
+      "text": "建议先把bug写进复盘报告",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "终评现场·念缺点",
+    "purpose": "照实念缺点，系统反而给出更具体的岗位匹配",
+    "choices": [
+     {
+      "text": "顺着匹配结果点头应下",
+      "to": "n11"
+     },
+     {
+      "text": "把缺点逐条改写成自评规则",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": "e1",
+    "label": "恭喜，匹配管理岗",
+    "purpose": "复核数据全对上，系统判定正式生效",
+    "choices": []
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": "e2",
+    "label": "系统升级，测试岗取消",
+    "purpose": "升级后测试岗被裁撤，他只剩管理岗一条路",
+    "choices": []
+   },
+   {
+    "id": "n12",
+    "level": 5,
+    "endingId": "e3",
+    "label": "缺点写成了规则",
+    "purpose": "缺点变成系统条文，他成了规则本身",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "恭喜，匹配管理岗",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "系统升级，测试岗取消",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "他把缺点写成了规则",
+    "kind": "twist"
+   }
+  ]
+ },
+ "skeletonSignature": "grid12s:12",
+ "shape": {
+  "id": "grid12s",
+  "note": "六个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 12,
+  "paths": 32,
+  "minLen": 6,
+  "maxLen": 6,
+  "levels": 6,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "（结局入口）"
+  ],
+  "n11": [
+   "n8",
+   "n9",
+   "（结局入口）"
+  ],
+  "n12": [
+   "n9",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n1": {
+   "text": "小周的屏幕上又跳出一只弹窗，白底绿字，慢条斯理：恭喜，匹配管理岗。他刚把自评里最后一版缺点删掉，管理潜质分又往上抬了一格。窗口右下角两个按钮都亮着，走廊尽头老陈的隔断里灯还开着，敲键盘的声音一下一下传过来。他把手搭在鼠标上，没动。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "关掉弹窗，先去找老陈探口风"
+    },
+    {
+     "to": "n3",
+     "text": "把弹窗截图，直接摊到他面前"
+    }
+   ]
+  },
+  "n2": {
+   "text": "老陈的隔断里摊着一张系统报表，他拿笔尖点着小周那行分数，说这分不是白来的，得当面验一验。他早排好了情境模拟，让小周坐主位，看怎么带人；系统也刚把模拟脚本推进他的邮箱，题面写在里面。小周张了张嘴，想说那只是个弹窗，报表上的数字他一个字都不信。老陈把笔搁下，等他表态。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "照着系统脚本，演个铁腕主管"
+    },
+    {
+     "to": "n5",
+     "text": "照自己性子，演个软主管"
+    }
+   ]
+  },
+  "n3": {
+   "text": "老陈的隔断里摊着那张系统报表，还有系统刚推来的情境模拟脚本。小周把手机掏出来，屏幕转过去，弹窗那行绿字正对着老陈：恭喜，匹配管理岗。他说这东西是他自己测出来的，一个字都不该当真。老陈看了很久，把报表推回他面前，说验一验总没错，会议室已经腾出来了，题面就在脚本里。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "把截图留在桌上，进去演强硬"
+    },
+    {
+     "to": "n5",
+     "text": "收起截图，按脾气演个软主管"
+    }
+   ]
+  },
+  "n4": {
+   "text": "会议室的门关上，投屏挂着系统推来的情境脚本。小周按老陈安排坐了主位，把题面往下念，念得又快又硬：任务分下去，节点卡死，谁做不到谁说话，一句软话都没有。老陈坐在侧边，笔尖在纸上走，没打断他。脚本翻到最后，投屏角落浮出一行小字，说本轮情境已记录。老陈从文件夹里抽出一张最终自评表，推到他面前。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "把缺点一条条照实写满"
+    },
+    {
+     "to": "n7",
+     "text": "每条缺点后面加改进计划"
+    }
+   ]
+  },
+  "n5": {
+   "text": "会议室的门关上，投屏挂着系统推来的情境脚本。小周按老陈安排坐了主位，没端架子，先问对面扮演下属的人手上卡在哪，再把活一块块分出去，谁做哪块、什么时候回头对一遍，说得很慢。老陈坐在侧边，笔尖在纸上走，没打断他。脚本翻到最后，投屏角落浮出一行小字，说本轮情境已记录。老陈从文件夹里抽出一张最终自评表，推到他面前。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "缺点原样照抄进自评"
+    },
+    {
+     "to": "n7",
+     "text": "把缺点翻译成管理优势"
+    }
+   ]
+  },
+  "n6": {
+   "text": "自评表摊在会议室桌上，缺点那一栏还空着。小周没绕，一条条照实写：改需求时说话太冲、催进度不看对方难处、出了问题先想着撇清。写到一半，投屏角落的分又往上抬了一格，弹窗慢条斯理地亮了一下。老陈没催他，只说填完给他看一眼。他把笔搁下，表还摊在面前。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "把自评交上去，等系统出结果"
+    },
+    {
+     "to": "n9",
+     "text": "先不交，留到终评当面念出来"
+    }
+   ]
+  },
+  "n7": {
+   "text": "投屏角落那行小字还亮着：本轮情境已记录。老陈把最终自评表推到他面前，笔尖在表头点了点，说终评现在开始，让他把手上的东西摆到桌面上来。小周把手机搁到桌沿，屏幕朝下，表就在他手边。两张牌，先出哪一张，老陈没催，会议室里没人再出声。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "把判定反转的截图摊在桌上"
+    },
+    {
+     "to": "n9",
+     "text": "继续照实念自己的缺点"
+    }
+   ]
+  },
+  "n8": {
+   "text": "小周把手机翻过来，屏幕转向老陈：那行绿字还在，往下拖，是他删掉的每一版缺点和跟着往上抬的分数，一条条排着。他说这不是他的表现，是判定反了。投屏上脚本的最后一页还挂着，老陈把纸笔往边上一推，看完手机，又看一眼屏幕，说别讲原理，你现在就给我一个当场能落地的结论。会议室里等着他开口。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "让老陈当场复核全部数据"
+    },
+    {
+     "to": "n11",
+     "text": "建议先把bug写进复盘报告"
+    }
+   ]
+  },
+  "n9": {
+   "text": "小周没动手机，把表拉到面前，缺点那一栏一条条念出来：改需求时说话太冲、催进度不看对方难处、出了问题先想着撇清。念一条，投屏角落的分就往上抬一格；投屏上的弹窗慢条斯理地补了一行，说这些特质与某类管理岗匹配度更高，后面还跟着一串更细的条目。老陈笔尖停了，抬眼看小周。表还摊在他手里。",
+   "choices": [
+    {
+     "to": "n11",
+     "text": "顺着匹配结果点头应下"
+    },
+    {
+     "to": "n12",
+     "text": "把缺点逐条改写成自评规则"
+    }
+   ]
+  },
+  "n10": {
+   "text": "老陈把手机接过去，屏幕还亮着，删掉的每一版缺点都排在那行往上抬的分后面。他一条条对完，把手机转回来，说数据复核过了，对得上。投屏上脚本最后一页翻过去，弹窗又浮出来，白底绿字，慢条斯理地念：恭喜，匹配管理岗。判定那一栏后面跟着两个字，生效。小周坐在主位上，手边那张表还摊着。",
+   "choices": []
+  },
+  "n11": {
+   "text": "投屏角落那行小字自己往下滚，系统把这一轮记完，推来一条归档通知：情境记录已入档。紧跟着第二条跟上来，说本次升级里测试岗并入管理序列，原岗位取消。会议室里没人出声。老陈把笔搁下，看一眼投屏，又看一眼他手边那张自评表。小周还坐在主位上，缺点那一栏是他自己填的。",
+   "choices": []
+  },
+  "n12": {
+   "text": "投屏上那行补注没有停，把他刚念过的几条一条条接过去，改写成条文：改需求时说话太冲，记为推进果断；催进度不看对方难处，记为结果导向；出了问题先想着撇清，记为边界清晰。系统说这几条已经写进下一版模板，落款处是他的名字。老陈抬着头看投屏，笔尖停在纸上，没动。",
+   "choices": []
+  }
+ },
+ "story": {
+  "storyId": "sc-0013",
+  "schemaVersion": 1,
+  "title": "越真诚，越升职",
+  "tagline": "他把缺点一条条写实，系统就一条条把他往管理岗上推。",
+  "summary": "小周是绩效系统的测试员，本职是把自评模板试到出问题。可他删了一版又一版缺点，系统给他的管理潜质分只涨不跌。弹窗弹出：恭喜，匹配管理岗。主管老陈当了真，面谈、情境模拟、最终自评一路排开。小周只想证明这是个bug，却发现整层楼的人都在等这个bug成真。",
+  "genre": "office",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "系统",
+   "测试员",
+   "黑色幽默"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "小周",
+    "desc": "绩效系统测试员，缺点写得过分真诚"
+   },
+   {
+    "id": "c2",
+    "name": "老陈",
+    "desc": "部门主管，把系统报表当成圣旨"
+   },
+   {
+    "id": "c3",
+    "name": "系统",
+    "desc": "弹窗人格，永远温和地宣布坏消息"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "恭喜，匹配管理岗",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "系统升级，测试岗取消",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "他把缺点写成了规则",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "小周的屏幕上又跳出一只弹窗，白底绿字，慢条斯理：恭喜，匹配管理岗。他刚把自评里最后一版缺点删掉，管理潜质分又往上抬了一格。窗口右下角两个按钮都亮着，走廊尽头老陈的隔断里灯还开着，敲键盘的声音一下一下传过来。他把手搭在鼠标上，没动。",
+    "label": "工位·弹窗",
+    "choices": [
+     {
+      "text": "关掉弹窗，先去找老陈探口风",
+      "to": "n2"
+     },
+     {
+      "text": "把弹窗截图，直接摊到他面前",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "老陈的隔断里摊着一张系统报表，他拿笔尖点着小周那行分数，说这分不是白来的，得当面验一验。他早排好了情境模拟，让小周坐主位，看怎么带人；系统也刚把模拟脚本推进他的邮箱，题面写在里面。小周张了张嘴，想说那只是个弹窗，报表上的数字他一个字都不信。老陈把笔搁下，等他表态。",
+    "label": "主管工位·探口风",
+    "choices": [
+     {
+      "text": "照着系统脚本，演个铁腕主管",
+      "to": "n4"
+     },
+     {
+      "text": "照自己性子，演个软主管",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "老陈的隔断里摊着那张系统报表，还有系统刚推来的情境模拟脚本。小周把手机掏出来，屏幕转过去，弹窗那行绿字正对着老陈：恭喜，匹配管理岗。他说这东西是他自己测出来的，一个字都不该当真。老陈看了很久，把报表推回他面前，说验一验总没错，会议室已经腾出来了，题面就在脚本里。",
+    "label": "主管工位·摊截图",
+    "choices": [
+     {
+      "text": "把截图留在桌上，进去演强硬",
+      "to": "n4"
+     },
+     {
+      "text": "收起截图，按脾气演个软主管",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "会议室的门关上，投屏挂着系统推来的情境脚本。小周按老陈安排坐了主位，把题面往下念，念得又快又硬：任务分下去，节点卡死，谁做不到谁说话，一句软话都没有。老陈坐在侧边，笔尖在纸上走，没打断他。脚本翻到最后，投屏角落浮出一行小字，说本轮情境已记录。老陈从文件夹里抽出一张最终自评表，推到他面前。",
+    "label": "会议室·强硬剧本",
+    "choices": [
+     {
+      "text": "把缺点一条条照实写满",
+      "to": "n6"
+     },
+     {
+      "text": "每条缺点后面加改进计划",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "会议室的门关上，投屏挂着系统推来的情境脚本。小周按老陈安排坐了主位，没端架子，先问对面扮演下属的人手上卡在哪，再把活一块块分出去，谁做哪块、什么时候回头对一遍，说得很慢。老陈坐在侧边，笔尖在纸上走，没打断他。脚本翻到最后，投屏角落浮出一行小字，说本轮情境已记录。老陈从文件夹里抽出一张最终自评表，推到他面前。",
+    "label": "会议室·软性剧本",
+    "choices": [
+     {
+      "text": "缺点原样照抄进自评",
+      "to": "n6"
+     },
+     {
+      "text": "把缺点翻译成管理优势",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "自评表摊在会议室桌上，缺点那一栏还空着。小周没绕，一条条照实写：改需求时说话太冲、催进度不看对方难处、出了问题先想着撇清。写到一半，投屏角落的分又往上抬了一格，弹窗慢条斯理地亮了一下。老陈没催他，只说填完给他看一眼。他把笔搁下，表还摊在面前。",
+    "label": "自评表·照实填",
+    "choices": [
+     {
+      "text": "把自评交上去，等系统出结果",
+      "to": "n8"
+     },
+     {
+      "text": "先不交，留到终评当面念出来",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "投屏角落那行小字还亮着：本轮情境已记录。老陈把最终自评表推到他面前，笔尖在表头点了点，说终评现在开始，让他把手上的东西摆到桌面上来。小周把手机搁到桌沿，屏幕朝下，表就在他手边。两张牌，先出哪一张，老陈没催，会议室里没人再出声。",
+    "label": "终评前·两张牌",
+    "choices": [
+     {
+      "text": "把判定反转的截图摊在桌上",
+      "to": "n8"
+     },
+     {
+      "text": "继续照实念自己的缺点",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "小周把手机翻过来，屏幕转向老陈：那行绿字还在，往下拖，是他删掉的每一版缺点和跟着往上抬的分数，一条条排着。他说这不是他的表现，是判定反了。投屏上脚本的最后一页还挂着，老陈把纸笔往边上一推，看完手机，又看一眼屏幕，说别讲原理，你现在就给我一个当场能落地的结论。会议室里等着他开口。",
+    "label": "终评现场·摊截图",
+    "choices": [
+     {
+      "text": "让老陈当场复核全部数据",
+      "to": "n10"
+     },
+     {
+      "text": "建议先把bug写进复盘报告",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "小周没动手机，把表拉到面前，缺点那一栏一条条念出来：改需求时说话太冲、催进度不看对方难处、出了问题先想着撇清。念一条，投屏角落的分就往上抬一格；投屏上的弹窗慢条斯理地补了一行，说这些特质与某类管理岗匹配度更高，后面还跟着一串更细的条目。老陈笔尖停了，抬眼看小周。表还摊在他手里。",
+    "label": "终评现场·念缺点",
+    "choices": [
+     {
+      "text": "顺着匹配结果点头应下",
+      "to": "n11"
+     },
+     {
+      "text": "把缺点逐条改写成自评规则",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "老陈把手机接过去，屏幕还亮着，删掉的每一版缺点都排在那行往上抬的分后面。他一条条对完，把手机转回来，说数据复核过了，对得上。投屏上脚本最后一页翻过去，弹窗又浮出来，白底绿字，慢条斯理地念：恭喜，匹配管理岗。判定那一栏后面跟着两个字，生效。小周坐在主位上，手边那张表还摊着。",
+    "label": "恭喜，匹配管理岗",
+    "ending": {
+     "id": "e1",
+     "title": "恭喜，匹配管理岗",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n11",
+    "text": "投屏角落那行小字自己往下滚，系统把这一轮记完，推来一条归档通知：情境记录已入档。紧跟着第二条跟上来，说本次升级里测试岗并入管理序列，原岗位取消。会议室里没人出声。老陈把笔搁下，看一眼投屏，又看一眼他手边那张自评表。小周还坐在主位上，缺点那一栏是他自己填的。",
+    "label": "系统升级，测试岗取消",
+    "ending": {
+     "id": "e2",
+     "title": "系统升级，测试岗取消",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n12",
+    "text": "投屏上那行补注没有停，把他刚念过的几条一条条接过去，改写成条文：改需求时说话太冲，记为推进果断；催进度不看对方难处，记为结果导向；出了问题先想着撇清，记为边界清晰。系统说这几条已经写进下一版模板，落款处是他的名字。老陈抬着头看投屏，笔尖停在纸上，没动。",
+    "label": "缺点写成了规则",
+    "ending": {
+     "id": "e3",
+     "title": "他把缺点写成了规则",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "office",
+  "meta": {
+   "createdAt": "2026-09-22T11:28:22.340Z",
+   "generatedBy": "tools/content/produce.cjs@1",
+   "reviewStatus": "passed",
+   "contentSources": "原创虚构，未使用未授权私人素材",
+   "pipeline": {
+    "proposalId": "sc-0013-p0",
+    "editorPass": true,
+    "pathReviewPass": true,
+    "editorVerdict": "revise",
+    "pathVerdict": "revise",
+    "pathSampling": "10/32",
+    "fixRounds": 2,
+    "openIssuesAtAcceptance": 0,
+    "premium": false
+   }
+  }
+ },
+ "choicesRefreshed": {
+  "at": "2026-09-22T11:21:51.919Z",
+  "touched": 0
+ },
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 32,
+    "capped": false,
+    "visitedPairs": 12,
+    "totalPairs": 12,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 8,
+    "e2": 16,
+    "e3": 8
+   },
+   "nodeCount": 12,
+   "endingCount": 3,
+   "avgNodeCjk": 117,
+   "totalChoices": 18,
+   "avgPathLen": 6,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "照着系统脚本，演个铁腕主管",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "关掉弹窗，先去找老陈探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "照自己性子，演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "把缺点一条条照实写满",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "把截图留在桌上，进去演强硬",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "每条缺点后面加改进计划",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把自评交上去，等系统出结果",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "缺点原样照抄进自评",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先不交，留到终评当面念出来",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "让老陈当场复核全部数据",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "把判定反转的截图摊在桌上",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "建议先把bug写进复盘报告",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "顺着匹配结果点头应下",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "把弹窗截图，直接摊到他面前",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "收起截图，按脾气演个软主管",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把缺点翻译成管理优势",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "继续照实念自己的缺点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "把缺点逐条改写成自评规则",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "照着系统脚本，演个铁腕主管",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "关掉弹窗，先去找老陈探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "照自己性子，演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "把缺点一条条照实写满",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "把截图留在桌上，进去演强硬",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "每条缺点后面加改进计划",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把自评交上去，等系统出结果",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "缺点原样照抄进自评",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先不交，留到终评当面念出来",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "让老陈当场复核全部数据",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "把判定反转的截图摊在桌上",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "建议先把bug写进复盘报告",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "顺着匹配结果点头应下",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "把弹窗截图，直接摊到他面前",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "收起截图，按脾气演个软主管",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把缺点翻译成管理优势",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "继续照实念自己的缺点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "把缺点逐条改写成自评规则",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "editorReview": {
+  "at": "2026-09-22T11:22:15.923Z",
+  "editorIssues": [
+   {
+    "severity": "minor",
+    "nodeId": "n9",
+    "issue": "从n7进入时自评表刚被推来、缺点栏为空，n9却逐条念出已填内容",
+    "suggest": "n7补明表已填好，或n9改为当场现写",
+    "evidence": "老陈把最终自评表推到他面前……把表拉到面前，缺点那一栏一条条念出来：改需求时说话太冲、催进度不看对方难处、出了问题先想着撇清。"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ },
+ "pathReview": {
+  "at": "2026-09-22T11:22:31.080Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 3,
+    "issue": "缺点栏尚空就选\"加改进计划\"，且推表动作重复一次",
+    "suggest": "补一句他当场落笔写缺点，或删掉重复的推表动作",
+    "evidence": "老陈从文件夹里抽出一张最终自评表，推到他面前。……老陈把最终自评表推到他面前，笔尖在表头点了点"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 6,
+    "issue": "主管工位已摊过截图，终评现场又\"把手机翻过来\"重摊，读感重复",
+    "suggest": "终评处改为\"把手机再推过去\"，点明这次多出的是删改记录",
+    "evidence": "小周把手机掏出来，屏幕转过去……小周把手机翻过来，屏幕转向老陈"
+   }
+  ],
+  "verdict": "revise"
+ },
+ "mergeCheck": {
+  "at": "2026-09-22T11:24:41.037Z",
+  "issues": [],
+  "mergeCount": 0,
+  "propCount": 0,
+  "factCount": 0,
+  "levelCount": 0,
+  "fixRounds": 1
+ },
+ "fixRounds": 2,
+ "fixLog": [
+  {
+   "round": 1,
+   "applied": 2,
+   "touched": [
+    "n2",
+    "n3"
+   ],
+   "uncovered": [
+    "n7"
+   ],
+   "note": "在n2补写小周出门前已截图存手机，并把n3选项从“把截图留在桌上”改为“收起手机/不亮截图”，确保所有通往n7、n8的路径手机里都保有截图道具。",
+   "at": "2026-09-22T11:23:34.524Z"
+  },
+  {
+   "round": 2,
+   "applied": 2,
+   "touched": [
+    "n2",
+    "n7"
+   ],
+   "uncovered": [],
+   "note": "成因在上游：在n2补了一句小周出门前把弹窗和那几版分数截图存进手机，使n2→n4/n5→n7/n8这条路径也有截图道具；n7同步点明手机里存着截图，两条上游路线（n2、n3）走到n7、n8时道具说法一致，均成立。",
+   "at": "2026-09-22T11:25:24.482Z"
+  }
+ ],
+ "regressions": [
+  {
+   "at": "2026-09-22T11:24:41.026Z",
+   "round": 1,
+   "scope": [
+    "n2",
+    "n1",
+    "n4",
+    "n5",
+    "n3"
+   ],
+   "issues": []
+  },
+  {
+   "at": "2026-09-22T11:28:22.335Z",
+   "round": 2,
+   "scope": [
+    "n2",
+    "n1",
+    "n4",
+    "n5",
+    "n7",
+    "n8",
+    "n9"
+   ],
+   "issues": []
+  }
+ ],
+ "finalCheck": {
+  "ok": true,
+  "codes": [],
+  "openIssuesAfterDedup": 0,
+  "openIssuesRaw": 0,
+  "openIssues": [],
+  "at": "2026-09-22T11:28:22.340Z"
+ }
+}

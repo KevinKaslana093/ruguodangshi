@@ -1,0 +1,5091 @@
+{
+ "proposals": [
+  {
+   "conflict": "闹钟响了七遍无人认领，因为认领者要负责叫全寝起床",
+   "differs": "焦点是责任归属，不是抢资源也不是打赌",
+   "hook": "第七遍闹铃响，六个人同时把脸埋进被子。",
+   "protagonist": "阿栗，上铺赖床冠军"
+  },
+  {
+   "conflict": "断电夜只剩一块满电充电宝，谁先起床谁独占",
+   "differs": "焦点是稀缺资源争夺，围绕断电后的最后电量",
+   "hook": "灯一灭，床头那点绿光成了全屋最亮的东西。",
+   "protagonist": "老周，下铺充电宝守夜人"
+  },
+  {
+   "conflict": "全寝打赌谁先起床就请奶茶，于是集体装睡到中午",
+   "differs": "焦点是面子赌局，比谁更能装死不动",
+   "hook": "中午十一点，六个人睁着眼，谁都不动。",
+   "protagonist": "小柚，赌约发起人兼裁判"
+  }
+ ],
+ "chosen": 0,
+ "story": {
+  "title": "第七遍闹铃没人认领",
+  "tagline": "闹钟响了七遍，四个人装睡，谁先认领谁就得叫全寝起床。",
+  "summary": "早上七点十二分，宿舍的闹钟响了第七遍。上学期立下的规矩还在：谁按掉闹钟，谁就得负责把全寝叫起来。于是四个人把脸埋进被子，谁都不肯先动。昨晚宿舍断过电，手机只剩百分之三的电量，早八在八点整。这是一场关于起床的拉锯战。",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "waves",
+   "hue": 205
+  },
+  "tags": [
+   "宿舍",
+   "早八",
+   "群像",
+   "搞笑"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "阿栗",
+    "desc": "上铺，赖床冠军，闹钟响七遍也不动。"
+   },
+   {
+    "id": "c2",
+    "name": "老陶",
+    "desc": "下铺，随身带小本子，什么都爱算一算。"
+   },
+   {
+    "id": "c3",
+    "name": "米粒",
+    "desc": "对铺，本子上记满课表和宿舍大事。"
+   },
+   {
+    "id": "c4",
+    "name": "大鹏",
+    "desc": "门口铺，嗓门最大，昨晚手机充得最满。"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n14",
+    "title": "全员到齐",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n15",
+    "title": "八点零七分",
+    "kind": "regret"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n16",
+    "title": "空教室",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "label": "第七遍闹铃",
+    "text": "七点十二分，第七遍闹铃在中间的书桌上响。四个人同时把脸埋进被子，谁也没动。上学期有人立过规矩：谁按掉闹钟，谁就得负责把全寝叫起来。从那以后，这间屋子再没人认领过闹钟。手机屏幕亮着，电量百分之三。",
+    "choices": [
+     {
+      "text": "把枕头扔过去盖住它",
+      "to": "n2"
+     },
+     {
+      "text": "下床按掉，认了",
+      "to": "n3"
+     },
+     {
+      "text": "喊一嗓子谁的闹钟",
+      "to": "n4"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "label": "枕头飞了",
+    "text": "上铺的枕头飞过去，没盖住闹钟，砸在老陶脸上。老陶坐起来，头发竖着，先看闹钟，再看枕头，最后看上铺。他说：这枕头飞过来，按规矩算谁认领？阿栗只好下床去捡，脚踩在凉地板上。老陶掏出枕边的小本子，翻到今天那一页。",
+    "choices": [
+     {
+      "text": "说我认领，但只叫一遍",
+      "to": "n5"
+     },
+     {
+      "text": "说这不算认领，是误伤",
+      "to": "n6"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "label": "爬下梯子",
+    "text": "阿栗掀开被子，踩着梯子下来，摸到书桌上那部还在响的手机。屏幕上是七点十三分，闹铃备注写着早八。米粒立刻从对铺坐起来，眼睛还没睁开，声音先到了：你按的，你认领。大鹏在上铺翻了个身，补了一句：认领了就得挨个叫，规矩。阿栗站在地上，脚底板贴着凉地板。",
+    "choices": [
+     {
+      "text": "认了，挨个叫",
+      "to": "n5"
+     },
+     {
+      "text": "把手机放回桌上，爬回床",
+      "to": "n6"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "label": "喊了一嗓子",
+    "text": "阿栗趴在床沿喊了一句：谁的闹钟谁负责。屋里安静了两秒。米粒从对铺回：那你的闹钟为什么在中间桌上。大鹏说：反正不是我的，我的是震动。老陶翻了个身，说要不投票。四个人都还躺着，闹钟继续响，一点没有要停的意思。",
+    "choices": [
+     {
+      "text": "赞成投票",
+      "to": "n6"
+     },
+     {
+      "text": "说投票太麻烦",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "label": "桌上的手机",
+    "text": "闹钟只剩百分之二的电，屏幕每亮一次都像在倒计时。阿栗走到书桌边，把手机翻过来扣在桌上，声音闷了一点，但还在响。米粒把被子蒙过头顶，大鹏把枕头压在耳朵上，老陶把小本子翻到新的一页，像在等一笔账。四个人都醒着，只是谁都没打算第一个坐起来。",
+    "choices": [
+     {
+      "text": "去掀老陶的被子",
+      "to": "n8"
+     },
+     {
+      "text": "先去叫米粒",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "label": "老陶的账本",
+    "text": "老陶翻开小本子，念出一条昨晚记下的账：十一点零七分，宿舍断电，因为有人同时开了热水壶和吹风机。他说按这个逻辑，早上的闹钟属于公共事务，谁认领谁吃亏。大鹏在被子里闷声回了一句：昨晚最后充电的是你，你手机电量最多。老陶合上本子，不说话了。",
+    "choices": [
+     {
+      "text": "说按老规矩来",
+      "to": "n8"
+     },
+     {
+      "text": "说那就抓阄吧",
+      "to": "n10"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "label": "米粒的本子",
+    "text": "米粒从对铺坐起来，说别吵了，她昨晚在断电前把今天的课表抄在了本子上：八点整，三教，点名。她把本子举起来，上面除了课表还记着一行：本月第 3 次没人认领闹钟。大鹏在被子里说，米粒你不去当宿舍长可惜了。米粒说，当宿舍长要叫起床，我不干。",
+    "choices": [
+     {
+      "text": "说那我来当",
+      "to": "n9"
+     },
+     {
+      "text": "提议抓阄",
+      "to": "n10"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "label": "春卷式防御",
+    "text": "阿栗走到老陶床边，伸手去掀被子。老陶早有准备，把被子裹成一条，像卷春卷一样把自己卷紧，只留一个后脑勺在外面。阿栗扯了三下，没扯动。大鹏在上铺看着，笑出了声。米粒从对铺探出头，问你们到底还上不上课。闹钟在桌上又亮了一下。",
+    "choices": [
+     {
+      "text": "转去掀大鹏的被子",
+      "to": "n11"
+     },
+     {
+      "text": "干脆撕纸抽签吧",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "label": "米粒的条件",
+    "text": "米粒把本子合上，说行，要叫她起床可以，但她有个条件：谁最后出门谁锁门。大鹏立刻说他不锁，他今天要去食堂买包子。老陶说锁门这事可以记在账上。阿栗站在两床之间，发现绕了一圈，叫起床的活还是落在自己头上。",
+    "choices": [
+     {
+      "text": "答应条件，开始叫人",
+      "to": "n11"
+     },
+     {
+      "text": "不答应，改用别的办法",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "label": "四张纸条",
+    "text": "阿栗从老陶的本子上撕了一角纸，分成四份，其中一份画了个圈。四个人围着书桌，谁也没先伸手。老陶说你这是浪费纸。大鹏说抽到圈的人负责叫全寝，抽不到的人负责装作没听见。米粒说这不公平，因为她已经醒了。闹钟屏幕暗了下去，百分之零。",
+    "choices": [
+     {
+      "text": "让老陶先抽",
+      "to": "n12"
+     },
+     {
+      "text": "自己先抽",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "label": "第一个起来的人",
+    "text": "阿栗先叫大鹏。大鹏把被子一掀，坐了起来，头发像被风吹过的草堆。他一边穿袜子一边说，早说啊，我闹钟也响过，就是懒得动。老陶在旁边补了一句：你手机昨晚充到百分之八十，你当然有底气。米粒已经坐在床边系鞋带。屋里终于有了动静。",
+    "choices": [
+     {
+      "text": "抓紧时间，催大家出门",
+      "to": "n14"
+     },
+     {
+      "text": "慢一点，先把话说清楚",
+      "to": "n15"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "label": "抽签的结果",
+    "text": "纸条摊开，圈画在老陶那一张上。老陶盯着纸条看了三秒，把本子合上，说这不算，纸是他自己的。大鹏笑得从上铺滚下来。米粒说愿赌服输。老陶叹了口气，站起来，开始一个一个拍被子。阿栗发现自己居然有点不好意思。",
+    "choices": [
+     {
+      "text": "帮老陶一起叫人",
+      "to": "n14"
+     },
+     {
+      "text": "趁乱去洗漱",
+      "to": "n16"
+     }
+    ]
+   },
+   {
+    "id": "n13",
+    "label": "各退一步",
+    "text": "最后达成的方案是：阿栗负责叫醒，老陶负责记账，米粒负责记时间，大鹏负责开门。四个人各自领了一项，谁也没占便宜。阿栗站在屋子中间，觉得自己像被分了一份工。窗外有自行车铃响了一声，楼下有人在喊名字。",
+    "choices": [
+     {
+      "text": "按分工开始执行",
+      "to": "n15"
+     },
+     {
+      "text": "说这分工太复杂了",
+      "to": "n16"
+     }
+    ]
+   },
+   {
+    "id": "n14",
+    "label": "七点五十五",
+    "text": "四个人在七点五十五分冲进三教的楼门。大鹏手里还捏着半个包子。教室里已经坐了一半人，老师在讲台前翻课件。他们找了最后一排坐下，谁也没提闹钟的事。下课的时候，米粒在本子上又记了一行：本月第 3 次没人认领闹钟，但这次全员到齐。",
+    "ending": {
+     "id": "e1",
+     "title": "全员到齐",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n15",
+    "label": "八点零七分",
+    "text": "推开门的时候，墙上的钟指着八点零七分。老师在点名册上划了一下，说了句下次早点。四个人站在门口，谁也没看谁。回宿舍的路上，老陶翻开本子算了一笔：从七点十二分到八点零七分，一共五十五分钟，其中四十分钟花在谁先起床这件事上。",
+    "ending": {
+     "id": "e2",
+     "title": "八点零七分",
+     "kind": "regret"
+    }
+   },
+   {
+    "id": "n16",
+    "label": "空教室",
+    "text": "四个人一路小跑冲进教室，发现里面空着，黑板上写着本课调至周五。米粒翻出本子对照，才发现她昨晚抄课表时抄错了教室。大鹏笑得蹲在地上。老陶说这算谁的账。阿栗站在空教室里，忽然觉得今天早上那七遍闹钟，响得挺值。",
+    "ending": {
+     "id": "e3",
+     "title": "空教室",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "storyId": "sc-0002",
+  "schemaVersion": 1,
+  "genreId": "office",
+  "meta": {
+   "createdAt": "2026-09-20T23:10:36.950Z",
+   "generatedBy": "tools/content/produce.cjs@1",
+   "reviewStatus": "passed",
+   "contentSources": "原创虚构，未使用未授权私人素材",
+   "pipeline": {
+    "proposalId": "sc-0002-p0",
+    "editorPass": true,
+    "pathReviewPass": true,
+    "editorVerdict": "revise",
+    "pathVerdict": "revise",
+    "pathSampling": "10/48",
+    "fixRounds": 2,
+    "openIssuesAtAcceptance": 0,
+    "premium": true
+   }
+  }
+ },
+ "createUsage": {
+  "reasoningChars": 31176,
+  "contentChars": 7457
+ },
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 48,
+    "capped": false,
+    "visitedPairs": 16,
+    "totalPairs": 16,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 17,
+    "e2": 15,
+    "e3": 16
+   },
+   "nodeCount": 16,
+   "endingCount": 3,
+   "avgNodeCjk": 95,
+   "totalChoices": 27,
+   "avgPathLen": 6,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n8",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n8",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n8",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "答应条件，开始叫人",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n9",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "答应条件，开始叫人",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n9",
+      "n13",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不答应，改用别的办法",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 0,
+       "choiceText": "按分工开始执行",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n9",
+      "n13",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "说我认领，但只叫一遍",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不答应，改用别的办法",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 1,
+       "choiceText": "说这分工太复杂了",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n8",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n8",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n8",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n10",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n10",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n10",
+      "n13",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 0,
+       "choiceText": "按分工开始执行",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n6",
+      "n10",
+      "n13",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "把枕头扔过去盖住它",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "说这不算认领，是误伤",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 1,
+       "choiceText": "说这分工太复杂了",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n8",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n8",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n8",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去掀老陶的被子",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "答应条件，开始叫人",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n9",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "答应条件，开始叫人",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n9",
+      "n13",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不答应，改用别的办法",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 0,
+       "choiceText": "按分工开始执行",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n9",
+      "n13",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "认了，挨个叫",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "先去叫米粒",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不答应，改用别的办法",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 1,
+       "choiceText": "说这分工太复杂了",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n8",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n8",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n8",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n10",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n10",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n10",
+      "n13",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 0,
+       "choiceText": "按分工开始执行",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n6",
+      "n10",
+      "n13",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "下床按掉，认了",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "把手机放回桌上，爬回床",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 1,
+       "choiceText": "说这分工太复杂了",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "转去掀大鹏的被子",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n8",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n8",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "说按老规矩来",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "干脆撕纸抽签吧",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n10",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n10",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n10",
+      "n13",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 0,
+       "choiceText": "按分工开始执行",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n6",
+      "n10",
+      "n13",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "赞成投票",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "说那就抓阄吧",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 1,
+       "choiceText": "说这分工太复杂了",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "说那我来当",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "答应条件，开始叫人",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "抓紧时间，催大家出门",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "说那我来当",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "答应条件，开始叫人",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "慢一点，先把话说清楚",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n9",
+      "n13",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "说那我来当",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不答应，改用别的办法",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 0,
+       "choiceText": "按分工开始执行",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n9",
+      "n13",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "说那我来当",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "不答应，改用别的办法",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 1,
+       "choiceText": "说这分工太复杂了",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n10",
+      "n12",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "提议抓阄",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 0,
+       "choiceText": "帮老陶一起叫人",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n10",
+      "n12",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "提议抓阄",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "让老陶先抽",
+       "to": "n12"
+      },
+      {
+       "nodeId": "n12",
+       "choiceIndex": 1,
+       "choiceText": "趁乱去洗漱",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n10",
+      "n13",
+      "n15"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "提议抓阄",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 0,
+       "choiceText": "按分工开始执行",
+       "to": "n15"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n4",
+      "n7",
+      "n10",
+      "n13",
+      "n16"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 2,
+       "choiceText": "喊一嗓子谁的闹钟",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "说投票太麻烦",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "提议抓阄",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "自己先抽",
+       "to": "n13"
+      },
+      {
+       "nodeId": "n13",
+       "choiceIndex": 1,
+       "choiceText": "说这分工太复杂了",
+       "to": "n16"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n8",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n8",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n8",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "答应条件，开始叫人",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n9",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "答应条件，开始叫人",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n9",
+    "n13",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不答应，改用别的办法",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 0,
+     "choiceText": "按分工开始执行",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n9",
+    "n13",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "说我认领，但只叫一遍",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不答应，改用别的办法",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 1,
+     "choiceText": "说这分工太复杂了",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n8",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n8",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n8",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n10",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n10",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n10",
+    "n13",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 0,
+     "choiceText": "按分工开始执行",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n6",
+    "n10",
+    "n13",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "把枕头扔过去盖住它",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "说这不算认领，是误伤",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 1,
+     "choiceText": "说这分工太复杂了",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n8",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n8",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n8",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去掀老陶的被子",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "答应条件，开始叫人",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n9",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "答应条件，开始叫人",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n9",
+    "n13",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不答应，改用别的办法",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 0,
+     "choiceText": "按分工开始执行",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n9",
+    "n13",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "认了，挨个叫",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "先去叫米粒",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不答应，改用别的办法",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 1,
+     "choiceText": "说这分工太复杂了",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n8",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n8",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n8",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n10",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n10",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n10",
+    "n13",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 0,
+     "choiceText": "按分工开始执行",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n6",
+    "n10",
+    "n13",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "下床按掉，认了",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "把手机放回桌上，爬回床",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 1,
+     "choiceText": "说这分工太复杂了",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "转去掀大鹏的被子",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n8",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n8",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "说按老规矩来",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "干脆撕纸抽签吧",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n10",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n10",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n10",
+    "n13",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 0,
+     "choiceText": "按分工开始执行",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n6",
+    "n10",
+    "n13",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "赞成投票",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "说那就抓阄吧",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 1,
+     "choiceText": "说这分工太复杂了",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "说那我来当",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "答应条件，开始叫人",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "抓紧时间，催大家出门",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "说那我来当",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "答应条件，开始叫人",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "慢一点，先把话说清楚",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n9",
+    "n13",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "说那我来当",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不答应，改用别的办法",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 0,
+     "choiceText": "按分工开始执行",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n9",
+    "n13",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "说那我来当",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "不答应，改用别的办法",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 1,
+     "choiceText": "说这分工太复杂了",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n10",
+    "n12",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "提议抓阄",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 0,
+     "choiceText": "帮老陶一起叫人",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n10",
+    "n12",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "提议抓阄",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "让老陶先抽",
+     "to": "n12"
+    },
+    {
+     "nodeId": "n12",
+     "choiceIndex": 1,
+     "choiceText": "趁乱去洗漱",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n10",
+    "n13",
+    "n15"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "提议抓阄",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 0,
+     "choiceText": "按分工开始执行",
+     "to": "n15"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n4",
+    "n7",
+    "n10",
+    "n13",
+    "n16"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 2,
+     "choiceText": "喊一嗓子谁的闹钟",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "说投票太麻烦",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "提议抓阄",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "自己先抽",
+     "to": "n13"
+    },
+    {
+     "nodeId": "n13",
+     "choiceIndex": 1,
+     "choiceText": "说这分工太复杂了",
+     "to": "n16"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "fixRounds": 2,
+ "fixLog": [
+  {
+   "round": 1,
+   "applied": 6,
+   "note": "n4去掉投票提议并改选项衔接账本，n5改为闹钟已被按掉，n6大鹏改说自己手机电量，n10选项改为直接分工，n11统一为震动闹钟，n16只保留调课一个原因。",
+   "at": "2026-09-20T19:24:54.825Z"
+  },
+  {
+   "round": 2,
+   "applied": 7,
+   "note": "修复闹钟按掉后仍响的描写，统一电量最多者，二选一删除调课冲突，并补明抽签结果。",
+   "at": "2026-09-20T19:28:04.046Z"
+  }
+ ],
+ "editorReview": {
+  "at": "2026-09-20T19:28:29.425Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n6",
+    "issue": "大鹏称老陶电量最多，与人物设定及n11大鹏80%直接冲突",
+    "suggest": "改为大鹏自夸电量最多，或删掉这句反驳"
+   },
+   {
+    "severity": "major",
+    "nodeId": "n16",
+    "issue": "黑板写“调至周五”，却又说米粒抄错教室，两种解释打架",
+    "suggest": "统一为调课或抄错教室，只留一个原因"
+   },
+   {
+    "severity": "major",
+    "nodeId": "n5",
+    "issue": "n3米粒说阿栗已按掉闹钟，n5闹钟却仍在响并耗电",
+    "suggest": "改成只按了贪睡，或删去“你按的”这句"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 2
+ },
+ "pathReview": {
+  "at": "2026-09-20T19:28:43.680Z",
+  "sampled": 10,
+  "totalPaths": 48,
+  "fixRounds": 2,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "major",
+    "pathIndex": 5,
+    "issue": "已按掉闹钟并认领，下节点闹钟仍在响、四人又都没起",
+    "suggest": "按掉后应改为闹钟已停，直接进入叫人环节"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 0,
+    "issue": "大鹏的枕头已飞走砸老陶，却又压在自己耳朵上",
+    "suggest": "改为大鹏用被子蒙头或抱枕"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 6,
+    "issue": "手机已按掉放回桌上，后文闹钟又亮又响",
+    "suggest": "补一句贪睡键或改为屏幕余亮"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 2,
+    "issue": "空教室靠米粒抄错课表解释，前文无任何铺垫",
+    "suggest": "在米粒本子处埋一句课表存疑"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 7,
+    "issue": "自己先抽后直接跳到各退一步，抽签结果缺失",
+    "suggest": "补一句抽签作废或改选别的办法"
+   }
+  ],
+  "verdict": "revise"
+ },
+ "finalCheck": {
+  "ok": true,
+  "codes": [],
+  "openIssuesAfterDedup": 0,
+  "openIssuesRaw": 0,
+  "openIssues": [],
+  "at": "2026-09-20T23:10:36.950Z"
+ },
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "闹钟认领制",
+  "tagline": "闹钟响到没人再数，六个人都在等第一个抬手的人。",
+  "summary": "闹钟响了一轮又一轮，六张被子纹丝不动。寝室里有一条祖传规矩：谁认领闹钟，谁就负责叫全寝起床。于是阿栗、老K、小满和大熊在起床前的最后几分钟里，搬出公约、发起拍卖、组织表决，把一件叫人的小事办成了一场程序正义的拉扯。谁都不想认领，可闹钟还在响。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "rings",
+   "hue": 205
+  },
+  "tags": [
+   "寝室政治",
+   "赖床",
+   "认领制",
+   "荒诞",
+   "群像"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "阿栗",
+    "desc": "上铺赖床冠军，主张谁认领谁倒霉"
+   },
+   {
+    "id": "c2",
+    "name": "老K",
+    "desc": "下铺规则派，随身带打印版寝室公约"
+   },
+   {
+    "id": "c3",
+    "name": "小满",
+    "desc": "闹钟疑似主人，死不承认"
+   },
+   {
+    "id": "c4",
+    "name": "大熊",
+    "desc": "寝室长候选人，最怕担责"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "闹钟响到无人认领",
+    "purpose": "立起僵局：谁认领谁就得叫全寝起床",
+    "choices": [
+     {
+      "text": "闷声装死，等别人先动",
+      "to": "n2"
+     },
+     {
+      "text": "坐起来提议认领制",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "装死失败被点名",
+    "purpose": "装死失败，点名压力落到阿栗头上",
+    "choices": [
+     {
+      "text": "承认是自己，举手",
+      "to": "n4"
+     },
+     {
+      "text": "反手指认下铺老K",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "提议认领制",
+    "purpose": "把私人麻烦升级成一条公共制度",
+    "choices": [
+     {
+      "text": "追加一条免责条款",
+      "to": "n4"
+     },
+     {
+      "text": "先让老K表态附议",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "小满掏出公约",
+    "purpose": "搬出公约文本，让荒诞程序化",
+    "choices": [
+     {
+      "text": "要求逐条朗读公约",
+      "to": "n6"
+     },
+     {
+      "text": "建议跳过朗读直接表决",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "老K要拍卖认领权",
+    "purpose": "老K把责任包装成一场竞价",
+    "choices": [
+     {
+      "text": "先问清代价再举牌",
+      "to": "n6"
+     },
+     {
+      "text": "抢先举牌把水搅浑",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "关键条款浮出水面",
+    "purpose": "条款露面：认领即负责叫全寝",
+    "choices": [
+     {
+      "text": "承认条款，举手认领",
+      "to": "n8"
+     },
+     {
+      "text": "质疑条款没写要叫几个人",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "先吵怎么表决",
+    "purpose": "表决方式先吵起来，责任继续悬空",
+    "choices": [
+     {
+      "text": "提议匿名投票",
+      "to": "n8"
+     },
+     {
+      "text": "要求实名举手",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "老K掏出轮值表",
+    "purpose": "把表决方式之争转成轮值顺序之争",
+    "choices": [
+     {
+      "text": "从上铺开始往下轮",
+      "to": "n10"
+     },
+     {
+      "text": "先弄清楚闹钟从哪响",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "小满提议抽签",
+    "purpose": "把认领责任变成一道概率题",
+    "choices": [
+     {
+      "text": "当场抽签，抽到就认",
+      "to": "n10"
+     },
+     {
+      "text": "先确认闹钟主人再抽",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": null,
+    "label": "所有排法都指向同一人",
+    "purpose": "分歧收束到同一个死结：第一个最惨",
+    "choices": [
+     {
+      "text": "干脆全寝一起下床",
+      "to": "n12"
+     },
+     {
+      "text": "把认领制写进公约",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": null,
+    "label": "铃声似乎来自门外",
+    "purpose": "抛出闹钟来源疑点，指向寝室之外",
+    "choices": [
+     {
+      "text": "先立规矩，再查来源",
+      "to": "n13"
+     },
+     {
+      "text": "先查来源，规矩后说",
+      "to": "n14"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "level": 6,
+    "endingId": "e1",
+    "label": "六张被子同时掀开",
+    "purpose": "无人认领闹钟，但全寝一起下了床",
+    "choices": []
+   },
+   {
+    "id": "n13",
+    "level": 6,
+    "endingId": "e2",
+    "label": "认领制写进公约",
+    "purpose": "规矩落纸，责任有了名分仍没人抢",
+    "choices": []
+   },
+   {
+    "id": "n14",
+    "level": 6,
+    "endingId": "e3",
+    "label": "闹钟是隔壁寝的",
+    "purpose": "真相揭晓，这一屋子的程序白走了",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n12",
+    "title": "全寝一起下床",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n13",
+    "title": "认领制写进公约",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n14",
+    "title": "闹钟是隔壁寝的",
+    "kind": "twist"
+   }
+  ]
+ },
+ "shape": {
+  "id": "grid14",
+  "note": "七个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 14,
+  "paths": 64,
+  "minLen": 7,
+  "maxLen": 7,
+  "levels": 7,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "n9"
+  ],
+  "n11": [
+   "n8",
+   "n9"
+  ],
+  "n12": [
+   "n10",
+   "（结局入口）"
+  ],
+  "n13": [
+   "n10",
+   "n11",
+   "（结局入口）"
+  ],
+  "n14": [
+   "n11",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n12": {
+   "text": "闹钟又响起来。没人吭声，也没人动。阿栗盯着天花板，老K把手边的公约折起又展开，小满把脸埋进枕头里，大熊翻了个身。然后六张被子一齐掀开，脚落到地上。闹钟还在响，没人认领，也没人再躺回去。",
+   "choices": []
+  },
+  "n13": {
+   "text": "老K把打印版公约摊开，在末尾添上一行：认领闹钟者，负责叫全寝起床。笔一搁，谁都没接话。阿栗念了一遍，说白纸黑字，挺好。大熊小声问，那谁来认领。没人应。规矩端端正正躺在那里，认领那一栏还是空的。",
+   "choices": []
+  },
+  "n14": {
+   "text": "阿栗终于坐起来，伸手把闹钟捞过去翻看。底座上贴着一小条标签，写的是隔壁那间的门牌。他把闹钟举高给大家看。老K手边摊开的公约还摊着，笔搁在一边。小满先笑出声，笑着笑着又躺了回去。闹钟还在响，没人知道该谁去还。",
+   "choices": []
+  },
+  "n8": {
+   "text": "老K从枕头底下抽出那张打印的轮值表，摊在被子上，说既然没人认领，那就按表排。阿栗问按什么排。老K说床位、学号、上次值日，随你挑。小满说，排法再花，也总有一个排第一的。大熊说第一最惨。老K说那就先定排法。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "把所有排法逐个试一遍"
+    },
+    {
+     "to": "n11",
+     "text": "先停下，听铃声在哪"
+    }
+   ]
+  },
+  "n10": {
+   "text": "排法换了一种又一种。按床位、按学号、按上次值日，怎么排都得有一个排在第一的。排第一的，就是闹钟响时最先得起身的那个，得挨个掀被子、挨个挨瞪。阿栗说，绕了半天，还是谁排第一谁倒霉。没人接话，闹钟还在响。",
+   "choices": [
+    {
+     "to": "n12",
+     "text": "谁都不认领，一起掀被子"
+    },
+    {
+     "to": "n13",
+     "text": "先添一行认领制进公约"
+    }
+   ]
+  },
+  "n11": {
+   "text": "闹钟又响起来。这一回，声音好像不在屋里。阿栗把头探出床沿，说你们听。老K停下手里的动作，侧耳听。那声音比刚才闷一点、远一点，隔着门板传进来似的。小满说不至于吧。大熊说那谁下去看看。没人动。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n13",
+     "text": "先把公约摊开添一行"
+    },
+    {
+     "to": "n14",
+     "text": "把闹钟捞过来翻看底座"
+    }
+   ]
+  },
+  "n6": {
+   "text": "老K把枕头底下那份打印版公约抽出来，哗啦翻到背面，手指按住一行念出声：谁认领闹钟，谁负责叫全寝起床。念完他把纸举高，谁也没伸手去接。阿栗说这条谁写的。老K说祖传的，白纸黑字。小满把脸往被子里缩了缩，说条款归条款。大熊小声说，那总得先有人认领。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "让老K把轮值表翻出来"
+    },
+    {
+     "to": "n9",
+     "text": "听小满的，抽签定"
+    }
+   ]
+  },
+  "n7": {
+   "text": "话头先拐到怎么定上。阿栗说举手表决，老K说表决也得先有人提，小满说提名算不算认领，大熊说别提名我。举手怕得罪人，点名没人应声，抓阄算不算程序，公约上也没写。吵来吵去，谁都没提自己。责任还悬在半空，闹钟还在响。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "先把轮值表摊开排一排"
+    },
+    {
+     "to": "n9",
+     "text": "抽签，一翻两瞪眼"
+    }
+   ]
+  },
+  "n9": {
+   "text": "小满忽然说，抽签吧。让认领变成一道概率题，纸一折，谁抽到算谁，谁也怪不得谁。阿栗说抽签不讲道理，老K说抽签恰恰最讲道理，程序上挑不出毛病。大熊问纸从哪来、谁写、谁先抽。问题一层套一层，责任还在半空里悬着。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "那就把排法一种种试过去"
+    },
+    {
+     "to": "n11",
+     "text": "先别急，听听铃声从哪来"
+    }
+   ]
+  },
+  "n2": {
+   "text": "谁也没想到先露馅的是阿栗。他不过翻了个身，上铺的床板吱呀响了一声，立刻有人抬手往那个方向一指。有人含含糊糊地说，醒着的，那就你来认领。阿栗不出声，把脸往被子里埋。被子里闷，闹钟反倒听得更清楚。没人替他说话，也没人把这个话头接下去。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "小满摸出公约，摊开看条文"
+    },
+    {
+     "to": "n5",
+     "text": "老K把认领权挂出来拍卖"
+    }
+   ]
+  },
+  "n4": {
+   "text": "小满从枕头边摸出一张卷了边的公约，抖开，摊在被子上，一条条念下去：作息、值日、卫生，都跟起床有关，又都绕开了叫谁起。老K伸手要接，小满按住不放，说先看规矩。阿栗问，看哪一条。大熊把头探出来，又缩回去。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "翻到背面，念那条认领条款"
+    },
+    {
+     "to": "n7",
+     "text": "先吵该用什么办法定人"
+    }
+   ]
+  },
+  "n5": {
+   "text": "老K把认领权说成一件可以拍的东西：既然没人肯白认，那就挂出来拍，谁的条件合适谁拿走，其余人凑。阿栗说我们是要甩，不是要买。老K说方向反过来也行，从全寝请一顿往下减，减到有人应声为止。大熊问，拍出来的算不算数，公约认不认。没人答。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "先摊开公约，找那条祖传条款"
+    },
+    {
+     "to": "n7",
+     "text": "先为表决的规矩吵一架"
+    }
+   ]
+  },
+  "n1": {
+   "text": "闹钟响了一轮又一轮，六张被子纹丝不动。上铺的阿栗把脸埋进枕头，下铺的老K翻了个身，小满把被子拉到耳朵上，大熊盯着天花板装睡。寝室里那条老规矩谁都记得：谁认领闹钟，谁就负责叫全寝起床——挨个掀被子，挨个挨瞪。所以谁都不吭声，都在等别人先动。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "翻个身，继续装睡"
+    },
+    {
+     "to": "n3",
+     "text": "提议把认领立成制度"
+    }
+   ]
+  },
+  "n3": {
+   "text": "话头一转，有人提议：别每天这么僵着，把认领立成一条制度——谁认领闹钟，谁负责叫全寝起床，写进公约，全寝照办。老K说制度得有条款，条款得有人先认。阿栗说写的人算不算认领。大熊说那先写还是先认。谁写、写在哪、写了算不算数，一圈问题绕回原处，认领那一栏还是空的。闹钟还在响。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "先翻出公约，看规矩怎么写"
+    },
+    {
+     "to": "n5",
+     "text": "把认领权拿出来拍一次"
+    }
+   ]
+  }
+ },
+ "mergeCheck": {
+  "at": "2026-09-20T23:10:36.942Z",
+  "issues": [],
+  "mergeCount": 0,
+  "propCount": 0,
+  "factCount": 0,
+  "fixRounds": 2
+ }
+}

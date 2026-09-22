@@ -1,0 +1,25 @@
+{
+ "storyId": "sc-0015",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-22T15:35:25.800Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n12",
+    "issue": "原始表填数格空着，与n3\"随手填数的表格\"直接冲突",
+    "suggest": "改成该格有数但无口径备注，或n3改为空表",
+    "evidence": "那上面就是当初随手填数的表格……到那一格停住——填数的地方空着，备注栏只有两个字：待核"
+   },
+   {
+    "severity": "minor",
+    "nodeId": "n5",
+    "issue": "经n2进入时王姐并未提问，却写\"王姐问完口径和出处\"",
+    "suggest": "改为\"王姐的笔还悬在纸上\"，不预设已提问",
+    "evidence": "王姐问完口径和出处，笔还悬在纸上等着"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ }
+}

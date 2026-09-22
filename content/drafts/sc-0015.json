@@ -1,0 +1,7240 @@
+{
+ "proposals": [
+  {
+   "conflict": "临时编的数据被领导奉为季度战略依据，主角要在全员会上把它讲圆。",
+   "differs": "压力来自公开演讲的当场兑现，而非追查或道德挣扎。",
+   "hook": "主角盯着投影上自己瞎编的增长率，喉结动了一下。",
+   "protagonist": "小陈，市场部专员"
+  },
+  {
+   "conflict": "主角编的数据被隔壁部门当真，抢先立项，如今要主角交出原始表格。",
+   "differs": "冲突外溢到部门之间，主角从造假者变成被追债者。",
+   "hook": "隔壁部门主管笑着伸手：原始表发我一份呗。",
+   "protagonist": "老周，数据分析员"
+  },
+  {
+   "conflict": "领导用主角编的数据申请了预算，审计要求逐条溯源，主角得解释每条出处。",
+   "differs": "危机来自制度性核查流程，而非人际揭穿或跨部门索要。",
+   "hook": "审计邮件标题写着：请提供数据来源说明。",
+   "protagonist": "阿凯，运营助理"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "增长率是我编的",
+  "tagline": "一个随手填的数字被奉为季度战略，全员会开始前，小陈得在所有人面前把它讲圆。",
+  "summary": "市场部专员小陈随手填的增长率，被总监老周当成季度战略依据写进了全员会材料。投影亮起的那一刻，他必须在同一间会议室里，当着领导、同事和财务的面，把这个数字讲成一个像样的故事——而每一句补救，似乎都在把坑挖得更深一点。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "开会",
+   "数据",
+   "群像"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "小陈",
+    "desc": "市场部专员，随手编的增长率成了战略依据"
+   },
+   {
+    "id": "c2",
+    "name": "老周",
+    "desc": "市场总监，把临时数字当成季度战略，不容置疑"
+   },
+   {
+    "id": "c3",
+    "name": "小刘",
+    "desc": "同组同事，唯一知道数字来历，嘴快心软"
+   },
+   {
+    "id": "c4",
+    "name": "王姐",
+    "desc": "财务对接人，专问口径和出处，笑容标准"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "投影亮起那一刻",
+    "purpose": "投影亮出瞎编的增长率，小陈决定先找谁通气",
+    "choices": [
+     {
+      "text": "先找老周试探口风",
+      "to": "n2"
+     },
+     {
+      "text": "先拉小刘对一遍词",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "向老周试探",
+    "purpose": "向老周试探口径问题，看能否把数字降调",
+    "choices": [
+     {
+      "text": "强调这只是初步测算",
+      "to": "n4"
+     },
+     {
+      "text": "把口径问题推给样本太小",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "先和小刘对词",
+    "purpose": "先跟小刘对齐说法，确认他到底知道多少",
+    "choices": [
+     {
+      "text": "让小刘帮忙一起圆场",
+      "to": "n4"
+     },
+     {
+      "text": "先问小刘还记不记得来源",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "王姐追问口径",
+    "purpose": "王姐当场追问出处，小陈必须先接住这一招",
+    "choices": [
+     {
+      "text": "承认是估算，给个区间",
+      "to": "n6"
+     },
+     {
+      "text": "再补几个编的细节堵住",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "把话头递给领导",
+    "purpose": "把追问引向领导，争取让老周先定个口径",
+    "choices": [
+     {
+      "text": "请老周先定个说法",
+      "to": "n6"
+     },
+     {
+      "text": "把追问引到方法论上",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "老周拍板之后",
+    "purpose": "老周拍板写进战略，小陈试着加一道安全阀",
+    "choices": [
+     {
+      "text": "当场提议做一轮复核",
+      "to": "n8"
+     },
+     {
+      "text": "提议先挑一个区试点",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "改口径的余地",
+    "purpose": "老周拍板写进战略，小陈改走事后稀释的路",
+    "choices": [
+     {
+      "text": "承诺会后补一份明细",
+      "to": "n8"
+     },
+     {
+      "text": "把数字改写成参考区间",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "把数字往回收一收",
+    "purpose": "小陈请王姐当场核口径，试图降温",
+    "choices": [
+     {
+      "text": "请王姐当场念一遍原始数",
+      "to": "n10"
+     },
+     {
+      "text": "提议换个口径重新算一遍",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "顺着战略往上加码",
+    "purpose": "小陈放弃降温，把数字讲成新赛道",
+    "choices": [
+     {
+      "text": "把口径说成行业新算法",
+      "to": "n10"
+     },
+     {
+      "text": "主动揽下会后复核的活",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": null,
+    "label": "口径之争摆上台面",
+    "purpose": "小陈把争议引向口径，赌没人定标准",
+    "choices": [
+     {
+      "text": "请王姐当场调表复核",
+      "to": "n12"
+     },
+     {
+      "text": "请老周给这个口径命名",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": null,
+    "label": "把复核的活揽过来",
+    "purpose": "小陈抢先认领复核，把时间拖在手里",
+    "choices": [
+     {
+      "text": "当场答应每月按此口径报",
+      "to": "n13"
+     },
+     {
+      "text": "凑近问老周是不是早知道",
+      "to": "n14"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "level": 6,
+    "endingId": "e1",
+    "label": "当场复核，数字归零",
+    "purpose": "王姐当场调出原始表，增长率归零",
+    "choices": []
+   },
+   {
+    "id": "n13",
+    "level": 6,
+    "endingId": "e2",
+    "label": "数字成真，月月要填",
+    "purpose": "新口径被写进制度，小陈从此每月填数",
+    "choices": []
+   },
+   {
+    "id": "n14",
+    "level": 6,
+    "endingId": "e3",
+    "label": "老周其实早知道",
+    "purpose": "老周承认早看穿，数字是他留的试探",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n12",
+    "title": "当场复核，数字归零",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n13",
+    "title": "数字成真，从此月月填",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n14",
+    "title": "老周其实早知道",
+    "kind": "twist"
+   }
+  ]
+ },
+ "skeletonSignature": "grid14s:14",
+ "shape": {
+  "id": "grid14s",
+  "note": "七个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 14,
+  "paths": 64,
+  "minLen": 7,
+  "maxLen": 7,
+  "levels": 7,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "n9"
+  ],
+  "n11": [
+   "n8",
+   "n9"
+  ],
+  "n12": [
+   "n10",
+   "（结局入口）"
+  ],
+  "n13": [
+   "n10",
+   "n11",
+   "（结局入口）"
+  ],
+  "n14": [
+   "n11",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n1": {
+   "text": "投影亮起，幕布上那个增长率被老周用激光笔圈了一下，红点停在数字上。会议室的灯暗着，前排领导在点头，王姐翻开笔记本，笔尖悬着。小刘坐在小陈左手边，膝盖轻轻碰了他一下。老周说，这块请市场部再展开讲讲。小陈的手在桌下攥着——下一句话就是他的。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "凑到老周身边试探口风"
+    },
+    {
+     "to": "n3",
+     "text": "拉小刘对一遍说法"
+    }
+   ]
+  },
+  "n2": {
+   "text": "小陈借着挪椅子的动作往老周那边靠了半步，压低声音说这个数字还想再确认一下。老周没等他说完，把手里的材料翻过来，指节在增长率上敲了两下：材料已经发出去了，会开到这个份上，口径不能再动。前排领导正翻着同一页，王姐的笔尖还悬在纸上。老周侧过脸看着他，等他给个说法。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "强调这只是初步测算"
+    },
+    {
+     "to": "n5",
+     "text": "把口径问题推给样本太小"
+    }
+   ]
+  },
+  "n3": {
+   "text": "小陈转回身，借着翻页的动作碰了碰小刘的椅背。小刘会意，把电脑屏幕朝他偏了偏——那上面就是当初随手填数的表格。小刘用嘴型问：怎么了。投影上的数字还亮着，老周刚说完请市场部展开讲讲，王姐的笔已经落在纸上等着记。台下很静，留给小陈跟小刘把话说定的时间不多。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "让小刘帮忙一起圆场"
+    },
+    {
+     "to": "n5",
+     "text": "先问小刘还记不记得来源"
+    }
+   ]
+  },
+  "n4": {
+   "text": "王姐的笔尖落在纸上，笑容很标准：这个增长率的统计口径是什么，样本从哪几个渠道取的，有没有出过书面说明。投影上那个数字还亮着，老周刚说完请市场部展开讲讲，台下静着。小刘在旁边把电脑往自己那边收了半寸，没敢看他。小陈能感觉到前排的目光正从幕布上慢慢移过来。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "承认是估算，给一个区间"
+    },
+    {
+     "to": "n7",
+     "text": "再补几个编的细节堵住"
+    }
+   ]
+  },
+  "n5": {
+   "text": "王姐问完口径和出处，笔还悬在纸上等着。投影上那个数字亮着，老周刚说完请市场部展开讲讲，没再往下接。前排领导翻过同一页材料，翻页的声音很清楚。小刘在左手边又把膝盖轻轻碰了他一下。会议室里都在等市场部这边出个说法，而小陈知道，自己一张嘴就是口径。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "请老周先定个说法"
+    },
+    {
+     "to": "n7",
+     "text": "把追问引到方法论上"
+    }
+   ]
+  },
+  "n6": {
+   "text": "老周听完，把材料往前一推，说这块就写进季度战略，不用在会上反复了。投影翻到下一页，王姐在笔记本上添了一行，前排领导点了头。小陈手里那支笔还没落下去——数字一旦写进战略，往后每个月都要跟着它报数。会议室安静着，只等市场部这边再补一句话。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "当场提议做一轮复核"
+    },
+    {
+     "to": "n9",
+     "text": "提议先挑一个区试点"
+    }
+   ]
+  },
+  "n7": {
+   "text": "老周把材料往前一推，说这块就写进季度战略，不用在会上反复了。投影翻到下一页，王姐在笔记本上添了一行，前排领导点了头。小陈手里那支笔还没落下去——数字写进战略，往后每个月都要跟着它报数。他盯着纸上那行字，想的是会后还有没有把口径往回说的余地，而会议室正等着市场部再补一句。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "当场请王姐帮着核一遍"
+    },
+    {
+     "to": "n9",
+     "text": "把数字讲成新赛道的起量"
+    }
+   ]
+  },
+  "n8": {
+   "text": "小陈把材料翻回那一页，转向王姐，说这个数她要是想核，现在就能核，不必等会后。说完他把手按在纸上，会议室那点安静又沉了一层。老周靠在椅背上没表态，王姐把笔帽摘了，笔记本翻到新的一页，笔尖悬着，等他把后半句说出来。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "请王姐当场念一遍原始数"
+    },
+    {
+     "to": "n11",
+     "text": "提议换个口径重新算一遍"
+    }
+   ]
+  },
+  "n9": {
+   "text": "小陈把笔搁下，先谢了老周，说这个数不是一次活动的余量，是公司刚踩上的那条线的起量。他讲得很慢，手摊开，像在铺一张图。会议室跟着他的语速静下来，王姐的笔跟着记，记到一半停了，抬眼看他。前排领导没翻页，老周靠在椅背上，等他再往下说一句。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "把口径说成行业新算法"
+    },
+    {
+     "to": "n11",
+     "text": "主动揽下会后复核的活"
+    }
+   ]
+  },
+  "n10": {
+   "text": "小陈没有顺着数往下答，他把材料合上，说这个数字能不能立住，得看口径怎么定——取哪几个渠道、算多长的窗口、算不算退货。他说公司到现在没有一份写死的口径，谁定谁认。话音落下，会议室里没人接。王姐的笔悬在纸上，老周靠着椅背，前排领导看着他，等他往哪个方向指一下。",
+   "choices": [
+    {
+     "to": "n12",
+     "text": "请王姐当场调表复核"
+    },
+    {
+     "to": "n13",
+     "text": "请老周给这个口径定个名"
+    }
+   ]
+  },
+  "n11": {
+   "text": "小陈接了一句，说复核的活他来揽：样本、渠道、算法，他一条条对，会后交一份书面说明。他说得不快，像在给自己排工期。会议室安静着，王姐把笔帽盖上又拧开，老周靠着椅背没表态，前排领导的手停在材料边上。时间被他挪到了会后，可眼前这一句还得再补上。",
+   "choices": [
+    {
+     "to": "n13",
+     "text": "当场答应每月按此口径报"
+    },
+    {
+     "to": "n14",
+     "text": "凑近问老周是不是早知道"
+    }
+   ]
+  },
+  "n12": {
+   "text": "王姐把笔记本转过来，调出共享盘里那张原始表，投影切过去，表格一行行往下滚，到那一格停住——填数的地方空着，备注栏只有两个字：待核。会议室里很静。老周看着幕布，又看了看小陈，把材料合上。王姐把笔搁下，那一行还留在纸上，没划掉。",
+   "choices": []
+  },
+  "n13": {
+   "text": "那天会散了，口径的事没散。渠道、窗口、退货，一条条被写进流程，附在报表后头，谁填谁签字。那一格从此归小陈。第一个月他填的时候，把样本和算法摊在键盘边上，一行一行对着填。往后每个月，报表发出去，那一格都空着等他。",
+   "choices": []
+  },
+  "n14": {
+   "text": "老周把材料合上，看了小陈一眼：这数填得对不对，我第一眼就有数。会议室没人接话。他把材料推回来，说他要的不是这个数字，是看市场部里谁在什么时候把口径摆到桌面上来，谁一直往圆里说。王姐的笔停在纸上。老周靠回椅背，像这件事到这儿就完了。",
+   "choices": []
+  }
+ },
+ "story": {
+  "storyId": "sc-0015",
+  "schemaVersion": 1,
+  "title": "增长率是我编的",
+  "tagline": "一个随手填的数字被奉为季度战略，全员会开始前，小陈得在所有人面前把它讲圆。",
+  "summary": "市场部专员小陈随手填的增长率，被总监老周当成季度战略依据写进了全员会材料。投影亮起的那一刻，他必须在同一间会议室里，当着领导、同事和财务的面，把这个数字讲成一个像样的故事——而每一句补救，似乎都在把坑挖得更深一点。",
+  "genre": "office",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "开会",
+   "数据",
+   "群像"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "小陈",
+    "desc": "市场部专员，随手编的增长率成了战略依据"
+   },
+   {
+    "id": "c2",
+    "name": "老周",
+    "desc": "市场总监，把临时数字当成季度战略，不容置疑"
+   },
+   {
+    "id": "c3",
+    "name": "小刘",
+    "desc": "同组同事，唯一知道数字来历，嘴快心软"
+   },
+   {
+    "id": "c4",
+    "name": "王姐",
+    "desc": "财务对接人，专问口径和出处，笑容标准"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n12",
+    "title": "当场复核，数字归零",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n13",
+    "title": "数字成真，从此月月填",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n14",
+    "title": "老周其实早知道",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "投影亮起，幕布上那个增长率被老周用激光笔圈了一下，红点停在数字上。会议室的灯暗着，前排领导在点头，王姐翻开笔记本，笔尖悬着。小刘坐在小陈左手边，膝盖轻轻碰了他一下。老周说，这块请市场部再展开讲讲。小陈的手在桌下攥着——下一句话就是他的。",
+    "label": "投影亮起那一刻",
+    "choices": [
+     {
+      "text": "凑到老周身边试探口风",
+      "to": "n2"
+     },
+     {
+      "text": "拉小刘对一遍说法",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "小陈借着挪椅子的动作往老周那边靠了半步，压低声音说这个数字还想再确认一下。老周没等他说完，把手里的材料翻过来，指节在增长率上敲了两下：材料已经发出去了，会开到这个份上，口径不能再动。前排领导正翻着同一页，王姐的笔尖还悬在纸上。老周侧过脸看着他，等他给个说法。",
+    "label": "向老周试探",
+    "choices": [
+     {
+      "text": "强调这只是初步测算",
+      "to": "n4"
+     },
+     {
+      "text": "把口径问题推给样本太小",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "小陈转回身，借着翻页的动作碰了碰小刘的椅背。小刘会意，把电脑屏幕朝他偏了偏——那上面就是当初随手填数的表格。小刘用嘴型问：怎么了。投影上的数字还亮着，老周刚说完请市场部展开讲讲，王姐的笔已经落在纸上等着记。台下很静，留给小陈跟小刘把话说定的时间不多。",
+    "label": "先和小刘对词",
+    "choices": [
+     {
+      "text": "让小刘帮忙一起圆场",
+      "to": "n4"
+     },
+     {
+      "text": "先问小刘还记不记得来源",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "王姐的笔尖落在纸上，笑容很标准：这个增长率的统计口径是什么，样本从哪几个渠道取的，有没有出过书面说明。投影上那个数字还亮着，老周刚说完请市场部展开讲讲，台下静着。小刘在旁边把电脑往自己那边收了半寸，没敢看他。小陈能感觉到前排的目光正从幕布上慢慢移过来。",
+    "label": "王姐追问口径",
+    "choices": [
+     {
+      "text": "承认是估算，给一个区间",
+      "to": "n6"
+     },
+     {
+      "text": "再补几个编的细节堵住",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "王姐问完口径和出处，笔还悬在纸上等着。投影上那个数字亮着，老周刚说完请市场部展开讲讲，没再往下接。前排领导翻过同一页材料，翻页的声音很清楚。小刘在左手边又把膝盖轻轻碰了他一下。会议室里都在等市场部这边出个说法，而小陈知道，自己一张嘴就是口径。",
+    "label": "把话头递给领导",
+    "choices": [
+     {
+      "text": "请老周先定个说法",
+      "to": "n6"
+     },
+     {
+      "text": "把追问引到方法论上",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "老周听完，把材料往前一推，说这块就写进季度战略，不用在会上反复了。投影翻到下一页，王姐在笔记本上添了一行，前排领导点了头。小陈手里那支笔还没落下去——数字一旦写进战略，往后每个月都要跟着它报数。会议室安静着，只等市场部这边再补一句话。",
+    "label": "老周拍板之后",
+    "choices": [
+     {
+      "text": "当场提议做一轮复核",
+      "to": "n8"
+     },
+     {
+      "text": "提议先挑一个区试点",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "老周把材料往前一推，说这块就写进季度战略，不用在会上反复了。投影翻到下一页，王姐在笔记本上添了一行，前排领导点了头。小陈手里那支笔还没落下去——数字写进战略，往后每个月都要跟着它报数。他盯着纸上那行字，想的是会后还有没有把口径往回说的余地，而会议室正等着市场部再补一句。",
+    "label": "改口径的余地",
+    "choices": [
+     {
+      "text": "当场请王姐帮着核一遍",
+      "to": "n8"
+     },
+     {
+      "text": "把数字讲成新赛道的起量",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "小陈把材料翻回那一页，转向王姐，说这个数她要是想核，现在就能核，不必等会后。说完他把手按在纸上，会议室那点安静又沉了一层。老周靠在椅背上没表态，王姐把笔帽摘了，笔记本翻到新的一页，笔尖悬着，等他把后半句说出来。",
+    "label": "把数字往回收一收",
+    "choices": [
+     {
+      "text": "请王姐当场念一遍原始数",
+      "to": "n10"
+     },
+     {
+      "text": "提议换个口径重新算一遍",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "小陈把笔搁下，先谢了老周，说这个数不是一次活动的余量，是公司刚踩上的那条线的起量。他讲得很慢，手摊开，像在铺一张图。会议室跟着他的语速静下来，王姐的笔跟着记，记到一半停了，抬眼看他。前排领导没翻页，老周靠在椅背上，等他再往下说一句。",
+    "label": "顺着战略往上加码",
+    "choices": [
+     {
+      "text": "把口径说成行业新算法",
+      "to": "n10"
+     },
+     {
+      "text": "主动揽下会后复核的活",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "小陈没有顺着数往下答，他把材料合上，说这个数字能不能立住，得看口径怎么定——取哪几个渠道、算多长的窗口、算不算退货。他说公司到现在没有一份写死的口径，谁定谁认。话音落下，会议室里没人接。王姐的笔悬在纸上，老周靠着椅背，前排领导看着他，等他往哪个方向指一下。",
+    "label": "口径之争摆上台面",
+    "choices": [
+     {
+      "text": "请王姐当场调表复核",
+      "to": "n12"
+     },
+     {
+      "text": "请老周给这个口径定个名",
+      "to": "n13"
+     }
+    ]
+   },
+   {
+    "id": "n11",
+    "text": "小陈接了一句，说复核的活他来揽：样本、渠道、算法，他一条条对，会后交一份书面说明。他说得不快，像在给自己排工期。会议室安静着，王姐把笔帽盖上又拧开，老周靠着椅背没表态，前排领导的手停在材料边上。时间被他挪到了会后，可眼前这一句还得再补上。",
+    "label": "把复核的活揽过来",
+    "choices": [
+     {
+      "text": "当场答应每月按此口径报",
+      "to": "n13"
+     },
+     {
+      "text": "凑近问老周是不是早知道",
+      "to": "n14"
+     }
+    ]
+   },
+   {
+    "id": "n12",
+    "text": "王姐把笔记本转过来，调出共享盘里那张原始表，投影切过去，表格一行行往下滚，到那一格停住——填数的地方空着，备注栏只有两个字：待核。会议室里很静。老周看着幕布，又看了看小陈，把材料合上。王姐把笔搁下，那一行还留在纸上，没划掉。",
+    "label": "当场复核，数字归零",
+    "ending": {
+     "id": "e1",
+     "title": "当场复核，数字归零",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n13",
+    "text": "那天会散了，口径的事没散。渠道、窗口、退货，一条条被写进流程，附在报表后头，谁填谁签字。那一格从此归小陈。第一个月他填的时候，把样本和算法摊在键盘边上，一行一行对着填。往后每个月，报表发出去，那一格都空着等他。",
+    "label": "数字成真，月月要填",
+    "ending": {
+     "id": "e2",
+     "title": "数字成真，从此月月填",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n14",
+    "text": "老周把材料合上，看了小陈一眼：这数填得对不对，我第一眼就有数。会议室没人接话。他把材料推回来，说他要的不是这个数字，是看市场部里谁在什么时候把口径摆到桌面上来，谁一直往圆里说。王姐的笔停在纸上。老周靠回椅背，像这件事到这儿就完了。",
+    "label": "老周其实早知道",
+    "ending": {
+     "id": "e3",
+     "title": "老周其实早知道",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "office"
+ },
+ "choicesRefreshed": {
+  "at": "2026-09-22T15:35:11.660Z",
+  "touched": 0
+ },
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 64,
+    "capped": false,
+    "visitedPairs": 14,
+    "totalPairs": 14,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 16,
+    "e2": 32,
+    "e3": 16
+   },
+   "nodeCount": 14,
+   "endingCount": 3,
+   "avgNodeCjk": 106,
+   "totalChoices": 22,
+   "avgPathLen": 7,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "强调这只是初步测算",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "凑到老周身边试探口风",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "把口径问题推给样本太小",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "承认是估算，给一个区间",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "让小刘帮忙一起圆场",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "再补几个编的细节堵住",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "当场提议做一轮复核",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "请老周先定个说法",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "提议先挑一个区试点",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场念一遍原始数",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "当场请王姐帮着核一遍",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "提议换个口径重新算一遍",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 0,
+       "choiceText": "请王姐当场调表复核",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n10",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把口径说成行业新算法",
+       "to": "n10"
+      },
+      {
+       "nodeId": "n10",
+       "choiceIndex": 1,
+       "choiceText": "请老周给这个口径定个名",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n13"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 0,
+       "choiceText": "当场答应每月按此口径报",
+       "to": "n13"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11",
+      "n14"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "拉小刘对一遍说法",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "先问小刘还记不记得来源",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "把追问引到方法论上",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "把数字讲成新赛道的起量",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "主动揽下会后复核的活",
+       "to": "n11"
+      },
+      {
+       "nodeId": "n11",
+       "choiceIndex": 1,
+       "choiceText": "凑近问老周是不是早知道",
+       "to": "n14"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "强调这只是初步测算",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "凑到老周身边试探口风",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "把口径问题推给样本太小",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "承认是估算，给一个区间",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "让小刘帮忙一起圆场",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "再补几个编的细节堵住",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "当场提议做一轮复核",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "请老周先定个说法",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "提议先挑一个区试点",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场念一遍原始数",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "当场请王姐帮着核一遍",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "提议换个口径重新算一遍",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 0,
+     "choiceText": "请王姐当场调表复核",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n10",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把口径说成行业新算法",
+     "to": "n10"
+    },
+    {
+     "nodeId": "n10",
+     "choiceIndex": 1,
+     "choiceText": "请老周给这个口径定个名",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n13"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 0,
+     "choiceText": "当场答应每月按此口径报",
+     "to": "n13"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11",
+    "n14"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "拉小刘对一遍说法",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "先问小刘还记不记得来源",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "把追问引到方法论上",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "把数字讲成新赛道的起量",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "主动揽下会后复核的活",
+     "to": "n11"
+    },
+    {
+     "nodeId": "n11",
+     "choiceIndex": 1,
+     "choiceText": "凑近问老周是不是早知道",
+     "to": "n14"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "editorReview": {
+  "at": "2026-09-22T15:35:25.800Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n12",
+    "issue": "原始表填数格空着，与n3\"随手填数的表格\"直接冲突",
+    "suggest": "改成该格有数但无口径备注，或n3改为空表",
+    "evidence": "那上面就是当初随手填数的表格……到那一格停住——填数的地方空着，备注栏只有两个字：待核"
+   },
+   {
+    "severity": "minor",
+    "nodeId": "n5",
+    "issue": "经n2进入时王姐并未提问，却写\"王姐问完口径和出处\"",
+    "suggest": "改为\"王姐的笔还悬在纸上\"，不预设已提问",
+    "evidence": "王姐问完口径和出处，笔还悬在纸上等着"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ }
+}

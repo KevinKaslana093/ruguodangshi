@@ -1,0 +1,25 @@
+{
+ "storyId": "sc-0012",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-22T15:11:37.802Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n11",
+    "issue": "n11提到「人事那边那份文档」，但经n4→n6→n8/n9到达时从未铺垫过该文档",
+    "suggest": "在n4/n6/n8补一句莉姐提及人事文档，或让n11改为首次询问",
+    "evidence": "小满转头问莉姐，人事那边那份文档，要走到哪一层才能调出来。"
+   },
+   {
+    "severity": "minor",
+    "nodeId": "n4",
+    "issue": "n2/n3场景在IT部，n4/n5直接切到小会议室，缺转场",
+    "suggest": "补一句四人移步小会议室的过渡",
+    "evidence": "小会议室的门合上，四个人围着长桌。"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ }
+}

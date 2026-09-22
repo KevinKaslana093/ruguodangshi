@@ -1,0 +1,35 @@
+{
+ "storyId": "sc-0004",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-20T23:06:45.445Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 1,
+    "issue": "结局票突然到手，中间无买票过程",
+    "suggest": "补一句排队或付款的动作再切结局",
+    "evidence": "她把刚打出来的票递过去，又回头看了一眼那片没走完的街"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 5,
+    "issue": "未经历僵持却写“松口”，缺铺垫",
+    "suggest": "把“松口”改成顺势决定，或补一句犹豫",
+    "evidence": "松口是几乎同时的。她说那就试试，他说行，试试就试试"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 4,
+    "issue": "选“接着算账”后直接跳到天黑，账没算",
+    "suggest": "补半句算账内容再过渡到天黑",
+    "evidence": "路好像多了一条，账却还没算清"
+   }
+  ],
+  "verdict": "pass"
+ }
+}

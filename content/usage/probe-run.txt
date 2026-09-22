@@ -1,0 +1,44 @@
+=== 探针 ===
+模型：deepseek-v4.1-flash | 端点：https://ollama.com/v1
+密钥来源：file:.env:OLLAMA_API_KEY（密钥本身不打印、不落盘）
+预算：请求上限 350，已用 0；token 上限 null（null = 未设）
+✓ #1 6253ms usage={"prompt_tokens":71,"completion_tokens":49,"total_tokens":120,"prompt_tokens_details":{"cached_tokens":0}} json=true
+✓ #0 7144ms usage={"prompt_tokens":71,"completion_tokens":39,"total_tokens":110,"prompt_tokens_details":{"cached_tokens":0}} json=true
+✓ #2 7466ms usage={"prompt_tokens":71,"completion_tokens":43,"total_tokens":114,"prompt_tokens_details":{"cached_tokens":0}} json=true
+✓ #3 7776ms usage={"prompt_tokens":71,"completion_tokens":40,"total_tokens":111,"prompt_tokens_details":{"cached_tokens":0}} json=true
+✓ #4 11247ms usage={"prompt_tokens":71,"completion_tokens":45,"total_tokens":116,"prompt_tokens_details":{"cached_tokens":0}} json=true
+✓ #5 11293ms usage={"prompt_tokens":71,"completion_tokens":44,"total_tokens":115,"prompt_tokens_details":{"cached_tokens":0}} json=true
+✓ #6 8718ms usage={"prompt_tokens":71,"completion_tokens":40,"total_tokens":111,"prompt_tokens_details":{"cached_tokens":0}} json=true
+✓ #7 8739ms usage={"prompt_tokens":71,"completion_tokens":60,"total_tokens":131,"prompt_tokens_details":{"cached_tokens":0}} json=true
+
+=== 汇总 ===
+{
+ "at": "2026-09-20T16:54:02.155Z",
+ "model": "deepseek-v4.1-flash",
+ "endpoint": "https://ollama.com/v1",
+ "requested": 8,
+ "concurrency": 2,
+ "ok": 8,
+ "failed": 0,
+ "wallMs": 34954,
+ "perRequestMs": {
+  "min": 6253,
+  "median": 8718,
+  "max": 11293
+ },
+ "throughputPerMin": 13.73,
+ "usageReturned": "8/8",
+ "usageSample": {
+  "prompt_tokens": 71,
+  "completion_tokens": 49,
+  "total_tokens": 120,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  }
+ },
+ "usageCaveat": null,
+ "jsonValidRate": "100%",
+ "failures": [],
+ "note": "额度余额无法通过接口查询 → 标注未知；仅依据本地累计记录与预算设限。"
+}
+已写入：<工程根>\content\usage\probe.json

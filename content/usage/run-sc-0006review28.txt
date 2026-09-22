@@ -1,0 +1,4 @@
+编辑审核 verdict=pass，issues=1
+  [minor] n5 :: 从n3来时蛋糕已装盒，n5却写从「盘沿」掰下一块 | 证据: 小陶把蛋糕装进盒子，扣上盖……伸手从盘沿掰下一小块放进嘴里
+路径审核 verdict=pass，issues=0（抽样 10/64）
+已写回 draft 审核结论

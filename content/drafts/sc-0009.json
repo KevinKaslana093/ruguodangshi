@@ -1,0 +1,3506 @@
+{
+ "proposals": [
+  {
+   "conflict": "工牌丢失被系统判离职，为撤销要集齐三个无人负责的废章",
+   "differs": "冲突是流程迷宫本身；另两个一为利益诱惑，一为人际共谋",
+   "hook": "他刷卡进楼，闸机亮红灯：您已离职，请勿入内",
+   "protagonist": "老周，八年工龄普通职员"
+  },
+  {
+   "conflict": "错判离职后，系统改把他当外聘专家，薪水反而翻倍",
+   "differs": "冲突是身份错位的诱惑；另两个无利益反转",
+   "hook": "工资条多出三行专家津贴，他盯着数字没说话",
+   "protagonist": "小林，被除名的产品经理"
+  },
+  {
+   "conflict": "全公司默契装死，谁也不盖章，因为盖章等于认领责任",
+   "differs": "冲突是集体沉默的共谋；另两个主角独自面对系统",
+   "hook": "三个章位前，三张空椅子，三杯凉透的茶",
+   "protagonist": "阿May，行政部唯一在岗的人"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "工牌没了，章还在",
+  "tagline": "闸机说他已离职，系统要他集齐三个章，而这三个章谁也不认领。",
+  "summary": "八年工龄的老周刷卡进楼，闸机亮红灯：您已离职。人事窗口说，撤销这个判决要集齐三个无人认领的废章。于是他拉上同部门的小丁，在资产室、数据治理办和一间没有门牌的房间之间来回打转，用最笨的合规办法，证明自己今天早上还在这儿上班。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "盖章跑腿",
+   "黑色幽默"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "老周",
+    "desc": "八年工龄普通职员，被系统判离职，认死理"
+   },
+   {
+    "id": "c2",
+    "name": "小丁",
+    "desc": "同部门同事，全程陪着跑，负责吐槽和递材料"
+   },
+   {
+    "id": "c3",
+    "name": "章姐",
+    "desc": "人事窗口外包员工，只认流程不问原因"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "闸机红灯",
+    "purpose": "开场：系统判定老周已离职，人被挡在闸机外",
+    "choices": [
+     {
+      "text": "再刷一次，等保安来解释",
+      "to": "n2"
+     },
+     {
+      "text": "退出闸机，走访客通道登记",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "人事窗口：先问责任",
+    "purpose": "追问是谁判的离职，只换来一句系统自动",
+    "choices": [
+     {
+      "text": "先去资产室找负责人问章",
+      "to": "n4"
+     },
+     {
+      "text": "先去资产室翻旧用章档案",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "人事窗口：先问流程",
+    "purpose": "先问撤销要交什么，窗口递出三格空白章位",
+    "choices": [
+     {
+      "text": "拿着章位表去找资产室负责人",
+      "to": "n4"
+     },
+     {
+      "text": "拿着章位表去翻资产室旧档",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "资产室：找活人",
+    "purpose": "负责人说这章早注销，得先有状态确认表",
+    "choices": [
+     {
+      "text": "去数据治理办，找受理台问",
+      "to": "n6"
+     },
+     {
+      "text": "去数据治理办，先摸自助机",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "资产室：翻旧档",
+    "purpose": "旧档案写明用章须附状态确认表，同样卡住",
+    "choices": [
+     {
+      "text": "排队问数据治理办受理台",
+      "to": "n6"
+     },
+     {
+      "text": "绕到自助机先试打一张表",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "数据治理办：问人",
+    "purpose": "柜台说确认表由系统生成，系统只认原工牌",
+    "choices": [
+     {
+      "text": "回楼下失物箱翻那张工牌",
+      "to": "n8"
+     },
+     {
+      "text": "让小丁用他的工号代打表",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "走廊尽头没门牌",
+    "purpose": "第三枚章的房间没有标识，里面只坐着一个人",
+    "choices": [
+     {
+      "text": "按流程先递材料再开口",
+      "to": "n8"
+     },
+     {
+      "text": "先问这章平时归谁管",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "递材料，按章办事",
+    "purpose": "按规章说明用途，对方翻出一枚没人认领的章",
+    "choices": [
+     {
+      "text": "守在屋里等这枚章落下",
+      "to": "n10"
+     },
+     {
+      "text": "把材料留下，先回人事窗口",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "先打听章的来历",
+    "purpose": "先不问流程，先打听这枚章是谁留下的",
+    "choices": [
+     {
+      "text": "把三格章位交回人事窗口",
+      "to": "n11"
+     },
+     {
+      "text": "请对方顺手查一下工号",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": "e1",
+    "label": "闸机终于放行",
+    "purpose": "三枚章齐，闸机变绿，老周重新刷进楼里上班",
+    "choices": []
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": "e2",
+    "label": "章齐了，人不想上",
+    "purpose": "章盖齐的那一刻，老周决定不再上这个班",
+    "choices": []
+   },
+   {
+    "id": "n12",
+    "level": 5,
+    "endingId": "e3",
+    "label": "恢复的是另一个老周",
+    "purpose": "系统确实恢复了，恢复的却是一个同名同姓的人",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "章齐了，闸机放行",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "章盖齐，人不想上了",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "系统恢复的是另一个老周",
+    "kind": "twist"
+   }
+  ]
+ },
+ "skeletonSignature": "grid12s:12",
+ "shape": {
+  "id": "grid12s",
+  "note": "六个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 12,
+  "paths": 32,
+  "minLen": 6,
+  "maxLen": 6,
+  "levels": 6,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "（结局入口）"
+  ],
+  "n11": [
+   "n8",
+   "n9",
+   "（结局入口）"
+  ],
+  "n12": [
+   "n9",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n1": {
+   "text": "闸机亮红灯。老周把工牌贴上去，屏幕上跳出一行字：您已离职。他站在那儿没动，卡还捏在指头里。小丁从后面挤上来，看一眼屏幕，又看一眼他，嘴张了张没说出话。后面排队的人开始绕道走，保安在岗亭那头朝这边看。老周说，八年了。小丁说，哥，先别站在这儿。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "再刷一次，等保安来解释"
+    },
+    {
+     "to": "n3",
+     "text": "退出闸机，走访客通道登记"
+    }
+   ]
+  },
+  "n2": {
+   "text": "人事窗口前，章姐把老周的工牌在读卡器上过了一下，屏幕上还是那行字。老周问：是谁判的？章姐说系统自动，她这儿只看得见结果，看不见人。小丁问那怎么撤销，章姐说要集齐三个无人认领的废章。老周又追问一遍是谁判的，章姐还是那句：系统判的，她不问原因。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "先去资产室找负责人问章"
+    },
+    {
+     "to": "n5",
+     "text": "先去资产室翻旧用章档案"
+    }
+   ]
+  },
+  "n3": {
+   "text": "人事窗口前，章姐把老周的工牌在读卡器上过了一下，屏幕上还是那行字。老周没问是谁判的，直接问撤销要交什么。章姐从抽屉里抽出一张表，推过来。表上排着三个空白的方格，每个方格旁边都印着一个字：章。她说，三个无人认领的废章，一格一个，盖齐了再来。小丁把表接过去，翻到背面看了看，什么都没有。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "拿着章位表去找资产室负责人"
+    },
+    {
+     "to": "n5",
+     "text": "拿着章位表去翻资产室旧档"
+    }
+   ]
+  },
+  "n4": {
+   "text": "资产室在负一层，铁门半开，里头堆着报废显示器和落灰机箱。负责人戴着袖套，听完摆手：这章早注销了。老周问那怎么才算数，负责人说，得先有状态确认表，证明他今天还在编，才能碰章。老周说人站在这儿呢。负责人说，人站在这儿不算，表上写着才算。小丁把这句话记进手机。三个空格还是空的。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "到数据治理办，排队问受理台"
+    },
+    {
+     "to": "n7",
+     "text": "到数据治理办，先去摸自助机"
+    }
+   ]
+  },
+  "n5": {
+   "text": "资产室在负一层，铁门半开，里头堆着报废显示器和落灰机箱。老周没去找负责人，蹲到墙角那排档案柜前一层层翻，小丁替他扶着柜门。翻到的一本旧制度汇编上写着：用章须附状态确认表，无表不予受理。小丁说，这不还是绕回来了。老周把本子合上。三个空格还是空的。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "去受理台排队，问清楚"
+    },
+    {
+     "to": "n7",
+     "text": "绕到自助机，先试打一张"
+    }
+   ]
+  },
+  "n6": {
+   "text": "数据治理办的受理台前排队。老周把要凑三个废章的事讲了一遍，柜台后的人把屏幕转过来：状态确认表由系统生成，人工打不了；系统只认当初发的那张工牌。老周说，工牌在我手里。对方说，你手里那张刷出来是什么，你比我清楚。小丁把老周往旁边拉了半步，两个人站在台子侧面，谁也没先开口。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "回楼下失物箱翻那张工牌"
+    },
+    {
+     "to": "n9",
+     "text": "让小丁用他的工号代打表"
+    }
+   ]
+  },
+  "n7": {
+   "text": "从资产室出来，走廊往里走，尽头那扇门没挂任何标识，只在门框上贴了张边角起翘的白纸。老周推门进去，屋里一张桌、一把椅，桌后坐着一个人，抬眼看他们。老周把那张三格空的表放在桌沿上。小丁跟在他身后，没吭声。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "按流程先递材料再开口"
+    },
+    {
+     "to": "n9",
+     "text": "先问这章平时归谁管"
+    }
+   ]
+  },
+  "n8": {
+   "text": "老周没绕弯，把表推过去，一格一格说用途：三个无人认领的废章，凑齐了才能撤销。对方听完，弯身拉开桌下的抽屉，从里头翻出一枚章，对着灯看了一眼，搁在表边上。章面朝下。小丁盯着那枚章，手在裤缝上蹭了蹭。谁也没去碰它。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "守在屋里等这枚章落下"
+    },
+    {
+     "to": "n11",
+     "text": "把材料留下，先回人事窗口"
+    }
+   ]
+  },
+  "n9": {
+   "text": "老周没提表，先问这枚章原先归谁管、是谁留下的。对方把笔搁下，看了他一眼：章的主人早不在了，走的时候东西没人接，章就撂在这儿，也没人来认。小丁在旁边小声说，那不就是没人认领。对方没接这句。表还摊在桌沿上，三个格子空着。",
+   "choices": [
+    {
+     "to": "n11",
+     "text": "把三格章位交回人事窗口"
+    },
+    {
+     "to": "n12",
+     "text": "请对方顺手查一下工号"
+    }
+   ]
+  },
+  "n10": {
+   "text": "桌后的人把那枚章翻过来，蘸了印泥，朝表上按下去。又弯身拉开抽屉，摸出两枚，一个格子一个格子按完。三个格子里三个红印，边角糊成一片。表推回老周手里。他下楼回到闸机前，把工牌贴上去，红灯灭了，绿灯亮起来，门开了。小丁跟在后头小声说，哥，这回能进了。老周把工牌在指头上转了半圈，抬脚走进楼里。",
+   "choices": []
+  },
+  "n11": {
+   "text": "三枚章挨着盖下来，格子一个一个红起来，第三个按下去的时候，老周的手还扶在桌沿上没挪。表推回他面前，三个红印并排躺着。他看了很久，把工牌从兜里掏出来，放在表上面，说：那就不上了吧。小丁没接话，只把表从桌上拿起来，替他折了两折，塞进自己包里。屋里没人催他们走。",
+   "choices": []
+  },
+  "n12": {
+   "text": "那三格最后还是盖满了。闸机放行，他刷进去，屏幕跳出来的工号、部门、入职那年，一样都对不上。系统里那个老周，进楼比他还早，照片也不是他这张。小丁凑过来，把名字念了一遍，又回头看他的脸：哥，这……不是你吧。老周把工牌从闸机上抽回来，红灯又亮了一次。",
+   "choices": []
+  }
+ },
+ "story": {
+  "storyId": "sc-0009",
+  "schemaVersion": 1,
+  "title": "工牌没了，章还在",
+  "tagline": "闸机说他已离职，系统要他集齐三个章，而这三个章谁也不认领。",
+  "summary": "八年工龄的老周刷卡进楼，闸机亮红灯：您已离职。人事窗口说，撤销这个判决要集齐三个无人认领的废章。于是他拉上同部门的小丁，在资产室、数据治理办和一间没有门牌的房间之间来回打转，用最笨的合规办法，证明自己今天早上还在这儿上班。",
+  "genre": "office",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "职场",
+   "荒诞",
+   "盖章跑腿",
+   "黑色幽默"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "老周",
+    "desc": "八年工龄普通职员，被系统判离职，认死理"
+   },
+   {
+    "id": "c2",
+    "name": "小丁",
+    "desc": "同部门同事，全程陪着跑，负责吐槽和递材料"
+   },
+   {
+    "id": "c3",
+    "name": "章姐",
+    "desc": "人事窗口外包员工，只认流程不问原因"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "章齐了，闸机放行",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "章盖齐，人不想上了",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "系统恢复的是另一个老周",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "闸机亮红灯。老周把工牌贴上去，屏幕上跳出一行字：您已离职。他站在那儿没动，卡还捏在指头里。小丁从后面挤上来，看一眼屏幕，又看一眼他，嘴张了张没说出话。后面排队的人开始绕道走，保安在岗亭那头朝这边看。老周说，八年了。小丁说，哥，先别站在这儿。",
+    "label": "闸机红灯",
+    "choices": [
+     {
+      "text": "再刷一次，等保安来解释",
+      "to": "n2"
+     },
+     {
+      "text": "退出闸机，走访客通道登记",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "人事窗口前，章姐把老周的工牌在读卡器上过了一下，屏幕上还是那行字。老周问：是谁判的？章姐说系统自动，她这儿只看得见结果，看不见人。小丁问那怎么撤销，章姐从抽屉里抽出一张三格空表推过来：集齐三个无人认领的废章，一格一个，盖齐了再来。老周又追问一遍是谁判的，章姐还是那句：系统判的，她不问原因。保安跟过来看了一眼屏幕，记下工号，说按流程只能先这么挂账，转身走了。",
+    "label": "人事窗口：先问责任",
+    "choices": [
+     {
+      "text": "先去资产室找负责人问章",
+      "to": "n4"
+     },
+     {
+      "text": "先去资产室翻旧用章档案",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "人事窗口前，章姐把老周的工牌在读卡器上过了一下，屏幕上还是那行字。老周没问是谁判的，直接问撤销要交什么。章姐从抽屉里抽出一张表，推过来。表上排着三个空白的方格，每个方格旁边都印着一个字：章。她说，三个无人认领的废章，一格一个，盖齐了再来。小丁把表接过去，翻到背面看了看，什么都没有。",
+    "label": "人事窗口：先问流程",
+    "choices": [
+     {
+      "text": "拿着章位表去找资产室负责人",
+      "to": "n4"
+     },
+     {
+      "text": "拿着章位表去翻资产室旧档",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "资产室在负一层，铁门半开，里头堆着报废显示器和落灰机箱。负责人戴着袖套，听完摆手：这章早注销了。老周问那怎么才算数，负责人说，得先有状态确认表，证明他今天还在编，才能碰章。老周说人站在这儿呢。负责人说，人站在这儿不算，表上写着才算。小丁把这句话记进手机。三个空格还是空的。",
+    "label": "资产室：找活人",
+    "choices": [
+     {
+      "text": "到数据治理办，排队问受理台",
+      "to": "n6"
+     },
+     {
+      "text": "先往里走，看看还有谁在",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "资产室在负一层，铁门半开，里头堆着报废显示器和落灰机箱。老周没去找负责人，蹲到墙角那排档案柜前一层层翻，小丁替他扶着柜门。翻到的一本旧制度汇编上写着：用章须附状态确认表，无表不予受理。小丁说，这不还是绕回来了。老周把本子合上。三个空格还是空的。",
+    "label": "资产室：翻旧档",
+    "choices": [
+     {
+      "text": "去受理台排队，问清楚",
+      "to": "n6"
+     },
+     {
+      "text": "绕开受理台，往走廊深处走",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "数据治理办的受理台前排队。老周把要凑三个废章的事讲了一遍，柜台后的人把屏幕转过来：状态确认表由系统生成，人工打不了；系统只认当初发的那张工牌。老周说，工牌在我手里。对方说，你手里那张刷出来是什么，你比我清楚。小丁把老周往旁边拉了半步。柜台后的人往走廊里努了努嘴：尽头那间没挂牌的屋，去问问吧，兴许有人肯认这个章。",
+    "label": "数据治理办：问人",
+    "choices": [
+     {
+      "text": "把表推上去，按流程办",
+      "to": "n8"
+     },
+     {
+      "text": "先打听这类章的来历",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "从资产室出来，走廊往里走，尽头那扇门没挂任何标识，只在门框上贴了张边角起翘的白纸。老周推门进去，屋里一张桌、一把椅，桌后坐着一个人，抬眼看他们。老周把那张三格空的表放在桌沿上。小丁跟在他身后，没吭声。",
+    "label": "走廊尽头没门牌",
+    "choices": [
+     {
+      "text": "按流程先递材料再开口",
+      "to": "n8"
+     },
+     {
+      "text": "先问问这种章平时归谁管",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "老周没绕弯，把表推过去，一格一格说用途：三个无人认领的废章，凑齐了才能撤销。桌后那人接过去翻了翻，抬眼问他，前面那几处都是怎么说的。老周把一路听来的话原样复述了一遍：要表、要章、处处卡着。那人听完把表放下：那些规矩，到我这门口为止。说完弯身拉开抽屉，翻出一枚章搁在表边上，章面朝下。小丁盯着那枚章，手在裤缝上蹭了蹭。谁也没去碰它。",
+    "label": "递材料，按章办事",
+    "choices": [
+     {
+      "text": "趁这口气没散，请他把三枚都盖了",
+      "to": "n10"
+     },
+     {
+      "text": "把表留下，自己退到一边等",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "老周没提表，先打听起无人认领的章——原先归谁管，是谁留下的。桌后那人把笔搁下，看了他一眼：章的主人早不在了，走的时候东西没人接，章就撂在这儿，也没人来认。小丁在旁边小声说，那不就是没人认领。那人没接这句，只说：前面那几处的规矩，到我这儿为止——又问，你的工号是多少。表还摊在桌沿上，三个格子空着。",
+    "label": "先打听章的来历",
+    "choices": [
+     {
+      "text": "把表推回去，等章盖完",
+      "to": "n11"
+     },
+     {
+      "text": "请对方顺手查一下工号",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "桌后的人把那枚章翻过来，蘸了印泥，朝表上按下去。又弯身拉开抽屉，摸出两枚，一个格子一个格子按完。三个格子里三个红印，边角糊成一片。表推回老周手里。他回到闸机前，把工牌贴上去，红灯灭了，绿灯亮起来，门开了。小丁跟在后头小声说，哥，这回能进了。老周把工牌在指头上转了半圈，抬脚走进楼里。",
+    "label": "闸机终于放行",
+    "ending": {
+     "id": "e1",
+     "title": "章齐了，闸机放行",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n11",
+    "text": "桌后的人把章凑齐，一枚一枚蘸了印泥，对着表上的格子挨个按下去。三个格子一个接一个红起来，边角糊成一片。等章盖完，表推回老周手里。他看了很久——从早上站在闸机前，到今天为一枚章把八年翻来覆去证明给一屋子人看，他要的其实不是这一栏红印。他把工牌放到表上面，说：那就不上了吧。小丁没接话，只把表折了两折，塞进自己包里。屋里没人催他们走。",
+    "label": "章齐了，人不想上",
+    "ending": {
+     "id": "e2",
+     "title": "章盖齐，人不想上了",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n12",
+    "text": "对方把工号输进系统，屏幕转过来时，屋里静了一下。那个工号底下挂着一个人，入职那年、部门、照片，一样都对不上——系统里那个老周，进楼比他还早，照片也不是他这张。老周说，那我是谁。对方没接话，只把屏幕转回去。小丁凑过来，把那个名字念了一遍，又回头看他的脸：哥，这……不是你吧。",
+    "label": "恢复的是另一个老周",
+    "ending": {
+     "id": "e3",
+     "title": "系统恢复的是另一个老周",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "office",
+  "meta": {
+   "createdAt": "2026-09-22T15:18:45.009Z",
+   "generatedBy": "tools/content/produce.cjs@1",
+   "reviewStatus": "passed",
+   "contentSources": "原创虚构，未使用未授权私人素材",
+   "pipeline": {
+    "proposalId": "sc-0009-p0",
+    "editorPass": true,
+    "pathReviewPass": true,
+    "editorVerdict": "pass",
+    "pathVerdict": "pass",
+    "pathSampling": "10/32",
+    "fixRounds": 0,
+    "openIssuesAtAcceptance": 0,
+    "premium": false
+   }
+  }
+ },
+ "choicesRefreshed": {
+  "at": "2026-09-22T10:44:35.864Z",
+  "touched": 0
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "先去资产室找负责人问章",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "再刷一次，等保安来解释",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "先去资产室翻旧用章档案",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "到数据治理办，排队问受理台",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "拿着章位表去找资产室负责人",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "先往里走，看看还有谁在",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "把表推上去，按流程办",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "去受理台排队，问清楚",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "先打听这类章的来历",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "趁这口气没散，请他把三枚都盖了",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "按流程先递材料再开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把表留下，自己退到一边等",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把表推回去，等章盖完",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "退出闸机，走访客通道登记",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "拿着章位表去翻资产室旧档",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "绕开受理台，往走廊深处走",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "先问问这种章平时归谁管",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "请对方顺手查一下工号",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "editorReview": {
+  "at": "2026-09-22T15:14:29.415Z",
+  "verdict": "pass",
+  "editorIssues": []
+ },
+ "pathReview": {
+  "at": "2026-09-22T15:14:42.110Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "verdict": "pass",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 5,
+    "issue": "选项提到“受理台”，但该路径从未到过或听说过受理台",
+    "suggest": "改为“绕开前面几处，往走廊深处走”",
+    "evidence": "绕开受理台，往走廊深处走"
+   }
+  ]
+ },
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 32,
+    "capped": false,
+    "visitedPairs": 12,
+    "totalPairs": 12,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 8,
+    "e2": 16,
+    "e3": 8
+   },
+   "nodeCount": 12,
+   "endingCount": 3,
+   "avgNodeCjk": 124,
+   "totalChoices": 18,
+   "avgPathLen": 6,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "先去资产室找负责人问章",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "再刷一次，等保安来解释",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "先去资产室翻旧用章档案",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "到数据治理办，排队问受理台",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "拿着章位表去找资产室负责人",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "先往里走，看看还有谁在",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "把表推上去，按流程办",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "去受理台排队，问清楚",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "先打听这类章的来历",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "趁这口气没散，请他把三枚都盖了",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "按流程先递材料再开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把表留下，自己退到一边等",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把表推回去，等章盖完",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "退出闸机，走访客通道登记",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "拿着章位表去翻资产室旧档",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "绕开受理台，往走廊深处走",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "先问问这种章平时归谁管",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "请对方顺手查一下工号",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "finalCheck": {
+  "ok": true,
+  "codes": [],
+  "openIssuesAfterDedup": 0,
+  "openIssuesRaw": 0,
+  "openIssues": [],
+  "at": "2026-09-22T15:18:45.009Z"
+ }
+}

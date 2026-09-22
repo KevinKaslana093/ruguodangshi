@@ -1,0 +1,28 @@
+{
+ "storyId": "sc-0013",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-22T11:22:31.080Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 3,
+    "issue": "缺点栏尚空就选\"加改进计划\"，且推表动作重复一次",
+    "suggest": "补一句他当场落笔写缺点，或删掉重复的推表动作",
+    "evidence": "老陈从文件夹里抽出一张最终自评表，推到他面前。……老陈把最终自评表推到他面前，笔尖在表头点了点"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 6,
+    "issue": "主管工位已摊过截图，终评现场又\"把手机翻过来\"重摊，读感重复",
+    "suggest": "终评处改为\"把手机再推过去\"，点明这次多出的是删改记录",
+    "evidence": "小周把手机掏出来，屏幕转过去……小周把手机翻过来，屏幕转向老陈"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

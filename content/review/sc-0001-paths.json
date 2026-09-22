@@ -1,0 +1,28 @@
+{
+ "storyId": "sc-0001",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-21T06:13:19.335Z",
+  "sampled": 10,
+  "totalPaths": 128,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 7,
+    "issue": "饭团已被店长捏出，后文仍选\"留在原处\"，位置衔接不清",
+    "suggest": "补一句店长把它放回原处，或改选为\"放回那一格\"",
+    "evidence": "他弯下腰，把那个饭团捏出来，看了眼日期"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 2,
+    "issue": "前面已讲过常客的事，此处又\"把常客的事讲清楚\"，节奏重复",
+    "suggest": "改为补充新信息，如他几点来、买多久了",
+    "evidence": "林晚把话头落到周叙身上：他每天这个点来，只买这一款"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

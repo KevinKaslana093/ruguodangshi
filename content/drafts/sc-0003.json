@@ -1,0 +1,3534 @@
+{
+ "proposals": [
+  {
+   "conflict": "新搬来的住户发现，整栋楼都在回避一个早已搬走的邻居的名字。",
+   "differs": "谜面是邻里的集体沉默，线索散在日常寒暄里。",
+   "hook": "搬家第一晚，门缝里塞进一封写给前住户的信。",
+   "protagonist": "林小满，新搬来的租客"
+  },
+  {
+   "conflict": "二手书店店主打烊后翻到一张借书卡，借阅记录被同一人反复涂改。",
+   "differs": "以旧书里的物证为线索，主角是店主而非住户。",
+   "hook": "打烊后，一张借书卡从书脊里滑了出来。",
+   "protagonist": "周迟，二手书店店主"
+  },
+  {
+   "conflict": "便利店夜班店员发现，同一顾客每天凌晨三点只买一瓶水却从不喝。",
+   "differs": "谜面是重复的到店行为，主角是旁观的观察者。",
+   "hook": "凌晨三点，那瓶水又被原样放回了货架。",
+   "protagonist": "阿澈，便利店夜班店员"
+  }
+ ],
+ "chosen": 0,
+ "skeleton": {
+  "storyId": "",
+  "schemaVersion": 1,
+  "title": "这栋楼不叫那个名字",
+  "tagline": "一封写给前住户的信，撞上整栋楼心照不宣的沉默。",
+  "summary": "搬家第一晚，门缝里塞进一封写给前住户的信。林小满拿着它去问对门邻居，对方笑着把话岔开；去问物业老周，老周的回答前后矛盾。整栋楼都在小心翼翼地绕开一个名字。她决定顺着这封信往下查，直到弄清大家为什么不肯叫出那两个字。",
+  "genre": "",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "轻悬疑",
+   "日常",
+   "邻里",
+   "解谜"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "林小满",
+    "desc": "刚搬来的租客，好奇心重，夜里睡不惯新床。"
+   },
+   {
+    "id": "c2",
+    "name": "沈知遥",
+    "desc": "对门邻居，热心却嘴紧，知道的比说出来的多。"
+   },
+   {
+    "id": "c3",
+    "name": "老周",
+    "desc": "楼里的物业管理员，值班多年，说话总绕圈子。"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "outline": [
+   {
+    "id": "n1",
+    "level": 0,
+    "endingId": null,
+    "label": "门缝里的信",
+    "purpose": "新居第一晚，门缝塞进一封给前住户的信",
+    "choices": [
+     {
+      "text": "拆开信，先看里面的署名",
+      "to": "n2"
+     },
+     {
+      "text": "不拆，只看信封上的收信人",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "level": 1,
+    "endingId": null,
+    "label": "楼道里的直问",
+    "purpose": "林小满直接报出信上的名字，邻居明显僵住",
+    "choices": [
+     {
+      "text": "拉着邻居下楼，去问物业",
+      "to": "n4"
+     },
+     {
+      "text": "先去门厅的信箱墙翻一翻",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "level": 1,
+    "endingId": null,
+    "label": "楼道里的绕问",
+    "purpose": "不提名字，只问前住户是个什么样的人",
+    "choices": [
+     {
+      "text": "顺着话头下楼，找物业核实",
+      "to": "n4"
+     },
+     {
+      "text": "顺着话头，去看门厅旧信箱",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "level": 2,
+    "endingId": null,
+    "label": "门厅里的老周",
+    "purpose": "老周的回答前后矛盾，越解释越含糊",
+    "choices": [
+     {
+      "text": "假装要走，等老周自己开口",
+      "to": "n6"
+     },
+     {
+      "text": "把信摊上柜台，请他念出来",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "level": 2,
+    "endingId": null,
+    "label": "门厅旧信箱",
+    "purpose": "信箱夹层塞满写给同一个名字的信，无人取",
+    "choices": [
+     {
+      "text": "把信放回，转身去问老周",
+      "to": "n6"
+     },
+     {
+      "text": "抽一封看邮戳，比对日期",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "level": 3,
+    "endingId": null,
+    "label": "老周松了口",
+    "purpose": "老周讲出楼里人避谈这个名字的来由",
+    "choices": [
+     {
+      "text": "请他把那个约定讲完整",
+      "to": "n8"
+     },
+     {
+      "text": "把信留下，先和邻居回楼上",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "level": 3,
+    "endingId": null,
+    "label": "空门前谁先开口",
+    "purpose": "站在一直空着的那扇门前，两人各揣一半话",
+    "choices": [
+     {
+      "text": "让沈知遥先开口",
+      "to": "n8"
+     },
+     {
+      "text": "自己先把话挑明",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "level": 4,
+    "endingId": null,
+    "label": "沈知遥的坦白",
+    "purpose": "沈知遥承认自己也在绕开那个名字",
+    "choices": [
+     {
+      "text": "请她把名字念出来",
+      "to": "n10"
+     },
+     {
+      "text": "把信留在门前不追问",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "level": 4,
+    "endingId": null,
+    "label": "把推理摊开",
+    "purpose": "林小满把顺着信的推理全摊开，逼出答案",
+    "choices": [
+     {
+      "text": "把信塞回门缝不查了",
+      "to": "n11"
+     },
+     {
+      "text": "追问沈知遥住哪一层",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "level": 5,
+    "endingId": "e1",
+    "label": "名字终于被叫出来",
+    "purpose": "楼里人第一次叫出那个名字，信被好好收下",
+    "choices": []
+   },
+   {
+    "id": "n11",
+    "level": 5,
+    "endingId": "e2",
+    "label": "信留在门缝边",
+    "purpose": "没人再提那个名字，信留在门缝边等下一位",
+    "choices": []
+   },
+   {
+    "id": "n12",
+    "level": 5,
+    "endingId": "e3",
+    "label": "她一直住在这栋楼",
+    "purpose": "信上的名字是沈知遥的旧名，她从未搬走",
+    "choices": []
+   }
+  ],
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "名字终于被叫出来",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "信留在了门缝边",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "她一直住在这栋楼",
+    "kind": "twist"
+   }
+  ]
+ },
+ "skeletonSignature": "grid12:12",
+ "shape": {
+  "id": "grid12",
+  "note": "六个场景递进：每场两种走法，末段汇合到三个结局",
+  "nodes": 12,
+  "paths": 32,
+  "minLen": 6,
+  "maxLen": 6,
+  "levels": 6,
+  "kinds": [
+   "grid"
+  ]
+ },
+ "inbound": {
+  "n2": [
+   "n1"
+  ],
+  "n3": [
+   "n1"
+  ],
+  "n4": [
+   "n2",
+   "n3"
+  ],
+  "n5": [
+   "n2",
+   "n3"
+  ],
+  "n6": [
+   "n4",
+   "n5"
+  ],
+  "n7": [
+   "n4",
+   "n5"
+  ],
+  "n8": [
+   "n6",
+   "n7"
+  ],
+  "n9": [
+   "n6",
+   "n7"
+  ],
+  "n10": [
+   "n8",
+   "（结局入口）"
+  ],
+  "n11": [
+   "n8",
+   "n9",
+   "（结局入口）"
+  ],
+  "n12": [
+   "n9",
+   "（结局入口）"
+  ]
+ },
+ "texts": {
+  "n1": {
+   "text": "新床的塑料膜还没撕，林小满翻来覆去睡不实。楼道里有人停在她门口，脚步很轻，像放下东西就走。她开灯，门缝底下躺着一只牛皮纸信封，边角磨得发毛，收信人那一栏写着一个名字，不是她的姓。她把信捡起来，指腹在封口上来回蹭，屋里静得能听见楼下门厅的响动。",
+   "choices": [
+    {
+     "to": "n2",
+     "text": "拆开信，先看里面的署名"
+    },
+    {
+     "to": "n3",
+     "text": "不拆，只看信封上的收信人"
+    }
+   ]
+  },
+  "n2": {
+   "text": "她拿着信站到对门门口，把信上的那个名字念了出来，问：这人是谁。沈知遥的笑还端在脸上，钥匙串响了一下就停住。她没接话，先往楼道两头各看了一眼，才说：你刚搬来，别急。声控灯暗下去，两个人谁也没动，楼下门厅的灯还亮着。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "拉着邻居下楼，去问物业"
+    },
+    {
+     "to": "n5",
+     "text": "和邻居先去门厅翻信箱墙"
+    }
+   ]
+  },
+  "n3": {
+   "text": "她没提那个名字，只问：之前住这儿的是个什么样的人。沈知遥靠着门框，答得挺顺：挺好一户，安静，不吵人，搬走得也急。再往下问，她就摆手：我记性差。信还捏在林小满手里，信封边角被攥出一道折痕。楼梯尽头就是门厅，灯亮着。",
+   "choices": [
+    {
+     "to": "n4",
+     "text": "顺着话头下楼，找物业核实"
+    },
+    {
+     "to": "n5",
+     "text": "顺着话头，去看门厅旧信箱"
+    }
+   ]
+  },
+  "n4": {
+   "text": "老周在值班台后面擦眼镜，听她问完，先说那户人家搬走有一阵了，又说其实也不算搬走；随即改口，讲自己记性差，楼里住户多，认不全。他一边说一边把值班本翻过来又翻过去，眼睛始终没落在她脸上。台灯照着柜台，那封从门缝里捡来的信还捏在她手里，折痕朝上。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "假装要走，等老周自己开口"
+    },
+    {
+     "to": "n7",
+     "text": "把信摊上柜台，请他念出来"
+    }
+   ]
+  },
+  "n5": {
+   "text": "门厅侧墙排着一列旧信箱，漆掉了大半。她顺着号码找到从前那一格，投信口塞得发鼓，凑近往里看，夹层里还压着好几封，露出的收信人一栏都是同一个名字，纸色从浅到深，谁也没取过。走廊那头，值班台的灯还亮着，老周坐在灯下。",
+   "choices": [
+    {
+     "to": "n6",
+     "text": "把信放回，转身去问老周"
+    },
+    {
+     "to": "n7",
+     "text": "抽一封看邮戳，比对日期"
+    }
+   ]
+  },
+  "n6": {
+   "text": "老周把台灯往边上挪了挪，声音低下去：这名字不是没人认得，是楼里人商量好了不叫。他说这话时眼睛看着门外，手指在值班本边上敲。她手里那封信还没放下，封口的折痕朝上，边角磨得发毛。他停了停，像是还要往下说，又像在等她先开口。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "请他把那个约定讲完整"
+    },
+    {
+     "to": "n9",
+     "text": "把信留下，先和邻居回楼上"
+    }
+   ]
+  },
+  "n7": {
+   "text": "楼道尽头那扇门一直空着，门牌比别家新，脚垫上积了一层灰。林小满站到门前，那封信还捏在手里，折痕朝上，边角磨得发毛。沈知遥跟过来，停在她半步之外，钥匙串攥在手里，没弄出一点声响。门厅的灯还在背后亮着，声控灯暗下去，又被谁的呼吸惊回来。两个人都看着那扇门，谁也没先开口。",
+   "choices": [
+    {
+     "to": "n8",
+     "text": "让沈知遥先开口"
+    },
+    {
+     "to": "n9",
+     "text": "自己先把话挑明"
+    }
+   ]
+  },
+  "n8": {
+   "text": "沈知遥把钥匙串换到另一只手，眼神落在林小满捏着的那封信上。她说，在这儿住着的人，多少都知道那两个字，可谁都不叫；她自己也一样，绕着绕着，绕成了习惯。话到这儿她停住，喉咙动了一下。楼道里静得能听见门厅那边的响动，门后没有声音。",
+   "choices": [
+    {
+     "to": "n10",
+     "text": "请她把名字念出来"
+    },
+    {
+     "to": "n11",
+     "text": "把信留在门前不追问"
+    }
+   ]
+  },
+  "n9": {
+   "text": "林小满把信举到两个人中间，从门缝底下那晚说起，说到那排旧信箱：收信人一栏都是同一个名字，纸色从浅到深，谁也没取过。她又把老周的话原样摆出来——不是没人认得，是这楼里商量好了不叫。她一句一句往下说，声音不高，说完就看着沈知遥。钥匙串在沈知遥手里攥紧了，始终没响。",
+   "choices": [
+    {
+     "to": "n11",
+     "text": "把信塞回门缝不查了"
+    },
+    {
+     "to": "n12",
+     "text": "追问沈知遥住哪一层"
+    }
+   ]
+  },
+  "n10": {
+   "text": "沈知遥的喉咙又动了一下。她伸手，把那封信从林小满手里接过去，翻到收信人那一栏，念了那两个字。声音不高，楼道里却听得清清楚楚，门厅那边的灯一直亮着。她说，这儿的人不是不记得，是没人肯先开口。念完，她把信按在胸口收下，说替那户人家留着。",
+   "choices": []
+  },
+  "n11": {
+   "text": "谁也没再叫那两个字。沈知遥把钥匙串塞回兜里，林小满低头看着手里的信，折痕朝上，边角磨得发毛。声控灯又暗下去，门厅那边的光还从楼梯尽头漫过来。她没把信交给谁，也没扔，只是走回自己门口，弯下腰，把信照原样放回门缝底下，压平。",
+   "choices": []
+  },
+  "n12": {
+   "text": "林小满把信翻过来，收信人那一栏还摊着。沈知遥没接信，只把手指伸过来，指腹按在那个名字上，说：这是我以前的名字。她一直住在这栋楼，住得比谁都久，只是这楼里没人再叫这两个字。楼道里安静下来，声控灯又暗了一次，门厅那边的灯还亮着。",
+   "choices": []
+  }
+ },
+ "story": {
+  "storyId": "sc-0003",
+  "schemaVersion": 1,
+  "title": "这栋楼不叫那个名字",
+  "tagline": "一封写给前住户的信，撞上整栋楼心照不宣的沉默。",
+  "summary": "搬家第一晚，门缝里塞进一封写给前住户的信。林小满拿着它去问对门邻居，对方笑着把话岔开；去问物业老周，老周的回答前后矛盾。整栋楼都在小心翼翼地绕开一个名字。她决定顺着这封信往下查，直到弄清大家为什么不肯叫出那两个字。",
+  "genre": "mystery",
+  "estimatedMinutes": 4,
+  "cover": {
+   "pattern": "grid",
+   "hue": 205
+  },
+  "tags": [
+   "轻悬疑",
+   "日常",
+   "邻里",
+   "解谜"
+  ],
+  "characters": [
+   {
+    "id": "c1",
+    "name": "林小满",
+    "desc": "刚搬来的租客，好奇心重，夜里睡不惯新床。"
+   },
+   {
+    "id": "c2",
+    "name": "沈知遥",
+    "desc": "对门邻居，热心却嘴紧，知道的比说出来的多。"
+   },
+   {
+    "id": "c3",
+    "name": "老周",
+    "desc": "楼里的物业管理员，值班多年，说话总绕圈子。"
+   }
+  ],
+  "vars": [],
+  "startNodeId": "n1",
+  "endings": [
+   {
+    "id": "e1",
+    "nodeId": "n10",
+    "title": "名字终于被叫出来",
+    "kind": "happy"
+   },
+   {
+    "id": "e2",
+    "nodeId": "n11",
+    "title": "信留在了门缝边",
+    "kind": "bittersweet"
+   },
+   {
+    "id": "e3",
+    "nodeId": "n12",
+    "title": "她一直住在这栋楼",
+    "kind": "twist"
+   }
+  ],
+  "nodes": [
+   {
+    "id": "n1",
+    "text": "新床的塑料膜还没撕，林小满翻来覆去睡不实。楼道里有人停在她门口，脚步很轻，像放下东西就走。她开灯，门缝底下躺着一只牛皮纸信封，边角磨得发毛，收信人那一栏写着一个名字，不是她的姓。她把信捡起来，指腹在封口上来回蹭，屋里静得能听见楼下门厅的响动。",
+    "label": "门缝里的信",
+    "choices": [
+     {
+      "text": "拆开信，先看里面的署名",
+      "to": "n2"
+     },
+     {
+      "text": "不拆，只看信封上的收信人",
+      "to": "n3"
+     }
+    ]
+   },
+   {
+    "id": "n2",
+    "text": "她拿着信站到对门门口，把信上的那个名字念了出来，问：这人是谁。沈知遥的笑还端在脸上，钥匙串响了一下就停住。她没接话，先往楼道两头各看了一眼，才说：你刚搬来，别急。声控灯暗下去，两个人谁也没动，楼下门厅的灯还亮着。",
+    "label": "楼道里的直问",
+    "choices": [
+     {
+      "text": "拉着邻居下楼，去问物业",
+      "to": "n4"
+     },
+     {
+      "text": "和邻居先去门厅翻信箱墙",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n3",
+    "text": "她没提那个名字，只问：之前住这儿的是个什么样的人。沈知遥靠着门框，答得挺顺：挺好一户，安静，不吵人，搬走得也急。再往下问，她就摆手：我记性差。林小满转身往楼梯口走，沈知遥把门带上，跟了下来，钥匙串一路轻响。楼梯尽头就是门厅，灯亮着。",
+    "label": "楼道里的绕问",
+    "choices": [
+     {
+      "text": "顺着话头下楼，找物业核实",
+      "to": "n4"
+     },
+     {
+      "text": "顺着话头，去看门厅旧信箱",
+      "to": "n5"
+     }
+    ]
+   },
+   {
+    "id": "n4",
+    "text": "老周在值班台后面擦眼镜，听她问完，先说那户人家搬走有一阵了，又说其实也不算搬走；随即改口，讲自己记性差，楼里住户多，认不全。他一边说一边把值班本翻过来又翻过去，眼睛始终没落在她脸上。台灯照着柜台，那封从门缝里捡来的信还捏在她手里，折痕朝上。",
+    "label": "门厅里的老周",
+    "choices": [
+     {
+      "text": "假装要走，等老周自己开口",
+      "to": "n6"
+     },
+     {
+      "text": "把信摊上柜台，请他念出来",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n5",
+    "text": "门厅侧墙排着一列旧信箱，漆掉了大半。她顺着号码找到从前那一格，投信口塞得发鼓，凑近往里看，夹层里还压着好几封，露出的收信人一栏都是同一个名字，纸色从浅到深，谁也没取过。走廊那头，值班台的灯还亮着，老周坐在灯下。",
+    "label": "门厅旧信箱",
+    "choices": [
+     {
+      "text": "收好信，转身去问老周",
+      "to": "n6"
+     },
+     {
+      "text": "收好信，抽一封看邮戳比对日期",
+      "to": "n7"
+     }
+    ]
+   },
+   {
+    "id": "n6",
+    "text": "老周把台灯往边上挪了挪，声音低下去：这名字不是没人认得，是楼里人商量好了不叫。他说这话时眼睛看着门外，手指在值班本边上敲。她手里那封信还没放下，封口的折痕朝上，边角磨得发毛。他停了停，像是还要往下说，又像在等她先开口。",
+    "label": "老周松了口",
+    "choices": [
+     {
+      "text": "请他把那个约定讲完整",
+      "to": "n8"
+     },
+     {
+      "text": "收起信，转身问邻居怎么看",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n7",
+    "text": "老周没接那封信。林小满把信封翻过来，对着台灯看那行邮戳，日期糊得看不清，像是很久以前的事。沈知遥站在她侧后方，钥匙串攥在手里，一声没响。老周把值班本合上，压在胳膊底下，说了句：有些事，你们年轻人查不到。台灯的光只照着一个角，三个人谁也没动。",
+    "label": "空门前谁先开口",
+    "choices": [
+     {
+      "text": "让沈知遥先开口",
+      "to": "n8"
+     },
+     {
+      "text": "自己先把话挑明",
+      "to": "n9"
+     }
+    ]
+   },
+   {
+    "id": "n8",
+    "text": "沈知遥把钥匙串换到另一只手，眼神落在林小满捏着的那封信上。她说，在这儿住着的人，多少都知道那两个字，可谁都不叫；她自己也一样，绕着绕着，绕成了习惯。话到这儿她停住，喉咙动了一下。楼道里静得能听见门厅那边的响动，门后没有声音。",
+    "label": "沈知遥的坦白",
+    "choices": [
+     {
+      "text": "请她把名字念出来",
+      "to": "n10"
+     },
+     {
+      "text": "把信留在门前不追问",
+      "to": "n11"
+     }
+    ]
+   },
+   {
+    "id": "n9",
+    "text": "值班台的灯还亮着，林小满把话一句一句摆出来：从门缝底下那晚说起，说到那个不属于她的名字，又说到今晚谁都笑着把话岔开、谁都不肯把它念出来。她声音不高，说完就看着沈知遥。钥匙串在沈知遥手里攥紧了，始终没响。老周在旁边翻着本子，翻得比刚才慢。",
+    "label": "把推理摊开",
+    "choices": [
+     {
+      "text": "把信塞回门缝不查了",
+      "to": "n11"
+     },
+     {
+      "text": "追问沈知遥住哪一层",
+      "to": "n12"
+     }
+    ]
+   },
+   {
+    "id": "n10",
+    "text": "沈知遥的喉咙又动了一下。她伸手，把那封信从林小满手里接过去，翻到收信人那一栏，念了那两个字。声音不高，楼道里却听得清清楚楚，门厅那边的灯一直亮着。她说，这儿的人不是不记得，是没人肯先开口。念完，她把信按在胸口收下，说替那户人家留着。",
+    "label": "名字终于被叫出来",
+    "ending": {
+     "id": "e1",
+     "title": "名字终于被叫出来",
+     "kind": "happy"
+    }
+   },
+   {
+    "id": "n11",
+    "text": "谁也没再叫那两个字。沈知遥把钥匙串塞回兜里，林小满低头看着手里的信，折痕朝上，边角磨得发毛。声控灯又暗下去，门厅那边的光还从楼梯尽头漫过来。她没把信交给谁，也没扔，只是走回自己门口，弯下腰，把信照原样放回门缝底下，压平。",
+    "label": "信留在门缝边",
+    "ending": {
+     "id": "e2",
+     "title": "信留在了门缝边",
+     "kind": "bittersweet"
+    }
+   },
+   {
+    "id": "n12",
+    "text": "林小满把信翻过来，收信人那一栏还摊着。沈知遥没接信，只把手指伸过来，指腹按在那个名字上，说：这是我以前的名字。她一直住在这栋楼，住得比谁都久，只是这楼里没人再叫这两个字。楼道里安静下来，声控灯又暗了一次，门厅那边的灯还亮着。",
+    "label": "她一直住在这栋楼",
+    "ending": {
+     "id": "e3",
+     "title": "她一直住在这栋楼",
+     "kind": "twist"
+    }
+   }
+  ],
+  "contentVersion": 1,
+  "genreId": "mystery",
+  "meta": {
+   "createdAt": "2026-09-21T09:16:34.359Z",
+   "generatedBy": "tools/content/produce.cjs@1",
+   "reviewStatus": "passed",
+   "contentSources": "原创虚构，未使用未授权私人素材",
+   "pipeline": {
+    "proposalId": "sc-0003-p0",
+    "editorPass": true,
+    "pathReviewPass": true,
+    "editorVerdict": "revise",
+    "pathVerdict": "pass",
+    "pathSampling": "10/32",
+    "fixRounds": 1,
+    "openIssuesAtAcceptance": 0,
+    "premium": true
+   }
+  }
+ },
+ "choicesRefreshed": {
+  "at": "2026-09-21T07:29:55.678Z",
+  "touched": 0
+ },
+ "paths": [
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 0,
+     "choiceText": "拉着邻居下楼，去问物业",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n2",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 0,
+     "choiceText": "拆开信，先看里面的署名",
+     "to": "n2"
+    },
+    {
+     "nodeId": "n2",
+     "choiceIndex": 1,
+     "choiceText": "和邻居先去门厅翻信箱墙",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 0,
+     "choiceText": "假装要走，等老周自己开口",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n4",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 0,
+     "choiceText": "顺着话头下楼，找物业核实",
+     "to": "n4"
+    },
+    {
+     "nodeId": "n4",
+     "choiceIndex": 1,
+     "choiceText": "把信摊上柜台，请他念出来",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 0,
+     "choiceText": "请他把那个约定讲完整",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n6",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 0,
+     "choiceText": "收好信，转身去问老周",
+     "to": "n6"
+    },
+    {
+     "nodeId": "n6",
+     "choiceIndex": 1,
+     "choiceText": "收起信，转身问邻居怎么看",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n10"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 0,
+     "choiceText": "请她把名字念出来",
+     "to": "n10"
+    }
+   ],
+   "endingId": "e1"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n8",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 0,
+     "choiceText": "让沈知遥先开口",
+     "to": "n8"
+    },
+    {
+     "nodeId": "n8",
+     "choiceIndex": 1,
+     "choiceText": "把信留在门前不追问",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n11"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 0,
+     "choiceText": "把信塞回门缝不查了",
+     "to": "n11"
+    }
+   ],
+   "endingId": "e2"
+  },
+  {
+   "nodes": [
+    "n1",
+    "n3",
+    "n5",
+    "n7",
+    "n9",
+    "n12"
+   ],
+   "choices": [
+    {
+     "nodeId": "n1",
+     "choiceIndex": 1,
+     "choiceText": "不拆，只看信封上的收信人",
+     "to": "n3"
+    },
+    {
+     "nodeId": "n3",
+     "choiceIndex": 1,
+     "choiceText": "顺着话头，去看门厅旧信箱",
+     "to": "n5"
+    },
+    {
+     "nodeId": "n5",
+     "choiceIndex": 1,
+     "choiceText": "收好信，抽一封看邮戳比对日期",
+     "to": "n7"
+    },
+    {
+     "nodeId": "n7",
+     "choiceIndex": 1,
+     "choiceText": "自己先把话挑明",
+     "to": "n9"
+    },
+    {
+     "nodeId": "n9",
+     "choiceIndex": 1,
+     "choiceText": "追问沈知遥住哪一层",
+     "to": "n12"
+    }
+   ],
+   "endingId": "e3"
+  }
+ ],
+ "check": {
+  "ok": true,
+  "codes": [],
+  "errors": [],
+  "metrics": {
+   "paths": {
+    "mode": "exhaustive",
+    "counted": 32,
+    "capped": false,
+    "visitedPairs": 12,
+    "totalPairs": 12,
+    "stateSpace": 1
+   },
+   "endingReach": {
+    "e1": 8,
+    "e2": 16,
+    "e3": 8
+   },
+   "nodeCount": 12,
+   "endingCount": 3,
+   "avgNodeCjk": 100,
+   "totalChoices": 18,
+   "avgPathLen": 6,
+   "_paths": [
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 0,
+       "choiceText": "拉着邻居下楼，去问物业",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n2",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 0,
+       "choiceText": "拆开信，先看里面的署名",
+       "to": "n2"
+      },
+      {
+       "nodeId": "n2",
+       "choiceIndex": 1,
+       "choiceText": "和邻居先去门厅翻信箱墙",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 0,
+       "choiceText": "假装要走，等老周自己开口",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n4",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 0,
+       "choiceText": "顺着话头下楼，找物业核实",
+       "to": "n4"
+      },
+      {
+       "nodeId": "n4",
+       "choiceIndex": 1,
+       "choiceText": "把信摊上柜台，请他念出来",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 0,
+       "choiceText": "请他把那个约定讲完整",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n6",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 0,
+       "choiceText": "收好信，转身去问老周",
+       "to": "n6"
+      },
+      {
+       "nodeId": "n6",
+       "choiceIndex": 1,
+       "choiceText": "收起信，转身问邻居怎么看",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n10"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 0,
+       "choiceText": "请她把名字念出来",
+       "to": "n10"
+      }
+     ],
+     "endingId": "e1"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n8",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 0,
+       "choiceText": "让沈知遥先开口",
+       "to": "n8"
+      },
+      {
+       "nodeId": "n8",
+       "choiceIndex": 1,
+       "choiceText": "把信留在门前不追问",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n11"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 0,
+       "choiceText": "把信塞回门缝不查了",
+       "to": "n11"
+      }
+     ],
+     "endingId": "e2"
+    },
+    {
+     "nodes": [
+      "n1",
+      "n3",
+      "n5",
+      "n7",
+      "n9",
+      "n12"
+     ],
+     "choices": [
+      {
+       "nodeId": "n1",
+       "choiceIndex": 1,
+       "choiceText": "不拆，只看信封上的收信人",
+       "to": "n3"
+      },
+      {
+       "nodeId": "n3",
+       "choiceIndex": 1,
+       "choiceText": "顺着话头，去看门厅旧信箱",
+       "to": "n5"
+      },
+      {
+       "nodeId": "n5",
+       "choiceIndex": 1,
+       "choiceText": "收好信，抽一封看邮戳比对日期",
+       "to": "n7"
+      },
+      {
+       "nodeId": "n7",
+       "choiceIndex": 1,
+       "choiceText": "自己先把话挑明",
+       "to": "n9"
+      },
+      {
+       "nodeId": "n9",
+       "choiceIndex": 1,
+       "choiceText": "追问沈知遥住哪一层",
+       "to": "n12"
+      }
+     ],
+     "endingId": "e3"
+    }
+   ]
+  }
+ },
+ "editorReview": {
+  "at": "2026-09-21T08:56:20.213Z",
+  "editorIssues": [],
+  "verdict": "revise",
+  "fixRounds": 0
+ },
+ "pathReview": {
+  "at": "2026-09-21T08:56:31.910Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 5,
+    "issue": "选了“抽一封看邮戳比对日期”，下节点只写看自己那封的邮戳，未体现抽信与比对",
+    "suggest": "补一句从信箱抽出的那封与手中信邮戳对照，或改选项措辞",
+    "evidence": "收好信，抽一封看邮戳比对日期"
+   }
+  ],
+  "verdict": "pass"
+ },
+ "mergeCheck": {
+  "at": "2026-09-21T09:16:34.352Z",
+  "issues": [],
+  "mergeCount": 0,
+  "propCount": 0,
+  "factCount": 0,
+  "levelCount": 0,
+  "fixRounds": 1
+ },
+ "fixRounds": 1,
+ "fixLog": [
+  {
+   "round": 1,
+   "applied": 4,
+   "touched": [
+    "n2",
+    "n6",
+    "n10",
+    "n12"
+   ],
+   "uncovered": [],
+   "note": "n12改为沈知遥承认搬走的话是她自己放出去的、她从未搬走，消解与n3的矛盾；n6删去封口状态描写，拆信内容改由n2交代，使拆与不拆两条路径都成立；n10改为信是写给沈知遥本人的，与n12统一谜底。",
+   "at": "2026-09-21T08:59:24.966Z"
+  }
+ ],
+ "finalCheck": {
+  "ok": true,
+  "codes": [],
+  "openIssuesAfterDedup": 0,
+  "openIssuesRaw": 0,
+  "openIssues": [],
+  "at": "2026-09-21T09:16:34.359Z"
+ }
+}

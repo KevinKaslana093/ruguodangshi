@@ -1,0 +1,13 @@
+{
+  "tier": "A",
+  "note": "8 个精品示例，覆盖 8 种题材；sc-0004（旅行事故）已通过验收进入正式库。",
+  "items": [
+    { "id": "sc-0001", "genre": "warm", "premium": true, "seed": "便利店夜班店员与每天凌晨来买同一种饭团的人" },
+    { "id": "sc-0002", "genre": "office", "premium": true, "seed": "评审会上没人敢说的话，被实习生一句话说出来" },
+    { "id": "sc-0003", "genre": "mystery", "premium": true, "seed": "同一栋楼里连续三天收到一模一样的匿名快递" },
+    { "id": "sc-0005", "genre": "pet", "premium": true, "seed": "猫在搬家那天从纸箱里消失了" },
+    { "id": "sc-0006", "genre": "birthday", "premium": true, "seed": "生日蛋糕订错了名字，只好将错就错" },
+    { "id": "sc-0007", "genre": "scifi", "premium": true, "seed": "一台会替人道歉的旧机器，突然开始拒绝工作" },
+    { "id": "sc-0008", "genre": "dorm", "premium": true, "seed": "宿舍四个人合买的冰箱坏了，谁都不肯先说" }
+  ]
+}

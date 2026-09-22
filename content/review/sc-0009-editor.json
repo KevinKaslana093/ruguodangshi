@@ -1,0 +1,25 @@
+{
+ "storyId": "sc-0009",
+ "kind": "editor",
+ "review": {
+  "at": "2026-09-22T15:06:47.738Z",
+  "editorIssues": [
+   {
+    "severity": "major",
+    "nodeId": "n8",
+    "issue": "n6受理台与n8/n9“门口”房间场景混同，同一人先称规矩不可破又当场破例",
+    "suggest": "在n6后补一句过渡，或让n8/n9措辞兼容受理台场景",
+    "evidence": "数据治理办的受理台前排队……那些规矩，到我这门口为止"
+   },
+   {
+    "severity": "minor",
+    "nodeId": "n11",
+    "issue": "“从早上……到今天”暗示跨天，与全篇单日剧情不符",
+    "suggest": "改为“从早上站到现在”一类单日表述",
+    "evidence": "从早上站在闸机前，到今天为一枚章把八年翻来覆去证明给一屋子人看"
+   }
+  ],
+  "verdict": "revise",
+  "fixRounds": 0
+ }
+}

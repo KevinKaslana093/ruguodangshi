@@ -1,0 +1,4 @@
+编辑审核 verdict=pass，issues=0
+路径审核 verdict=pass，issues=1（抽样 10/64）
+  [minor] 路径1 :: 澄清稿从无到有，缺拟稿铺垫 | 证据: 澄清稿写定，总监从头读到尾，签了名
+已写回 draft 审核结论

@@ -1,0 +1,28 @@
+{
+ "storyId": "sc-0014",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-22T15:33:23.170Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "major",
+    "pathIndex": 3,
+    "issue": "刚坦白项目很虚，评审会现场却突然拔高做实，缺过渡",
+    "suggest": "补一句他为何改口，或让拔高由他人推动",
+    "evidence": "半真半假地说项目其实很虚……这东西不该只做一个场景，能往下接成一层底座"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 4,
+    "issue": "要求同事别外传，下一节点同事已对外问资源",
+    "suggest": "改为同事私下打听，或点明他们没听劝",
+    "evidence": "请同事先别往外说……老潘已经去问资源，沈工那边的目录又多了一层"
+   }
+  ],
+  "verdict": "revise"
+ }
+}

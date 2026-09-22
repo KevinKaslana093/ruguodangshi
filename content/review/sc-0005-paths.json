@@ -1,0 +1,28 @@
+{
+ "storyId": "sc-0005",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-21T06:04:33.777Z",
+  "sampled": 10,
+  "totalPaths": 64,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 5,
+    "issue": "选\"跳到沙发扶手\"，下节点却写蹲在沙发垫边",
+    "suggest": "统一落点，改为\"蹲坐在扶手上\"",
+    "evidence": "跳到沙发扶手，隔开一段距离……阿满退开半步，蹲坐在沙发垫边上"
+   },
+   {
+    "severity": "minor",
+    "pathIndex": 1,
+    "issue": "他尚未出门，结局直接跳到\"那天夜里又回来\"",
+    "suggest": "补一句他出门或时间流逝的过渡",
+    "evidence": "那天夜里他又回来得很晚"
+   }
+  ],
+  "verdict": "pass"
+ }
+}

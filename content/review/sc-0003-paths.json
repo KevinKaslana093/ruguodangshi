@@ -1,0 +1,21 @@
+{
+ "storyId": "sc-0003",
+ "kind": "paths",
+ "review": {
+  "at": "2026-09-21T08:56:31.910Z",
+  "sampled": 10,
+  "totalPaths": 32,
+  "fixRounds": 0,
+  "samplingNote": "程序侧穷举；模型侧抽样阅读",
+  "pathIssues": [
+   {
+    "severity": "minor",
+    "pathIndex": 5,
+    "issue": "选了“抽一封看邮戳比对日期”，下节点只写看自己那封的邮戳，未体现抽信与比对",
+    "suggest": "补一句从信箱抽出的那封与手中信邮戳对照，或改选项措辞",
+    "evidence": "收好信，抽一封看邮戳比对日期"
+   }
+  ],
+  "verdict": "pass"
+ }
+}

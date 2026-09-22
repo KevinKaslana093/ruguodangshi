@@ -1,0 +1,4 @@
+编辑审核 verdict=pass，issues=0
+路径审核 verdict=revise，issues=1（抽样 10/32）
+  [minor] 路径6 :: 选择推咖啡过去后，下节点仍写咖啡搁地上没人碰 | 证据: 先前冲的那杯速溶搁在地上，热气早散了，谁也没再碰
+已写回 draft 审核结论
